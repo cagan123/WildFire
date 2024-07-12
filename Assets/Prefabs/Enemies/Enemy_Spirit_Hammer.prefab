@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 6693672959991602712}
   - component: {fileID: 1286700868643037340}
   - component: {fileID: 1592837701501318838}
+  - component: {fileID: 5294921726718269550}
   m_Layer: 8
   m_Name: anim
   m_TagString: Untagged
@@ -124,8 +125,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 484162465
-  m_SortingLayer: 4
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -504111887, guid: e04d4b02846d3a6429ce2f8c2ed2380d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -150,6 +151,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e33e730ec99da842acd2b03403a1676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5294921726718269550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2425305796313993371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e93feda443ae0049931f180db6851fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMovable: 1
+  renderBelowAll: 0
+  sortType: 0
+  SorterPositionOffset: {x: 0.1308155, y: -0.54506016}
+  SorterPositionOffset2: {x: 0, y: 0}
+  renderersToSort:
+  - {fileID: 1286700868643037340}
 --- !u!1 &2967764989796898400
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,6 +249,7 @@ GameObject:
   - component: {fileID: 1904959102032108331}
   - component: {fileID: 4560890491681222317}
   - component: {fileID: 3794147402153008457}
+  - component: {fileID: 8661397127488349882}
   m_Layer: 8
   m_Name: Enemy_Spirit_Hammer
   m_TagString: Untagged
@@ -344,6 +365,28 @@ MonoBehaviour:
   Attack1DashSpeed: 2.5
   Attack2DashSpeed: 3
   Attack3DashSpeed: 0
+--- !u!114 &8661397127488349882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3682348925797886641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757d09db59d1244f84a0286cc34ffec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strenght:
+    baseValue: 0
+    modifiers: 
+  damage:
+    baseValue: 5
+    modifiers: 
+  maxHp:
+    baseValue: 30
+    modifiers: 
+  currentHp: 0
 --- !u!1 &4033736025578579703
 GameObject:
   m_ObjectHideFlags: 0

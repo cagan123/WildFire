@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 5626208701262747050}
   - component: {fileID: 3286497893991900720}
   - component: {fileID: 7707011052601311817}
+  - component: {fileID: 9068167358719671740}
   m_Layer: 8
   m_Name: Enemy_Spirit_Spear
   m_TagString: Untagged
@@ -223,6 +224,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitMat: {fileID: 2100000, guid: ca0842ac9110a384494f6bcd6f262681, type: 2}
+--- !u!114 &9068167358719671740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6718917293024325092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757d09db59d1244f84a0286cc34ffec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strenght:
+    baseValue: 0
+    modifiers: 
+  damage:
+    baseValue: 5
+    modifiers: 
+  maxHp:
+    baseValue: 30
+    modifiers: 
+  currentHp: 0
 --- !u!1 &8306792904513171454
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +311,7 @@ GameObject:
   - component: {fileID: 4358022081906548196}
   - component: {fileID: 6647301630303532105}
   - component: {fileID: 5720372151152761372}
+  - component: {fileID: 1990198616424627731}
   m_Layer: 8
   m_Name: anim
   m_TagString: Untagged
@@ -369,9 +393,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 484162465
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: -868274557, guid: 7dd9f9e3ca2b47a4faebd3231a77943c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -395,6 +419,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e33e730ec99da842acd2b03403a1676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1990198616424627731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8378215316599163822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e93feda443ae0049931f180db6851fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMovable: 0
+  renderBelowAll: 0
+  sortType: 0
+  SorterPositionOffset: {x: 0.090224266, y: -0.5300698}
+  SorterPositionOffset2: {x: 0, y: 0}
+  renderersToSort:
+  - {fileID: 6647301630303532105}
 --- !u!1 &9087775979766729575
 GameObject:
   m_ObjectHideFlags: 0

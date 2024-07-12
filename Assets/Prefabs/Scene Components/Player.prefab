@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: -862040123, guid: 72214dcd2ebdb0f4e8a909b3c4c62c5d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -306,7 +306,7 @@ MonoBehaviour:
   isMovable: 1
   renderBelowAll: 0
   sortType: 0
-  SorterPositionOffset: {x: 0, y: -0.4496417}
+  SorterPositionOffset: {x: 0, y: -0.44964218}
   SorterPositionOffset2: {x: 0, y: 0}
   renderersToSort:
   - {fileID: 5661268610057764966}

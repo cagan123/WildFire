@@ -92,6 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3164928304118203100}
   - component: {fileID: 8613905865575422607}
+  - component: {fileID: 6159286325047712659}
   m_Layer: 7
   m_Name: StoneWall
   m_TagString: Obstacle
@@ -154,9 +155,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 484162465
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 20
   m_Sprite: {fileID: 21300000, guid: 9040647d56b4a504db0a08ed6b8bd102, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -168,6 +169,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &6159286325047712659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146806933346395277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e93feda443ae0049931f180db6851fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMovable: 0
+  renderBelowAll: 0
+  sortType: 1
+  SorterPositionOffset: {x: 1.622652, y: 0.3120489}
+  SorterPositionOffset2: {x: -2.0907211, y: -0.32765102}
+  renderersToSort:
+  - {fileID: 8613905865575422607}
 --- !u!1 &4993857449152104947
 GameObject:
   m_ObjectHideFlags: 0

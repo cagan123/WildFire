@@ -79,6 +79,7 @@ GameObject:
   - component: {fileID: 5089684861604629129}
   - component: {fileID: 6008916788781646228}
   - component: {fileID: 5748944537941337387}
+  - component: {fileID: 3223157207393868782}
   m_Layer: 8
   m_Name: anim
   m_TagString: Untagged
@@ -160,9 +161,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 484162465
-  m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 14
   m_Sprite: {fileID: -1022454684, guid: e48c920d69924d44785f243557d0855d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -186,6 +187,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e33e730ec99da842acd2b03403a1676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3223157207393868782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4124140943513101570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e93feda443ae0049931f180db6851fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMovable: 1
+  renderBelowAll: 0
+  sortType: 0
+  SorterPositionOffset: {x: 0.36206055, y: -0.5105984}
+  SorterPositionOffset2: {x: 0, y: 0}
+  renderersToSort:
+  - {fileID: 6008916788781646228}
 --- !u!1 &4266372763213801604
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +333,7 @@ GameObject:
   - component: {fileID: 4490265539325840453}
   - component: {fileID: 3106180045545308012}
   - component: {fileID: 8416166845696119327}
+  - component: {fileID: 7753408111278147959}
   m_Layer: 8
   m_Name: Enemy_Spirit_Sword
   m_TagString: Untagged
@@ -428,6 +449,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitMat: {fileID: 2100000, guid: ca0842ac9110a384494f6bcd6f262681, type: 2}
+--- !u!114 &7753408111278147959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6639515053351302718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6757d09db59d1244f84a0286cc34ffec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strenght:
+    baseValue: 0
+    modifiers: 
+  damage:
+    baseValue: 5
+    modifiers: 
+  maxHp:
+    baseValue: 30
+    modifiers: 
+  currentHp: 0
 --- !u!1 &9005999638885946911
 GameObject:
   m_ObjectHideFlags: 0
