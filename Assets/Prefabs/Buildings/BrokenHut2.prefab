@@ -156,7 +156,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 1462863417, guid: dad626fec0e402f429e7c12a31f37e30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -178,6 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8553887416053219458}
   - component: {fileID: 1046936459856448764}
+  - component: {fileID: 5029424961183695326}
   m_Layer: 0
   m_Name: WildFire_Ruined_Hut_3_01
   m_TagString: Untagged
@@ -238,8 +239,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 484162465
-  m_SortingLayer: 4
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 1461537225, guid: dad626fec0e402f429e7c12a31f37e30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -252,6 +253,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
+--- !u!114 &5029424961183695326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3381736602271421840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e93feda443ae0049931f180db6851fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMovable: 1
+  renderBelowAll: 0
+  sortType: 1
+  SorterPositionOffset: {x: 1.2709398, y: 0.18631601}
+  SorterPositionOffset2: {x: -0.8562279, y: -1.0027843}
+  renderersToSort: []
 --- !u!1 &4316459437550867647
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,6 +317,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6033807224172310971}
   - component: {fileID: 4538331177759043640}
+  - component: {fileID: 1995913679837533947}
   m_Layer: 0
   m_Name: WildFire_Ruined_Hut_3_02
   m_TagString: Untagged
@@ -358,8 +378,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 484162465
-  m_SortingLayer: 4
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 994059895, guid: dad626fec0e402f429e7c12a31f37e30, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -372,6 +392,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1995913679837533947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6235483818216447307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e93feda443ae0049931f180db6851fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMovable: 1
+  renderBelowAll: 0
+  sortType: 0
+  SorterPositionOffset: {x: -0.0000009536743, y: -0.1006484}
+  SorterPositionOffset2: {x: 0, y: 0}
+  renderersToSort:
+  - {fileID: 4538331177759043640}
 --- !u!1 &8449200400091335428
 GameObject:
   m_ObjectHideFlags: 0
