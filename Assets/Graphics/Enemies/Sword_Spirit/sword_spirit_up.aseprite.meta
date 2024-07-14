@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41a064801cbf51244a056f821101e0ed
+guid: dd996698d3ba89c4d9c67a0244de5016
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -121,18 +121,58 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Spear_Spear_Frame_0
+  - name: sword_spirit_up_Frame_4
     originalName: 
-    pivot: {x: 0.18604654, y: -0.5833334}
+    pivot: {x: 0.30434778, y: -1.3199999}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 93
+      width: 23
+      height: 25
+    spriteID: b8bf65a147872e14786a336a01ab83a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 93}
+  - name: sword_spirit_up_Frame_5
+    originalName: 
+    pivot: {x: 0.4666666, y: -1.6190476}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 144
+      width: 15
+      height: 21
+    spriteID: 57b5a525dde298e45895845bc8a69153
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 144}
+  - name: sword_spirit_up_Frame_15
+    originalName: 
+    pivot: {x: 0.3469388, y: -1.7619048}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 43
-      height: 36
-    spriteID: b12f6d878229a364f8010347090cf90c
+      width: 49
+      height: 21
+    spriteID: 1e2ad9f3e61de794993e477418373357
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -141,118 +181,18 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Spear_Spear_Frame_1
+  - name: sword_spirit_up_Frame_16
     originalName: 
-    pivot: {x: 0.3333333, y: -0.7741935}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 55
-      y: 4
-      width: 39
-      height: 31
-    spriteID: 4ca440a1ea102184cb88381588d6ad34
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 55, y: 4}
-  - name: Spear_Spear_Frame_2
-    originalName: 
-    pivot: {x: 0.4615385, y: -2.2941177}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 55
-      y: 48
-      width: 39
-      height: 17
-    spriteID: bfc1d380ed5a4d64b8e0f95d6c6343e0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 55, y: 48}
-  - name: Spear_Spear_Frame_3
-    originalName: 
-    pivot: {x: 0.5277778, y: -1.2222222}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 149
-      y: 4
-      width: 36
-      height: 27
-    spriteID: 1f7450445738703458678a0cf704007a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 149, y: 4}
-  - name: Spear_Spear_Frame_4
-    originalName: 
-    pivot: {x: 0.6666667, y: -1.7727274}
+    pivot: {x: 0.17948717, y: -1.6818182}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 74
-      width: 33
-      height: 22
-    spriteID: 6b61bced08bb0bf4bad42061cc1714a9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 74}
-  - name: Spear_Spear_Frame_5
-    originalName: 
-    pivot: {x: 0.6666667, y: -1.7727274}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 45
-      y: 74
-      width: 33
-      height: 22
-    spriteID: 5edcae24e8118a94490b9ff0fa9b8570
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 45, y: 74}
-  - name: Spear_Spear_Frame_6
-    originalName: 
-    pivot: {x: 0.3589744, y: -0.90000004}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 102
-      y: 4
+      y: 33
       width: 39
-      height: 30
-    spriteID: 8a989875e79594a41b23fb29fbea7e87
+      height: 22
+    spriteID: 45687014034407e4ca35604fa1bb7c5d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -260,19 +200,139 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 102, y: 4}
-  - name: Spear_Spear_Frame_7
+    uvTransform: {x: 4, y: 33}
+  - name: sword_spirit_up_Frame_0
     originalName: 
-    pivot: {x: 0.5116279, y: -2.1111112}
+    pivot: {x: 0.5, y: -1.95}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 35
+      y: 93
+      width: 18
+      height: 20
+    spriteID: 17b81e8fba2676a42be977a19f0510a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 35, y: 93}
+  - name: sword_spirit_up_Frame_1
+    originalName: 
+    pivot: {x: 0.5625, y: -2.0500002}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 116
+      width: 16
+      height: 20
+    spriteID: 28ea4919fa0291841b4606731ce629e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 116}
+  - name: sword_spirit_up_Frame_2
+    originalName: 
+    pivot: {x: 0.8235295, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 33
+      y: 181
+      width: 17
+      height: 21
+    spriteID: b0e158f9cb28f624890486bbf3925046
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 33, y: 181}
+  - name: sword_spirit_up_Frame_3
+    originalName: 
+    pivot: {x: 0.8235295, y: -2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 33
+      y: 210
+      width: 17
+      height: 21
+    spriteID: 605f8dd5de3edd547987a14376a7acdd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 33, y: 210}
+  - name: sword_spirit_up_Frame_6
+    originalName: 
+    pivot: {x: 0.49999994, y: -1.375}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 84
+      width: 14
+      height: 24
+    spriteID: df9fec03a704ae345a961ba7f6d897a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 84}
+  - name: sword_spirit_up_Frame_7
+    originalName: 
+    pivot: {x: 0.41176465, y: -1.8000001}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 61
+      y: 28
+      width: 17
+      height: 20
+    spriteID: 8532baf237889ad4ca5bd051539302c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 61, y: 28}
+  - name: sword_spirit_up_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: -1.95}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 48
-      width: 43
-      height: 18
-    spriteID: 4b3aef1131ae13e419842bf9e8f74317
+      y: 180
+      width: 18
+      height: 20
+    spriteID: 6ec514fe6ad2aa043934e2aacb8b805d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -280,19 +340,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 48}
-  - name: Spear_Spear_Frame_8
+    uvTransform: {x: 4, y: 180}
+  - name: sword_spirit_up_Frame_9
     originalName: 
-    pivot: {x: 0.4615385, y: -2.2941177}
+    pivot: {x: 0.5, y: -1.95}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 102
-      y: 48
-      width: 39
-      height: 17
-    spriteID: baf34b6aa24b438438b7c3c167411a42
+      x: 4
+      y: 208
+      width: 18
+      height: 20
+    spriteID: 0a65244d4d91aa7489deacf65a49f0ee
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -300,19 +360,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 102, y: 48}
-  - name: Spear_Spear_Frame_9
+    uvTransform: {x: 4, y: 208}
+  - name: sword_spirit_up_Frame_10
     originalName: 
-    pivot: {x: 0.4390244, y: -2.2941177}
+    pivot: {x: 0.4705883, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 209
-      y: 104
-      width: 41
-      height: 17
-    spriteID: 87e13c72bff239940958f58755753fc0
+      x: 61
+      y: 56
+      width: 17
+      height: 20
+    spriteID: e648f0ceff009ed4eb67319e6d58f296
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -320,19 +380,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 209, y: 104}
-  - name: Spear_Spear_Frame_10
+    uvTransform: {x: 61, y: 56}
+  - name: sword_spirit_up_Frame_11
     originalName: 
-    pivot: {x: 0.4390244, y: -2.5}
+    pivot: {x: 0.3636364, y: -2.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 196
-      y: 48
-      width: 41
+      x: 61
+      y: 4
+      width: 22
       height: 16
-    spriteID: aa5c8030b7ce0d1478476fbaada21aaa
+    spriteID: 6ab3a6e7f02008d49b967895939aa13f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -340,19 +400,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 196, y: 48}
-  - name: Spear_Spear_Frame_11
+    uvTransform: {x: 61, y: 4}
+  - name: sword_spirit_up_Frame_12
     originalName: 
-    pivot: {x: 0.4615385, y: -2.2941177}
+    pivot: {x: 0.5238096, y: -2.9285715}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 149
-      y: 48
-      width: 39
-      height: 17
-    spriteID: 624d4653afdc50c4982298605c6dae14
+      x: 4
+      y: 236
+      width: 21
+      height: 14
+    spriteID: 5c0f208ca618069409ff2710b461f85c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -360,19 +420,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 149, y: 48}
-  - name: Spear_Spear_Frame_12
+    uvTransform: {x: 4, y: 236}
+  - name: sword_spirit_up_Frame_13
     originalName: 
-    pivot: {x: 0.38888893, y: -1.4444444}
+    pivot: {x: 0.5714286, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 193
-      y: 4
-      width: 36
-      height: 27
-    spriteID: 1fe7267b17e2b3b4f948877bdc759415
+      x: 4
+      y: 126
+      width: 21
+      height: 19
+    spriteID: 505b41cb4686ecc49acf0d245982e1ba
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -380,19 +440,39 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 193, y: 4}
-  - name: Spear_Spear_Frame_13
+    uvTransform: {x: 4, y: 126}
+  - name: sword_spirit_up_Frame_14
     originalName: 
-    pivot: {x: 0.6363636, y: -1.5909091}
+    pivot: {x: 0.5238096, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 86
-      y: 74
-      width: 33
+      x: 4
+      y: 153
+      width: 21
+      height: 19
+    spriteID: a94661d6f4931904a99c01794734b8f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 153}
+  - name: sword_spirit_up_Frame_17
+    originalName: 
+    pivot: {x: 0.20588233, y: -1.6818182}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 63
+      width: 34
       height: 22
-    spriteID: e9903ed69a751a2429bfeb5b8ed59fce
+    spriteID: 7a03e238ae3e47e448d934353c2d5e38
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -400,19 +480,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 86, y: 74}
-  - name: Spear_Spear_Frame_14
+    uvTransform: {x: 4, y: 63}
+  - name: sword_spirit_up_Frame_18
     originalName: 
-    pivot: {x: 0.6363636, y: -1.5909091}
+    pivot: {x: 0.3, y: -2.0526314}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 127
-      y: 74
-      width: 33
-      height: 22
-    spriteID: 056532ce3be7545489579fd71868f70d
+      x: 33
+      y: 126
+      width: 20
+      height: 19
+    spriteID: 3347851b2222cbd4e8506ac8db2ebd1f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -420,19 +500,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 127, y: 74}
-  - name: Spear_Spear_Frame_15
+    uvTransform: {x: 33, y: 126}
+  - name: sword_spirit_up_Frame_19
     originalName: 
-    pivot: {x: 0.6363636, y: -1.5909091}
+    pivot: {x: 0.5, y: -1.95}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 168
-      y: 74
-      width: 33
-      height: 22
-    spriteID: 3e0a70d9955ab374e8664128039f3b89
+      x: 33
+      y: 153
+      width: 18
+      height: 20
+    spriteID: 452731e70dfd2044286fd10393d6d531
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -440,189 +520,196 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 168, y: 74}
-  - name: Spear_Spear_Frame_16
-    originalName: 
-    pivot: {x: 0.6363636, y: -1.5909091}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 209
-      y: 74
-      width: 33
-      height: 22
-    spriteID: fd67d972816122c46b67499d5d433335
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 209, y: 74}
+    uvTransform: {x: 33, y: 153}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 352427867
-    name: Spear_Spear
+    guid: -700094263
+    name: sword_spirit_up
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Spear_Spear_Frame_4
+    - name: sword_spirit_up_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 40
-        y: 21
-        width: 43
-        height: 36
-      spriteId: b12f6d878229a364f8010347090cf90c
-    - name: Spear_Spear_Frame_5
+        x: 41
+        y: 33
+        width: 23
+        height: 25
+      spriteId: b8bf65a147872e14786a336a01ab83a3
+    - name: sword_spirit_up_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
-        x: 35
-        y: 24
-        width: 39
-        height: 31
-      spriteId: 4ca440a1ea102184cb88381588d6ad34
-    - name: Spear_Spear_Frame_0
-      frameIndex: 0
-      additiveSortOrder: 0
-      cellRect:
-        x: 30
-        y: 39
-        width: 39
-        height: 17
-      spriteId: bfc1d380ed5a4d64b8e0f95d6c6343e0
-    - name: Spear_Spear_Frame_1
-      frameIndex: 1
-      additiveSortOrder: 0
-      cellRect:
-        x: 29
-        y: 33
-        width: 36
-        height: 27
-      spriteId: 1f7450445738703458678a0cf704007a
-    - name: Spear_Spear_Frame_2
-      frameIndex: 2
-      additiveSortOrder: 0
-      cellRect:
-        x: 26
-        y: 39
-        width: 33
-        height: 22
-      spriteId: 6b61bced08bb0bf4bad42061cc1714a9
-    - name: Spear_Spear_Frame_3
-      frameIndex: 3
-      additiveSortOrder: 0
-      cellRect:
-        x: 26
-        y: 39
-        width: 33
-        height: 22
-      spriteId: 5edcae24e8118a94490b9ff0fa9b8570
-    - name: Spear_Spear_Frame_6
-      frameIndex: 6
-      additiveSortOrder: 0
-      cellRect:
-        x: 34
-        y: 27
-        width: 39
-        height: 30
-      spriteId: 8a989875e79594a41b23fb29fbea7e87
-    - name: Spear_Spear_Frame_7
-      frameIndex: 7
-      additiveSortOrder: 0
-      cellRect:
-        x: 26
-        y: 38
-        width: 43
-        height: 18
-      spriteId: 4b3aef1131ae13e419842bf9e8f74317
-    - name: Spear_Spear_Frame_8
-      frameIndex: 8
-      additiveSortOrder: 0
-      cellRect:
-        x: 30
-        y: 39
-        width: 39
-        height: 17
-      spriteId: baf34b6aa24b438438b7c3c167411a42
-    - name: Spear_Spear_Frame_9
-      frameIndex: 9
-      additiveSortOrder: 0
-      cellRect:
-        x: 30
-        y: 39
-        width: 41
-        height: 17
-      spriteId: 87e13c72bff239940958f58755753fc0
-    - name: Spear_Spear_Frame_10
-      frameIndex: 10
-      additiveSortOrder: 0
-      cellRect:
-        x: 30
-        y: 40
-        width: 41
-        height: 16
-      spriteId: aa5c8030b7ce0d1478476fbaada21aaa
-    - name: Spear_Spear_Frame_11
-      frameIndex: 11
-      additiveSortOrder: 0
-      cellRect:
-        x: 30
-        y: 39
-        width: 39
-        height: 17
-      spriteId: 624d4653afdc50c4982298605c6dae14
-    - name: Spear_Spear_Frame_12
-      frameIndex: 12
-      additiveSortOrder: 0
-      cellRect:
-        x: 34
-        y: 39
-        width: 36
-        height: 27
-      spriteId: 1fe7267b17e2b3b4f948877bdc759415
-    - name: Spear_Spear_Frame_13
-      frameIndex: 13
-      additiveSortOrder: 0
-      cellRect:
-        x: 27
-        y: 35
-        width: 33
-        height: 22
-      spriteId: e9903ed69a751a2429bfeb5b8ed59fce
-    - name: Spear_Spear_Frame_14
-      frameIndex: 14
-      additiveSortOrder: 0
-      cellRect:
-        x: 27
-        y: 35
-        width: 33
-        height: 22
-      spriteId: 056532ce3be7545489579fd71868f70d
-    - name: Spear_Spear_Frame_15
+        x: 41
+        y: 34
+        width: 15
+        height: 21
+      spriteId: 57b5a525dde298e45895845bc8a69153
+    - name: sword_spirit_up_Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
-        x: 27
-        y: 35
-        width: 33
-        height: 22
-      spriteId: 3e0a70d9955ab374e8664128039f3b89
-    - name: Spear_Spear_Frame_16
+        x: 31
+        y: 37
+        width: 49
+        height: 21
+      spriteId: 1e2ad9f3e61de794993e477418373357
+    - name: sword_spirit_up_Frame_16
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
-        x: 27
-        y: 35
-        width: 33
+        x: 41
+        y: 37
+        width: 39
         height: 22
-      spriteId: fd67d972816122c46b67499d5d433335
+      spriteId: 45687014034407e4ca35604fa1bb7c5d
+    - name: sword_spirit_up_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 39
+        width: 18
+        height: 20
+      spriteId: 17b81e8fba2676a42be977a19f0510a2
+    - name: sword_spirit_up_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 41
+        width: 16
+        height: 20
+      spriteId: 28ea4919fa0291841b4606731ce629e5
+    - name: sword_spirit_up_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 34
+        y: 42
+        width: 17
+        height: 21
+      spriteId: b0e158f9cb28f624890486bbf3925046
+    - name: sword_spirit_up_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 34
+        y: 42
+        width: 17
+        height: 21
+      spriteId: 605f8dd5de3edd547987a14376a7acdd
+    - name: sword_spirit_up_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 33
+        width: 14
+        height: 24
+      spriteId: df9fec03a704ae345a961ba7f6d897a2
+    - name: sword_spirit_up_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 36
+        width: 17
+        height: 20
+      spriteId: 8532baf237889ad4ca5bd051539302c3
+    - name: sword_spirit_up_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 39
+        width: 18
+        height: 20
+      spriteId: 6ec514fe6ad2aa043934e2aacb8b805d
+    - name: sword_spirit_up_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 39
+        width: 18
+        height: 20
+      spriteId: 0a65244d4d91aa7489deacf65a49f0ee
+    - name: sword_spirit_up_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 40
+        width: 17
+        height: 20
+      spriteId: e648f0ceff009ed4eb67319e6d58f296
+    - name: sword_spirit_up_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 40
+        width: 22
+        height: 16
+      spriteId: 6ab3a6e7f02008d49b967895939aa13f
+    - name: sword_spirit_up_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 37
+        y: 41
+        width: 21
+        height: 14
+      spriteId: 5c0f208ca618069409ff2710b461f85c
+    - name: sword_spirit_up_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 38
+        width: 21
+        height: 19
+      spriteId: 505b41cb4686ecc49acf0d245982e1ba
+    - name: sword_spirit_up_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 37
+        y: 38
+        width: 21
+        height: 19
+      spriteId: a94661d6f4931904a99c01794734b8f4
+    - name: sword_spirit_up_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 37
+        width: 34
+        height: 22
+      spriteId: 7a03e238ae3e47e448d934353c2d5e38
+    - name: sword_spirit_up_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 39
+        width: 20
+        height: 19
+      spriteId: 3347851b2222cbd4e8506ac8db2ebd1f
+    - name: sword_spirit_up_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 39
+        width: 18
+        height: 20
+      spriteId: 452731e70dfd2044286fd10393d6d531
     linkedCells: []
     parentIndex: -1
   platformSettings: []

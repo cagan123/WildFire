@@ -15,6 +15,7 @@ public class Enemy : Entity
 
     [HideInInspector]public int facingDirection { get; private set; } = 1;
     [HideInInspector]protected bool facingLeft = true;
+    [HideInInspector]protected bool facingUp = false;
     [SerializeField] public bool startFlipped;
     [Header("Attack Info")]
     public float prepDuration1;
@@ -105,14 +106,21 @@ public class Enemy : Entity
     }
     public void ControlFlipforEnemytoPlayer()
     {
-        var direction = player.position.x - transform.position.x;
-        if (direction < -.1f && !facingLeft) // it is -1 and 1 to prevent jittering
+        var direction_y = player.position.y -transform.position.y;
+        var direction_x = player.position.x - transform.position.x;
+        if (direction_x < -.1f && !facingLeft) // it is -1 and 1 to prevent jittering
         {
             Flip();
         }
-        else if (direction > .1f && facingLeft)
+        else if (direction_x > .1f && facingLeft)
         {
             Flip();
+        }
+        if(direction_y < -.1f ){
+            anim.SetBool("isAttackingDown", true);
+        }
+        else{
+            anim.SetBool("isAttackingDown", false);
         }
     }
     public void ControlFlipforEnemybyVelocity(){
