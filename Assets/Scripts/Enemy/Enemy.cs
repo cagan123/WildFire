@@ -118,9 +118,11 @@ public class Enemy : Entity
         }
         if(direction_y < -.1f ){
             anim.SetBool("isAttackingDown", true);
+            facingUp = false;
         }
         else{
             anim.SetBool("isAttackingDown", false);
+            facingUp = true;
         }
     }
     public void ControlFlipforEnemybyVelocity(){

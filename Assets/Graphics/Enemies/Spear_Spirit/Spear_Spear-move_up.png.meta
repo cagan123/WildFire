@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4623a865692c49548b1a8e655c527bc9
+guid: 9f5978d7952c1464488b0245dd75bc2f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spear_Spear-stab_prep_up_0
+      name: Spear_Spear-move_up_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77d12565bf551d54bbfc544d5e494cea
-      internalID: 1099551722
+      spriteID: d163d4c3fb8f58b4c97d7a983e16dd04
+      internalID: 1886079241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_Spear-stab_prep_up_1
+      name: Spear_Spear-move_up_1
       rect:
         serializedVersion: 2
         x: 96
@@ -145,29 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a3544f5839294e4d9bb237fb2d32e2a
-      internalID: 497380208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Spear_Spear-stab_prep_up_2
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 96
-        height: 96
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eece80ab542702541b6195e981390c5e
-      internalID: -569845418
+      spriteID: c262475b04606f04db4e0ca0af96da8b
+      internalID: -430400441
       vertices: []
       indices: 
       edges: []
@@ -183,9 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Spear_Spear-stab_prep_up_0: 1099551722
-      Spear_Spear-stab_prep_up_1: 497380208
-      Spear_Spear-stab_prep_up_2: -569845418
+      Spear_Spear-move_up_0: 1886079241
+      Spear_Spear-move_up_1: -430400441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

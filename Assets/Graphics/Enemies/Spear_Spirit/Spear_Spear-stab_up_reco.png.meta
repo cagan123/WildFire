@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4623a865692c49548b1a8e655c527bc9
+guid: a558b37012662d440b2a2cf485cc4a31
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spear_Spear-stab_prep_up_0
+      name: Spear_Spear-stab_up_reco_0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77d12565bf551d54bbfc544d5e494cea
-      internalID: 1099551722
+      spriteID: 6da7f171feb067444a04cdb0adb6e7ea
+      internalID: -1915087649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_Spear-stab_prep_up_1
+      name: Spear_Spear-stab_up_reco_1
       rect:
         serializedVersion: 2
         x: 96
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a3544f5839294e4d9bb237fb2d32e2a
-      internalID: 497380208
+      spriteID: a253dbc273678384aaf261e1c788ddbe
+      internalID: -214724093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear_Spear-stab_prep_up_2
+      name: Spear_Spear-stab_up_reco_2
       rect:
         serializedVersion: 2
         x: 192
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eece80ab542702541b6195e981390c5e
-      internalID: -569845418
+      spriteID: 3c63b514f0bff3b4284ad96675154ee7
+      internalID: -620343275
       vertices: []
       indices: 
       edges: []
@@ -183,9 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Spear_Spear-stab_prep_up_0: 1099551722
-      Spear_Spear-stab_prep_up_1: 497380208
-      Spear_Spear-stab_prep_up_2: -569845418
+      Spear_Spear-stab_up_reco_0: -1915087649
+      Spear_Spear-stab_up_reco_1: -214724093
+      Spear_Spear-stab_up_reco_2: -620343275
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

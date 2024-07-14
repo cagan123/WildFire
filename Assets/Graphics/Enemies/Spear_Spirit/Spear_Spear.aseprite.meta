@@ -123,14 +123,14 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Spear_Spear_Frame_0
     originalName: 
-    pivot: {x: 0.18604654, y: -0.5833334}
+    pivot: {x: 0.20000003, y: -0.5833334}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 43
+      width: 40
       height: 36
     spriteID: b12f6d878229a364f8010347090cf90c
     spriteBone: []
@@ -148,7 +148,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 55
+      x: 52
       y: 4
       width: 39
       height: 31
@@ -160,18 +160,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 55, y: 4}
+    uvTransform: {x: 52, y: 4}
   - name: Spear_Spear_Frame_2
     originalName: 
-    pivot: {x: 0.4615385, y: -2.2941177}
+    pivot: {x: 0.21212119, y: -1.3571429}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 55
+      x: 4
       y: 48
-      width: 39
-      height: 17
+      width: 33
+      height: 28
     spriteID: bfc1d380ed5a4d64b8e0f95d6c6343e0
     spriteBone: []
     spriteOutline: []
@@ -180,18 +180,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 55, y: 48}
+    uvTransform: {x: 4, y: 48}
   - name: Spear_Spear_Frame_3
     originalName: 
-    pivot: {x: 0.5277778, y: -1.2222222}
+    pivot: {x: 0.27272728, y: -1.3214285}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 149
-      y: 4
-      width: 36
-      height: 27
+      x: 45
+      y: 48
+      width: 33
+      height: 28
     spriteID: 1f7450445738703458678a0cf704007a
     spriteBone: []
     spriteOutline: []
@@ -200,18 +200,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 149, y: 4}
+    uvTransform: {x: 45, y: 48}
   - name: Spear_Spear_Frame_4
     originalName: 
-    pivot: {x: 0.6666667, y: -1.7727274}
+    pivot: {x: 0.4615385, y: -2.2941177}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 74
-      width: 33
-      height: 22
+      y: 114
+      width: 39
+      height: 17
     spriteID: 6b61bced08bb0bf4bad42061cc1714a9
     spriteBone: []
     spriteOutline: []
@@ -220,18 +220,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 74}
+    uvTransform: {x: 4, y: 114}
   - name: Spear_Spear_Frame_5
     originalName: 
-    pivot: {x: 0.6666667, y: -1.7727274}
+    pivot: {x: 0.5277778, y: -1.2222222}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 45
-      y: 74
-      width: 33
-      height: 22
+      x: 146
+      y: 4
+      width: 36
+      height: 27
     spriteID: 5edcae24e8118a94490b9ff0fa9b8570
     spriteBone: []
     spriteOutline: []
@@ -240,18 +240,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 45, y: 74}
+    uvTransform: {x: 146, y: 4}
   - name: Spear_Spear_Frame_6
     originalName: 
-    pivot: {x: 0.3589744, y: -0.90000004}
+    pivot: {x: 0.6666667, y: -1.7727274}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 102
-      y: 4
-      width: 39
-      height: 30
+      x: 178
+      y: 48
+      width: 33
+      height: 22
     spriteID: 8a989875e79594a41b23fb29fbea7e87
     spriteBone: []
     spriteOutline: []
@@ -260,18 +260,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 102, y: 4}
+    uvTransform: {x: 178, y: 48}
   - name: Spear_Spear_Frame_7
     originalName: 
-    pivot: {x: 0.5116279, y: -2.1111112}
+    pivot: {x: 0.6666667, y: -1.7727274}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 219
       y: 48
-      width: 43
-      height: 18
+      width: 33
+      height: 22
     spriteID: 4b3aef1131ae13e419842bf9e8f74317
     spriteBone: []
     spriteOutline: []
@@ -280,18 +280,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 48}
+    uvTransform: {x: 219, y: 48}
   - name: Spear_Spear_Frame_8
     originalName: 
-    pivot: {x: 0.4615385, y: -2.2941177}
+    pivot: {x: 0.3589744, y: -0.90000004}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 102
-      y: 48
+      x: 99
+      y: 4
       width: 39
-      height: 17
+      height: 30
     spriteID: baf34b6aa24b438438b7c3c167411a42
     spriteBone: []
     spriteOutline: []
@@ -300,18 +300,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 102, y: 48}
+    uvTransform: {x: 99, y: 4}
   - name: Spear_Spear_Frame_9
     originalName: 
-    pivot: {x: 0.4390244, y: -2.2941177}
+    pivot: {x: 0.5116279, y: -2.1111112}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 209
-      y: 104
-      width: 41
-      height: 17
+      x: 127
+      y: 48
+      width: 43
+      height: 18
     spriteID: 87e13c72bff239940958f58755753fc0
     spriteBone: []
     spriteOutline: []
@@ -320,18 +320,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 209, y: 104}
+    uvTransform: {x: 127, y: 48}
   - name: Spear_Spear_Frame_10
     originalName: 
-    pivot: {x: 0.4390244, y: -2.5}
+    pivot: {x: 0.4615385, y: -2.2941177}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 196
-      y: 48
-      width: 41
-      height: 16
+      x: 51
+      y: 114
+      width: 39
+      height: 17
     spriteID: aa5c8030b7ce0d1478476fbaada21aaa
     spriteBone: []
     spriteOutline: []
@@ -340,17 +340,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 196, y: 48}
+    uvTransform: {x: 51, y: 114}
   - name: Spear_Spear_Frame_11
     originalName: 
-    pivot: {x: 0.4615385, y: -2.2941177}
+    pivot: {x: 0.4390244, y: -2.2941177}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 149
-      y: 48
-      width: 39
+      x: 86
+      y: 84
+      width: 41
       height: 17
     spriteID: 624d4653afdc50c4982298605c6dae14
     spriteBone: []
@@ -360,18 +360,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 149, y: 48}
+    uvTransform: {x: 86, y: 84}
   - name: Spear_Spear_Frame_12
     originalName: 
-    pivot: {x: 0.38888893, y: -1.4444444}
+    pivot: {x: 0.4390244, y: -2.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 193
-      y: 4
-      width: 36
-      height: 27
+      x: 192
+      y: 114
+      width: 41
+      height: 16
     spriteID: 1fe7267b17e2b3b4f948877bdc759415
     spriteBone: []
     spriteOutline: []
@@ -380,18 +380,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 193, y: 4}
+    uvTransform: {x: 192, y: 114}
   - name: Spear_Spear_Frame_13
     originalName: 
-    pivot: {x: 0.6363636, y: -1.5909091}
+    pivot: {x: 0.4615385, y: -2.2941177}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 86
-      y: 74
-      width: 33
-      height: 22
+      x: 98
+      y: 114
+      width: 39
+      height: 17
     spriteID: e9903ed69a751a2429bfeb5b8ed59fce
     spriteBone: []
     spriteOutline: []
@@ -400,18 +400,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 86, y: 74}
+    uvTransform: {x: 98, y: 114}
   - name: Spear_Spear_Frame_14
     originalName: 
-    pivot: {x: 0.6363636, y: -1.5909091}
+    pivot: {x: 0.38888893, y: -1.4444444}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 127
-      y: 74
-      width: 33
-      height: 22
+      x: 190
+      y: 4
+      width: 36
+      height: 27
     spriteID: 056532ce3be7545489579fd71868f70d
     spriteBone: []
     spriteOutline: []
@@ -420,7 +420,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 127, y: 74}
+    uvTransform: {x: 190, y: 4}
   - name: Spear_Spear_Frame_15
     originalName: 
     pivot: {x: 0.6363636, y: -1.5909091}
@@ -428,8 +428,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 168
-      y: 74
+      x: 4
+      y: 84
       width: 33
       height: 22
     spriteID: 3e0a70d9955ab374e8664128039f3b89
@@ -440,7 +440,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 168, y: 74}
+    uvTransform: {x: 4, y: 84}
   - name: Spear_Spear_Frame_16
     originalName: 
     pivot: {x: 0.6363636, y: -1.5909091}
@@ -448,8 +448,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 209
-      y: 74
+      x: 45
+      y: 84
       width: 33
       height: 22
     spriteID: fd67d972816122c46b67499d5d433335
@@ -460,7 +460,107 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 209, y: 74}
+    uvTransform: {x: 45, y: 84}
+  - name: Spear_Spear_Frame_17
+    originalName: 
+    pivot: {x: 0.27272728, y: -1.52}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 48
+      width: 33
+      height: 25
+    spriteID: ecaa2af9b4d7dc14883a9518cf635d03
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 48}
+  - name: Spear_Spear_Frame_18
+    originalName: 
+    pivot: {x: 0.3243243, y: -2.1111112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 184
+      y: 84
+      width: 37
+      height: 18
+    spriteID: a8bbc378fa433fc44805c366b2de752a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 184, y: 84}
+  - name: Spear_Spear_Frame_19
+    originalName: 
+    pivot: {x: 0.4615385, y: -2.2941177}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 145
+      y: 114
+      width: 39
+      height: 17
+    spriteID: b43c6a395f864e5449e5338745e81b93
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 145, y: 114}
+  - name: Spear_Spear_Frame_20
+    originalName: 
+    pivot: {x: 0.4390244, y: -2.2941177}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 135
+      y: 84
+      width: 41
+      height: 17
+    spriteID: c37325751ff5764449a47faaad096323
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 135, y: 84}
+  - name: Spear_Spear_Frame_21
+    originalName: 
+    pivot: {x: 0.4390244, y: -2.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 139
+      width: 41
+      height: 16
+    spriteID: ae7c5f75ccabac44c9bc43cbcda063f8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 139}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -476,7 +576,7 @@ ScriptedImporter:
       cellRect:
         x: 40
         y: 21
-        width: 43
+        width: 40
         height: 36
       spriteId: b12f6d878229a364f8010347090cf90c
     - name: Spear_Spear_Frame_5
@@ -488,6 +588,24 @@ ScriptedImporter:
         width: 39
         height: 31
       spriteId: 4ca440a1ea102184cb88381588d6ad34
+    - name: Spear_Spear_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 38
+        width: 33
+        height: 28
+      spriteId: bfc1d380ed5a4d64b8e0f95d6c6343e0
+    - name: Spear_Spear_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 37
+        width: 33
+        height: 28
+      spriteId: 1f7450445738703458678a0cf704007a
     - name: Spear_Spear_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -496,7 +614,7 @@ ScriptedImporter:
         y: 39
         width: 39
         height: 17
-      spriteId: bfc1d380ed5a4d64b8e0f95d6c6343e0
+      spriteId: 6b61bced08bb0bf4bad42061cc1714a9
     - name: Spear_Spear_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -505,7 +623,7 @@ ScriptedImporter:
         y: 33
         width: 36
         height: 27
-      spriteId: 1f7450445738703458678a0cf704007a
+      spriteId: 5edcae24e8118a94490b9ff0fa9b8570
     - name: Spear_Spear_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -514,7 +632,7 @@ ScriptedImporter:
         y: 39
         width: 33
         height: 22
-      spriteId: 6b61bced08bb0bf4bad42061cc1714a9
+      spriteId: 8a989875e79594a41b23fb29fbea7e87
     - name: Spear_Spear_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -523,7 +641,7 @@ ScriptedImporter:
         y: 39
         width: 33
         height: 22
-      spriteId: 5edcae24e8118a94490b9ff0fa9b8570
+      spriteId: 4b3aef1131ae13e419842bf9e8f74317
     - name: Spear_Spear_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
@@ -532,7 +650,7 @@ ScriptedImporter:
         y: 27
         width: 39
         height: 30
-      spriteId: 8a989875e79594a41b23fb29fbea7e87
+      spriteId: baf34b6aa24b438438b7c3c167411a42
     - name: Spear_Spear_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
@@ -541,7 +659,7 @@ ScriptedImporter:
         y: 38
         width: 43
         height: 18
-      spriteId: 4b3aef1131ae13e419842bf9e8f74317
+      spriteId: 87e13c72bff239940958f58755753fc0
     - name: Spear_Spear_Frame_8
       frameIndex: 8
       additiveSortOrder: 0
@@ -550,7 +668,7 @@ ScriptedImporter:
         y: 39
         width: 39
         height: 17
-      spriteId: baf34b6aa24b438438b7c3c167411a42
+      spriteId: aa5c8030b7ce0d1478476fbaada21aaa
     - name: Spear_Spear_Frame_9
       frameIndex: 9
       additiveSortOrder: 0
@@ -559,7 +677,7 @@ ScriptedImporter:
         y: 39
         width: 41
         height: 17
-      spriteId: 87e13c72bff239940958f58755753fc0
+      spriteId: 624d4653afdc50c4982298605c6dae14
     - name: Spear_Spear_Frame_10
       frameIndex: 10
       additiveSortOrder: 0
@@ -568,7 +686,7 @@ ScriptedImporter:
         y: 40
         width: 41
         height: 16
-      spriteId: aa5c8030b7ce0d1478476fbaada21aaa
+      spriteId: 1fe7267b17e2b3b4f948877bdc759415
     - name: Spear_Spear_Frame_11
       frameIndex: 11
       additiveSortOrder: 0
@@ -577,7 +695,7 @@ ScriptedImporter:
         y: 39
         width: 39
         height: 17
-      spriteId: 624d4653afdc50c4982298605c6dae14
+      spriteId: e9903ed69a751a2429bfeb5b8ed59fce
     - name: Spear_Spear_Frame_12
       frameIndex: 12
       additiveSortOrder: 0
@@ -586,7 +704,7 @@ ScriptedImporter:
         y: 39
         width: 36
         height: 27
-      spriteId: 1fe7267b17e2b3b4f948877bdc759415
+      spriteId: 056532ce3be7545489579fd71868f70d
     - name: Spear_Spear_Frame_13
       frameIndex: 13
       additiveSortOrder: 0
@@ -595,7 +713,7 @@ ScriptedImporter:
         y: 35
         width: 33
         height: 22
-      spriteId: e9903ed69a751a2429bfeb5b8ed59fce
+      spriteId: 3e0a70d9955ab374e8664128039f3b89
     - name: Spear_Spear_Frame_14
       frameIndex: 14
       additiveSortOrder: 0
@@ -604,25 +722,52 @@ ScriptedImporter:
         y: 35
         width: 33
         height: 22
-      spriteId: 056532ce3be7545489579fd71868f70d
-    - name: Spear_Spear_Frame_15
-      frameIndex: 15
-      additiveSortOrder: 0
-      cellRect:
-        x: 27
-        y: 35
-        width: 33
-        height: 22
-      spriteId: 3e0a70d9955ab374e8664128039f3b89
-    - name: Spear_Spear_Frame_16
-      frameIndex: 16
-      additiveSortOrder: 0
-      cellRect:
-        x: 27
-        y: 35
-        width: 33
-        height: 22
       spriteId: fd67d972816122c46b67499d5d433335
+    - name: Spear_Spear_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 38
+        width: 33
+        height: 25
+      spriteId: ecaa2af9b4d7dc14883a9518cf635d03
+    - name: Spear_Spear_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 38
+        width: 37
+        height: 18
+      spriteId: a8bbc378fa433fc44805c366b2de752a
+    - name: Spear_Spear_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 30
+        y: 39
+        width: 39
+        height: 17
+      spriteId: b43c6a395f864e5449e5338745e81b93
+    - name: Spear_Spear_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 30
+        y: 39
+        width: 41
+        height: 17
+      spriteId: c37325751ff5764449a47faaad096323
+    - name: Spear_Spear_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 30
+        y: 40
+        width: 41
+        height: 16
+      spriteId: ae7c5f75ccabac44c9bc43cbcda063f8
     linkedCells: []
     parentIndex: -1
   platformSettings: []
