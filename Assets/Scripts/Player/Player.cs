@@ -85,7 +85,14 @@ public class Player : Entity
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
 
     public Vector2 PlayerToMouseDirection(){
+
     var direction = (Input.mousePosition - cam.WorldToScreenPoint(transform.position)).normalized;
     return direction;
+    }
+
+    public void PlayerDamageEffect(){
+        if(stateMachine.currentState != dashState){
+            DamageEffect();
+        }
     }
 }

@@ -116,13 +116,13 @@ public class Enemy : Entity
         {
             Flip();
         }
-        if(direction_y < -.1f ){
+        if(direction_y < -.1f && !facingUp){
             anim.SetBool("isAttackingDown", true);
-            facingUp = false;
+            facingUp = !facingUp;
         }
-        else{
+        else if (direction_y > .1f && facingUp){
             anim.SetBool("isAttackingDown", false);
-            facingUp = true;
+            facingUp = !facingUp;
         }
     }
     public void ControlFlipforEnemybyVelocity(){
