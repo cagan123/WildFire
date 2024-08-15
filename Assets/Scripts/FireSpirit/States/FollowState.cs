@@ -25,13 +25,16 @@ public class FollowState : FireSpiritState
     public override void Update()
     {
         base.Update();
-        if (Input.GetMouseButton(0)) // Left mouse button
-        {
+        if (Input.GetMouseButton(0)){
             stateMachine.ChangeState(fireSpirit.powerUpState);
         }
-        if (Input.GetMouseButton(1)) // Right mouse button
-        {
+
+        if (Input.GetMouseButton(1)){
             stateMachine.ChangeState(fireSpirit.swordState);
+        }
+        
+        if(Input.GetKey(KeyCode.Q)){
+            stateMachine.ChangeState(fireSpirit.attack2State);
         }
     }
 

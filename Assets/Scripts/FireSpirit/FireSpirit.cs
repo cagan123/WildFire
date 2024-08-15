@@ -63,23 +63,22 @@ public class FireSpirit : MonoBehaviour
         stateMachine = new FireSpiritStateMachine();
         followState = new FollowState(this, stateMachine);
         attackState = new AttackState(this, stateMachine);
+        attack2State = new Attack2State(this, stateMachine);
         returnState = new ReturnState(this, stateMachine);
         powerUpState = new PowerUpState(this, stateMachine);
         violentState = new ViolentState(this,stateMachine);
         swordState = new SwordState(this, stateMachine);
 
         cam = Camera.main;
-
-        rb = GetComponent<Rigidbody2D>();
-
-        
+        rb = GetComponent<Rigidbody2D>();       
         fire = GetComponentInChildren<ParticleSystem>();
+
 
     }
     private void Start()
     {
         stateMachine.Initialize(followState);
-        transformToFollow = PlayerManager.instance.player.transform;
+                transformToFollow = PlayerManager.instance.player.transform;
     }
 
     private void FixedUpdate()

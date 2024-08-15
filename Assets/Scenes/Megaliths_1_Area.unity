@@ -49386,7 +49386,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2026871928424392890, guid: 62abd2413489bdd4082ff872c9be192f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3299730166451904573, guid: 62abd2413489bdd4082ff872c9be192f, type: 3}
       propertyPath: spearDistance
@@ -49749,71 +49749,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfa5ab2de900a6b43ae77c9c6b76a93a, type: 3}
---- !u!1001 &8244851126636861418
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1175567344057543588, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 13.288931
-      objectReference: {fileID: 0}
-    - target: {fileID: 1175567344057543588, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.25849366
-      objectReference: {fileID: 0}
-    - target: {fileID: 1175567344057543588, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1175567344057543588, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1175567344057543588, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1175567344057543588, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1175567344057543588, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1175567344057543588, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1175567344057543588, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1175567344057543588, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1990198616424627731, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: isMovable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6647301630303532105, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: m_SortingOrder
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 6718917293024325092, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
-      propertyPath: m_Name
-      value: Enemy_Spirit_Spear
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 495a4eccd53d4ef49a820f2ae72d754a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -49825,4 +49760,3 @@ SceneRoots:
   - {fileID: 972377730201772198}
   - {fileID: 1939983290}
   - {fileID: 4380346128919724016}
-  - {fileID: 8244851126636861418}

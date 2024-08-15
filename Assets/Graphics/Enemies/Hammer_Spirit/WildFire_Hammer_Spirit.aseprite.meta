@@ -123,15 +123,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: WildFire_Hammer_Spirit
     originalName: 
-    pivot: {x: 0.27777776, y: -0.48}
+    pivot: {x: 0.5087719, y: -0.24528304}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 100
-      y: 57
-      width: 36
-      height: 50
+      x: 4
+      y: 4
+      width: 57
+      height: 53
     spriteID: e30aa87fe6b45d441939afaf3b756cf1
     spriteBone: []
     spriteOutline: []
@@ -140,18 +140,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 100, y: 57}
+    uvTransform: {x: 4, y: 4}
   - name: WildFire_Hammer_Spirit_Frame_5
     originalName: 
-    pivot: {x: 0.23255813, y: -1.2399999}
+    pivot: {x: 0.53448284, y: -0.39534885}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 66
+      x: 69
       y: 4
-      width: 43
-      height: 25
+      width: 58
+      height: 43
     spriteID: 30f3145d1f7d2fe4dace613d7c6d0dc8
     spriteBone: []
     spriteOutline: []
@@ -160,18 +160,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 66, y: 4}
+    uvTransform: {x: 69, y: 4}
   - name: WildFire_Hammer_Spirit_Frame_0
     originalName: 
-    pivot: {x: 0.55, y: -0.52631575}
+    pivot: {x: 0.3703704, y: -0.59615386}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 144
-      y: 57
-      width: 40
-      height: 38
+      x: 4
+      y: 65
+      width: 54
+      height: 52
     spriteID: b37d602632c33cc4a8c4c2abc87880ec
     spriteBone: []
     spriteOutline: []
@@ -180,18 +180,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 144, y: 57}
+    uvTransform: {x: 4, y: 65}
   - name: WildFire_Hammer_Spirit_Frame_1
     originalName: 
-    pivot: {x: 0.21052633, y: -0.45833334}
+    pivot: {x: 0.46511632, y: -0.14545456}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 54
-      y: 57
-      width: 38
-      height: 48
+      x: 69
+      y: 285
+      width: 43
+      height: 55
     spriteID: 71c7a59620f94574db3bc1a788b3b420
     spriteBone: []
     spriteOutline: []
@@ -200,18 +200,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 54, y: 57}
+    uvTransform: {x: 69, y: 285}
   - name: WildFire_Hammer_Spirit_Frame_2
     originalName: 
-    pivot: {x: 0.9117648, y: -0.89189184}
+    pivot: {x: 0.31481484, y: -0.59183675}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 192
-      y: 57
-      width: 34
-      height: 37
+      x: 4
+      y: 125
+      width: 54
+      height: 49
     spriteID: b2fe690ebe07ad14ab2ca6a9f206ed88
     spriteBone: []
     spriteOutline: []
@@ -220,18 +220,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 192, y: 57}
+    uvTransform: {x: 4, y: 125}
   - name: WildFire_Hammer_Spirit_Frame_3
     originalName: 
-    pivot: {x: 0.6111111, y: -0.7111112}
+    pivot: {x: 0.671875, y: -0.9142858}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
+      x: 135
       y: 4
-      width: 54
-      height: 45
+      width: 64
+      height: 35
     spriteID: 27cf23a1501bff94199bced9b40ccfee
     spriteBone: []
     spriteOutline: []
@@ -240,18 +240,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 135, y: 4}
   - name: WildFire_Hammer_Spirit_Frame_6
     originalName: 
-    pivot: {x: 0.6363636, y: -0.44262296}
+    pivot: {x: 0.6111111, y: -0.7111112}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 122
-      width: 33
-      height: 61
+      y: 305
+      width: 54
+      height: 45
     spriteID: 1a358371b19115f4aa01a961be65832b
     spriteBone: []
     spriteOutline: []
@@ -260,18 +260,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 122}
+    uvTransform: {x: 4, y: 305}
   - name: WildFire_Hammer_Spirit_Frame_7
     originalName: 
-    pivot: {x: 0.625, y: -0.42857143}
+    pivot: {x: 0.6363636, y: -0.44262296}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 45
-      y: 122
-      width: 24
-      height: 63
+      x: 69
+      y: 348
+      width: 33
+      height: 61
     spriteID: 94b055a6e0eec864189139961e69d843
     spriteBone: []
     spriteOutline: []
@@ -280,18 +280,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 45, y: 122}
+    uvTransform: {x: 69, y: 348}
   - name: WildFire_Hammer_Spirit_Frame_8
     originalName: 
-    pivot: {x: 0.6428572, y: -0.50877196}
+    pivot: {x: 0.625, y: -0.42857143}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 57
-      width: 42
-      height: 57
+      x: 69
+      y: 417
+      width: 24
+      height: 63
     spriteID: 92e9066bc143a6049bfd7e72d397c53f
     spriteBone: []
     spriteOutline: []
@@ -300,18 +300,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 57}
+    uvTransform: {x: 69, y: 417}
   - name: WildFire_Hammer_Spirit_Frame_9
     originalName: 
-    pivot: {x: 0.21874997, y: -1.6666667}
+    pivot: {x: 0.6428572, y: -0.50877196}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 229
-      width: 32
-      height: 21
+      x: 69
+      y: 220
+      width: 42
+      height: 57
     spriteID: c9f0de4429f7c014c8f0912cd513a8a8
     spriteBone: []
     spriteOutline: []
@@ -320,18 +320,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 229}
+    uvTransform: {x: 69, y: 220}
   - name: WildFire_Hammer_Spirit_Frame_10
     originalName: 
-    pivot: {x: 0.32000002, y: -1.3000001}
+    pivot: {x: 0.5918367, y: -0.24528304}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 191
-      width: 25
-      height: 30
+      y: 182
+      width: 49
+      height: 53
     spriteID: a3595ef1ff5cfde4592676bdf3c698a2
     spriteBone: []
     spriteOutline: []
@@ -340,18 +340,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 191}
+    uvTransform: {x: 4, y: 182}
   - name: WildFire_Hammer_Spirit_Frame_11
     originalName: 
-    pivot: {x: 0.8148148, y: -1.56}
+    pivot: {x: 0.39130434, y: -0.5740741}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 77
-      y: 122
-      width: 27
-      height: 25
+      x: 4
+      y: 243
+      width: 46
+      height: 54
     spriteID: 93ca692f34fcc9b4cb72646112bb7dbe
     spriteBone: []
     spriteOutline: []
@@ -360,18 +360,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 77, y: 122}
+    uvTransform: {x: 4, y: 243}
   - name: WildFire_Hammer_Spirit_Frame_12
     originalName: 
-    pivot: {x: 0.8148148, y: -1.56}
+    pivot: {x: 0.4126984, y: -1.1923077}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 112
-      y: 122
-      width: 27
-      height: 25
+      x: 135
+      y: 124
+      width: 63
+      height: 26
     spriteID: 367d00d707abcde4483ed3edec3e2fe4
     spriteBone: []
     spriteOutline: []
@@ -380,18 +380,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 112, y: 122}
+    uvTransform: {x: 135, y: 124}
   - name: WildFire_Hammer_Spirit_Frame_13
     originalName: 
-    pivot: {x: 0.8148148, y: -1.4615386}
+    pivot: {x: 0.34042552, y: -0.5490196}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 203
-      y: 4
-      width: 27
-      height: 26
+      x: 69
+      y: 161
+      width: 47
+      height: 51
     spriteID: a8aa7d991105c24499388602f60c01d7
     spriteBone: []
     spriteOutline: []
@@ -400,18 +400,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 203, y: 4}
+    uvTransform: {x: 69, y: 161}
   - name: WildFire_Hammer_Spirit_Frame_14
     originalName: 
-    pivot: {x: 0.8148148, y: -1.56}
+    pivot: {x: 0.6111111, y: -0.7111112}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 147
-      y: 122
-      width: 27
-      height: 25
+      x: 4
+      y: 358
+      width: 54
+      height: 45
     spriteID: 2cba2bfff98e23c4cad3c1e932939912
     spriteBone: []
     spriteOutline: []
@@ -420,18 +420,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 147, y: 122}
+    uvTransform: {x: 4, y: 358}
   - name: WildFire_Hammer_Spirit_Frame_15
     originalName: 
-    pivot: {x: 0.9117648, y: -1.8181819}
+    pivot: {x: 0.6111111, y: -0.7111112}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 161
-      y: 4
-      width: 34
-      height: 22
+      x: 4
+      y: 411
+      width: 54
+      height: 45
     spriteID: 3b88d83f0a6c80f4fbee73979fa523e6
     spriteBone: []
     spriteOutline: []
@@ -440,18 +440,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 161, y: 4}
+    uvTransform: {x: 4, y: 411}
   - name: WildFire_Hammer_Spirit_Frame_16
     originalName: 
-    pivot: {x: 0.9166667, y: -1.7826087}
+    pivot: {x: 0.6296297, y: -0.7111112}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 117
-      y: 4
-      width: 36
-      height: 23
+      x: 69
+      y: 55
+      width: 54
+      height: 45
     spriteID: 622fd8d74c1f48649a14a08af91ffa02
     spriteBone: []
     spriteOutline: []
@@ -460,7 +460,67 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 117, y: 4}
+    uvTransform: {x: 69, y: 55}
+  - name: WildFire_Hammer_Spirit_Frame_14
+    originalName: 
+    pivot: {x: 0.6111111, y: -0.7111112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 108
+      width: 54
+      height: 45
+    spriteID: d4e33f3219e710e42b6447e4303f5866
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 69, y: 108}
+  - name: WildFire_Hammer_Spirit_Frame_15
+    originalName: 
+    pivot: {x: 0.71186435, y: -1.1212121}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 135
+      y: 47
+      width: 59
+      height: 33
+    spriteID: c401866a13f805d4d904f3d7b9225ace
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 135, y: 47}
+  - name: WildFire_Hammer_Spirit_Frame_16
+    originalName: 
+    pivot: {x: 0.76666665, y: -1.3571429}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 135
+      y: 88
+      width: 60
+      height: 28
+    spriteID: 8cdc7506304974445a1f092f1e32f6d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 135, y: 88}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -474,47 +534,56 @@ ScriptedImporter:
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 38
-        y: 24
-        width: 36
-        height: 50
+        x: 19
+        y: 13
+        width: 57
+        height: 53
       spriteId: e30aa87fe6b45d441939afaf3b756cf1
     - name: WildFire_Hammer_Spirit_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
-        x: 38
-        y: 31
-        width: 43
-        height: 25
-      spriteId: 30f3145d1f7d2fe4dace613d7c6d0dc8
-    - name: WildFire_Hammer_Spirit_Frame_14
-      frameIndex: 14
-      additiveSortOrder: 0
-      cellRect:
-        x: 26
-        y: 20
-        width: 40
-        height: 38
-      spriteId: b37d602632c33cc4a8c4c2abc87880ec
-    - name: WildFire_Hammer_Spirit_Frame_15
-      frameIndex: 15
-      additiveSortOrder: 0
-      cellRect:
-        x: 40
-        y: 22
-        width: 38
-        height: 48
-      spriteId: 71c7a59620f94574db3bc1a788b3b420
-    - name: WildFire_Hammer_Spirit_Frame_16
-      frameIndex: 16
-      additiveSortOrder: 0
-      cellRect:
         x: 17
-        y: 33
-        width: 34
-        height: 37
+        y: 17
+        width: 58
+        height: 43
+      spriteId: 30f3145d1f7d2fe4dace613d7c6d0dc8
+    - name: WildFire_Hammer_Spirit_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 31
+        width: 54
+        height: 52
+      spriteId: b37d602632c33cc4a8c4c2abc87880ec
+    - name: WildFire_Hammer_Spirit_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 8
+        width: 43
+        height: 55
+      spriteId: 71c7a59620f94574db3bc1a788b3b420
+    - name: WildFire_Hammer_Spirit_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 31
+        y: 29
+        width: 54
+        height: 49
       spriteId: b2fe690ebe07ad14ab2ca6a9f206ed88
+    - name: WildFire_Hammer_Spirit_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 5
+        y: 32
+        width: 64
+        height: 35
+      spriteId: 27cf23a1501bff94199bced9b40ccfee
     - name: WildFire_Hammer_Spirit_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -523,7 +592,7 @@ ScriptedImporter:
         y: 32
         width: 54
         height: 45
-      spriteId: 27cf23a1501bff94199bced9b40ccfee
+      spriteId: 1a358371b19115f4aa01a961be65832b
     - name: WildFire_Hammer_Spirit_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -532,7 +601,7 @@ ScriptedImporter:
         y: 27
         width: 33
         height: 61
-      spriteId: 1a358371b19115f4aa01a961be65832b
+      spriteId: 94b055a6e0eec864189139961e69d843
     - name: WildFire_Hammer_Spirit_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -541,7 +610,7 @@ ScriptedImporter:
         y: 27
         width: 24
         height: 63
-      spriteId: 94b055a6e0eec864189139961e69d843
+      spriteId: 92e9066bc143a6049bfd7e72d397c53f
     - name: WildFire_Hammer_Spirit_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -550,79 +619,97 @@ ScriptedImporter:
         y: 29
         width: 42
         height: 57
-      spriteId: 92e9066bc143a6049bfd7e72d397c53f
+      spriteId: c9f0de4429f7c014c8f0912cd513a8a8
     - name: WildFire_Hammer_Spirit_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
-        x: 41
-        y: 35
-        width: 32
-        height: 21
-      spriteId: c9f0de4429f7c014c8f0912cd513a8a8
-    - name: WildFire_Hammer_Spirit_Frame_7
-      frameIndex: 7
-      additiveSortOrder: 0
-      cellRect:
-        x: 40
-        y: 39
-        width: 25
-        height: 30
+        x: 19
+        y: 13
+        width: 49
+        height: 53
       spriteId: a3595ef1ff5cfde4592676bdf3c698a2
     - name: WildFire_Hammer_Spirit_Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
-        x: 26
-        y: 39
-        width: 27
-        height: 25
+        x: 30
+        y: 31
+        width: 46
+        height: 54
       spriteId: 93ca692f34fcc9b4cb72646112bb7dbe
     - name: WildFire_Hammer_Spirit_Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
-        x: 26
-        y: 39
-        width: 27
-        height: 25
+        x: 22
+        y: 31
+        width: 63
+        height: 26
       spriteId: 367d00d707abcde4483ed3edec3e2fe4
     - name: WildFire_Hammer_Spirit_Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
-        x: 26
-        y: 38
-        width: 27
-        height: 26
+        x: 32
+        y: 28
+        width: 47
+        height: 51
       spriteId: a8aa7d991105c24499388602f60c01d7
     - name: WildFire_Hammer_Spirit_Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
-        x: 26
-        y: 39
-        width: 27
-        height: 25
+        x: 15
+        y: 32
+        width: 54
+        height: 45
       spriteId: 2cba2bfff98e23c4cad3c1e932939912
     - name: WildFire_Hammer_Spirit_Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
-        x: 17
-        y: 40
-        width: 34
-        height: 22
+        x: 15
+        y: 32
+        width: 54
+        height: 45
       spriteId: 3b88d83f0a6c80f4fbee73979fa523e6
     - name: WildFire_Hammer_Spirit_Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
-        x: 15
-        y: 41
-        width: 36
-        height: 23
+        x: 14
+        y: 32
+        width: 54
+        height: 45
       spriteId: 622fd8d74c1f48649a14a08af91ffa02
+    - name: WildFire_Hammer_Spirit_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 15
+        y: 32
+        width: 54
+        height: 45
+      spriteId: d4e33f3219e710e42b6447e4303f5866
+    - name: WildFire_Hammer_Spirit_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 6
+        y: 37
+        width: 59
+        height: 33
+      spriteId: c401866a13f805d4d904f3d7b9225ace
+    - name: WildFire_Hammer_Spirit_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 2
+        y: 38
+        width: 60
+        height: 28
+      spriteId: 8cdc7506304974445a1f092f1e32f6d4
     linkedCells: []
     parentIndex: -1
   platformSettings: []

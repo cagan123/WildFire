@@ -63,11 +63,13 @@ public class Player : Entity
     {
         stateMachine.currentState.Update();
 
+        CheckForDashInput();
+        
         ControlFlip();
 
         DashCooldownTimer();
 
-        CheckForDashInput();
+        
     }
     
 

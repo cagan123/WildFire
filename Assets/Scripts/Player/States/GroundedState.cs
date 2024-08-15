@@ -11,7 +11,7 @@ public class GroundedState : PlayerState
     public override void Update()
     {
         base.Update();
-        if(Input.GetMouseButton(0))
-            stateMachine.ChangeState(player.prep1state);
+        //if(Input.GetMouseButton(0))
+            //stateMachine.ChangeState(player.prep1state);
     }
 }
