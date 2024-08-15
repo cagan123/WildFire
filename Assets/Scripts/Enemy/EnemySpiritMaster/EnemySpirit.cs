@@ -22,6 +22,7 @@ public class EnemySpirit : Enemy
     public SpiritPrep3State Prep3State{ get; private set; }
     public SpiritAttack3State Attack3State{ get; private set; }
     public SpiritReco3State Recover3State{ get; private set;}
+    public SpiritDeathState DeathState{ get; private set; }
 
     #endregion
     protected override void Awake()
@@ -41,11 +42,14 @@ public class EnemySpirit : Enemy
         Prep3State = new SpiritPrep3State(this, stateMachine, "prep3", this);
         Attack3State = new SpiritAttack3State(this, stateMachine, "attack3", this);
         Recover3State = new SpiritReco3State(this, stateMachine, "reco3", this);
+
+        DeathState = new SpiritDeathState(this, stateMachine, "death", this);
     }
     protected override void Start()
     {
         base.Start();
         stateMachine.Initialize(idleState);
+        GetDeathState(DeathState);
     }
 
     protected void FixedUpdate()
@@ -57,6 +61,4 @@ public class EnemySpirit : Enemy
     {           
         stateMachine.currentState.Update();
     }
-
-        
 }

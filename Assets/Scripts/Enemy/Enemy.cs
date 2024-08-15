@@ -1,3 +1,4 @@
+using Enemy_Bug_namespace;
 using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 
@@ -31,6 +32,7 @@ public class Enemy : Entity
 
     #region Components
     public EnemyStateMachine stateMachine { get; private set; }
+    public EnemyState deathState;
     [HideInInspector]public FieldOfView fieldOfView;
     public PathFinder pathFinder{get; private set;}
     [HideInInspector]public Transform player;
@@ -148,5 +150,15 @@ public class Enemy : Entity
     }
 
     #endregion
+    # region Death
+    public override void Die()
+    {
+        base.Die();
 
+        stateMachine.ChangeState(deathState);
+    }
+    public void GetDeathState(EnemyState _deathState){
+        deathState = _deathState;
+    }
+    #endregion
 }

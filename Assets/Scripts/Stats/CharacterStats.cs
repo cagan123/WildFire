@@ -13,8 +13,6 @@ public class CharacterStats : MonoBehaviour
         currentHp = maxHp.GetValue();
     }
     public virtual void DoDamage(CharacterStats _targetStat){
-
-
         int totalDamage = damage.GetValue() + strenght.GetValue();
         _targetStat.TakeDamage(totalDamage);
     }

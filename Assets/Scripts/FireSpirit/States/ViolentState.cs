@@ -32,7 +32,7 @@ public class ViolentState : FireSpiritState
         foreach (var hit in colliders)
         {
             if (hit.GetComponentInParent<Enemy>() != null){
-                EnemyStats _target = hit.GetComponent<EnemyStats>();
+                EnemyStats _target = hit.GetComponentInParent<EnemyStats>();
                 hit.GetComponentInParent<Enemy>().stats.DoDamage(_target);
                 if(stateMachine.currentState != fireSpirit.swordState){
                     stateMachine.ChangeState(fireSpirit.returnState);            

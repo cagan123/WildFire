@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5428551914773640872}
   - component: {fileID: 8631338529154051410}
   - component: {fileID: 3299730166451904573}
+  - component: {fileID: 1728873248807460875}
   m_Layer: 3
   m_Name: FireSpirit
   m_TagString: Untagged
@@ -80,6 +81,7 @@ MonoBehaviour:
   DashVelocitySmoothness: 0.5
   attackCheck: {fileID: 5664446343191245897}
   attackCheckRadius: 0.6
+  spearDistance: 2.5
   chargeRate: 2.5
   maxChargeTime: 3
   minChargePower: 1
@@ -91,8 +93,31 @@ MonoBehaviour:
   followSmoothness: 0.1
   torqueSmoothnes: 0.1
   SwordAttackCheckRadius: 1.5
+  swordTime: 2
   cam: {fileID: 0}
   fire: {fileID: 3014746353725681445}
+--- !u!114 &1728873248807460875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026871928424392890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cacdd7d455543444a9689f0eed1e54a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strenght:
+    baseValue: 0
+    modifiers: 
+  damage:
+    baseValue: 5
+    modifiers: 
+  maxHp:
+    baseValue: 0
+    modifiers: 
+  currentHp: 0
 --- !u!1 &4079971197940000332
 GameObject:
   m_ObjectHideFlags: 0

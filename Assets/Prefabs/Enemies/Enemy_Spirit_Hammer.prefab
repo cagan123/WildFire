@@ -337,7 +337,8 @@ MonoBehaviour:
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 128
-  knockbackForce: 0
+  knockbackForce: 5
+  knockbackDir: {x: 0, y: 0}
   knockbackTime: 1
   PlayerLayer:
     serializedVersion: 2
@@ -365,7 +366,7 @@ MonoBehaviour:
   patrol: {fileID: 0}
   Attack1DashSpeed: 2.5
   Attack2DashSpeed: 3
-  Attack3DashSpeed: 0
+  Attack3DashSpeed: 1.8
 --- !u!114 &8661397127488349882
 MonoBehaviour:
   m_ObjectHideFlags: 0

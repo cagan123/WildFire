@@ -13,7 +13,7 @@ public class SwordState : ViolentState
     public override void Enter()
     {
         base.Enter();
-        stateTimer = fireSpirit.swordTime;
+        //stateTimer = fireSpirit.swordTime;
         var emission = fireSpirit.fire.emission;
         emission.rateOverTime = 60f;
         var shape = fireSpirit.fire.shape;
@@ -52,7 +52,7 @@ public class SwordState : ViolentState
     public override void Update()
     {
         base.Update();
-        if (Input.GetKeyUp(KeyCode.Mouse1) || stateTimer<0) // Right mouse button
+        if (Input.GetKeyUp(KeyCode.Mouse1)) // Right mouse button
         {
             stateMachine.ChangeState(fireSpirit.followState);
         }       

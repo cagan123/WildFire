@@ -47,6 +47,6 @@ public class PowerUpState : FireSpiritState
             attackPower = Mathf.Lerp(fireSpirit.minChargePower, fireSpirit.maxChargePower, fireSpirit.currentChargeTime / fireSpirit.maxChargeTime);
             stateMachine.ChangeState(fireSpirit.attackState);
             fireSpirit.currentChargeTime = 0.0f;
-        }      
+        }
     }
 }

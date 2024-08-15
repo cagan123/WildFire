@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemySpiritAC : MonoBehaviour
@@ -17,7 +18,9 @@ public class EnemySpiritAC : MonoBehaviour
                 if (hit.GetComponent<Player>() != null)
                 {
                     PlayerStats _target = hit.GetComponent<PlayerStats>();
+                    hit.GetComponent<Player>().closestEnemyPos = enemy.transform.position;
                     enemy.stats.DoDamage(_target);
+
                 }
             }
         }
@@ -29,8 +32,12 @@ public class EnemySpiritAC : MonoBehaviour
                 if (hit.GetComponent<Player>() != null)
                 {
                     PlayerStats _target = hit.GetComponent<PlayerStats>();
+                    hit.GetComponent<Player>().closestEnemyPos = enemy.transform.position;
                     enemy.stats.DoDamage(_target);
                 }
             }
+        }
+        private void DeathTrigger(){
+            Destroy(enemy.GameObject());
         }
 }

@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -16,6 +12,7 @@ public class Player : Entity
     [Header("Attack Info")]
     public float prep1time;
     public float attack1speed;
+    public Vector2 closestEnemyPos;
 
     #region Components
     Camera cam;
@@ -32,6 +29,8 @@ public class Player : Entity
     public Reco1Sstate reco1State{ get; private set; }
     public Up1State up1State{ get; private set;}
     public RecoUpState recoUpState{ get; private set; }
+
+    public DeathState deathState{ get; private set; }
     #endregion
 
     protected override void Awake()
@@ -50,6 +49,8 @@ public class Player : Entity
         reco1State = new Reco1Sstate(this, stateMachine, "swordreco");
         up1State = new Up1State(this, stateMachine, "swordup");
         recoUpState = new RecoUpState(this, stateMachine, "swordrecoup");
+
+        deathState = new DeathState(this, stateMachine, "death");
 
     }
     protected override void Start()
@@ -92,9 +93,18 @@ public class Player : Entity
     return direction;
     }
 
+    public Vector2 KnockbackDirection(){
+        return ((Vector2)transform.position - closestEnemyPos).normalized;
+    }
     public void PlayerDamageEffect(){
         if(stateMachine.currentState != dashState){
             DamageEffect();
         }
     }
+    public override void Die()
+    {
+        base.Die();
+        stateMachine.ChangeState(deathState);
+    }
+
 }

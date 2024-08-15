@@ -12,6 +12,12 @@ public class PlayerStats : CharacterStats
     public override void TakeDamage(int _damage)
     {
         base.TakeDamage(_damage);
+        player.knockbackDir = player.KnockbackDirection();
         player.DamageEffect();
+    }
+    protected override void Die()
+    {
+        base.Die();
+        player.Die();
     }
 }

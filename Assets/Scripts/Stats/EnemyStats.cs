@@ -14,6 +14,12 @@ public class EnemyStats : CharacterStats
     public override void TakeDamage(int _damage)
     {
         base.TakeDamage(_damage);
+        enemy.knockbackDir = -enemy.direction();
         enemy.DamageEffect();
+    }
+    protected override void Die()
+    {
+        base.Die();
+        enemy.Die();
     }
 }

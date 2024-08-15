@@ -33,9 +33,7 @@ public class FollowState : FireSpiritState
             stateMachine.ChangeState(fireSpirit.swordState);
         }
         
-        if(Input.GetKey(KeyCode.Q)){
-            stateMachine.ChangeState(fireSpirit.attack2State);
-        }
+    
     }
 
     public override void FixedUpdate()

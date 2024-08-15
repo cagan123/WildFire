@@ -17,6 +17,7 @@ public class Entity : MonoBehaviour
 
     [Header("Knockback Info")]
     [SerializeField] protected float knockbackForce;
+    public Vector2 knockbackDir;
     [SerializeField] private float knockbackTime = 1f;
     [HideInInspector]protected bool isKnocked;
 
@@ -45,19 +46,13 @@ public class Entity : MonoBehaviour
     public virtual void DamageEffect()
     {
         VFX.StartCoroutine("FlashVFX_Routine");
+        StartCoroutine("KnockBackRoutine");
     }
-    public void GetKnockedBacked(Transform damageSource, float knockbackForce)
+    protected virtual IEnumerator KnockBackRoutine()
     {
         isKnocked = true;
-        Vector2 difference = (transform.position-damageSource.position).normalized * knockbackForce * rb.mass;
-        rb.AddForce(difference, ForceMode2D.Impulse);
-        StartCoroutine(KnockBackRoutine());
-    }
-
-    private IEnumerator KnockBackRoutine()
-    {
+        rb.velocity = knockbackDir * knockbackForce;
         yield return new WaitForSeconds(knockbackTime);
-        rb.velocity= Vector2.zero;
         isKnocked= false;
     }
 
@@ -73,32 +68,52 @@ public class Entity : MonoBehaviour
     #region Velocity
     public virtual void PassVelocity(float _xInput, float _yInput)
     {
+        if(isKnocked){
+            return;
+        }
         rb.velocity = new Vector2(_xInput, _yInput).normalized * movementSpeed;
     }
     public virtual void PassVelocity(Vector2 vector2)
     {
+        if(isKnocked){
+            return;
+        }
         rb.velocity = vector2.normalized * movementSpeed;
     }
 
     public virtual void PassDashVelocity(float _xInput, float _yInput)
     {
+        if(isKnocked){
+            return;
+        }
         rb.velocity = new Vector2(_xInput, _yInput).normalized * dashSpeed;
     }
 
     public virtual void PassDashVelocity(Vector2 vector2)
     {
+        if(isKnocked){
+            return;
+        }
         rb.velocity = vector2.normalized * dashSpeed;
     }
 
     public virtual void PassStealthVelocity(float _xInput, float _yInput)
     {
+        if(isKnocked){
+            return;
+        }
         rb.velocity = new Vector2(_xInput, _yInput).normalized * stealthSpeed;
     }
 
     public virtual void PassStealthVelocity(Vector2 vector2)
     {
+        if(isKnocked){
+            return;
+        }
         rb.velocity = vector2.normalized * stealthSpeed;
     }
     #endregion
-
+    public virtual void Die(){
+        
+    }
 }
