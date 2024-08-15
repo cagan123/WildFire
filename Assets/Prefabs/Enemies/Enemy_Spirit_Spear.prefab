@@ -194,6 +194,7 @@ MonoBehaviour:
   attackCooldown: 0
   attackCooldownTimer: 0
   startFlipped: 0
+  Is4Directional: 1
   prepDuration1: 1
   prepDuration2: 1.2
   prepDuration3: 1.4

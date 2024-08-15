@@ -123,15 +123,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_0
     originalName: 
-    pivot: {x: 0.30434778, y: -0.04}
+    pivot: {x: 0.33333334, y: -0.9655172}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 94
-      width: 23
-      height: 25
+      y: 62
+      width: 27
+      height: 29
     spriteID: b21cf21d850ac324a8d7e64751da2383
     spriteBone: []
     spriteOutline: []
@@ -140,18 +140,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 94}
+    uvTransform: {x: 4, y: 62}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_1
     originalName: 
-    pivot: {x: 0.4666666, y: -0.0952381}
+    pivot: {x: 0.39130434, y: -0.96428573}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 61
-      y: 144
-      width: 15
-      height: 21
+      x: 39
+      y: 62
+      width: 23
+      height: 28
     spriteID: 4677d8f426acd66438c9afeefc09d3dc
     spriteBone: []
     spriteOutline: []
@@ -160,10 +160,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 61, y: 144}
+    uvTransform: {x: 39, y: 62}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_2
     originalName: 
-    pivot: {x: 0.3469388, y: -0.22727273}
+    pivot: {x: 0.30612245, y: -1.85}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -171,7 +171,7 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 49
-      height: 22
+      height: 20
     spriteID: 6e7856ed706d1674c8d354b81a8140f6
     spriteBone: []
     spriteOutline: []
@@ -183,13 +183,13 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_3
     originalName: 
-    pivot: {x: 0.17948717, y: -0.22727273}
+    pivot: {x: 0.17948717, y: -1.6818182}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 34
+      y: 32
       width: 39
       height: 22
     spriteID: 255be290be005cc43a4de660e5fd46ab
@@ -200,17 +200,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 34}
+    uvTransform: {x: 4, y: 32}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_4
     originalName: 
-    pivot: {x: 0.5, y: -0.35}
+    pivot: {x: 0.38461536, y: -1.95}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 35
-      y: 94
-      width: 18
+      x: 169
+      y: 62
+      width: 26
       height: 20
     spriteID: 227584e3e54d1d74ea9ef0e84dee87c8
     spriteBone: []
@@ -220,18 +220,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 35, y: 94}
+    uvTransform: {x: 169, y: 62}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_5
     originalName: 
-    pivot: {x: 0.5625, y: -0.45000002}
+    pivot: {x: 0.42857146, y: -1.9523811}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 61
-      y: 116
-      width: 16
-      height: 20
+      x: 106
+      y: 99
+      width: 21
+      height: 21
     spriteID: 808d2444217a132458b62a872a9f1f4d
     spriteBone: []
     spriteOutline: []
@@ -240,18 +240,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 61, y: 116}
+    uvTransform: {x: 106, y: 99}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_6
     originalName: 
-    pivot: {x: 0.8235295, y: -0.47619048}
+    pivot: {x: 0.8500001, y: -1.826087}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 33
-      y: 182
-      width: 17
-      height: 21
+      x: 39
+      y: 98
+      width: 20
+      height: 23
     spriteID: 7a07ac7463e35ed44873e74b9156a375
     spriteBone: []
     spriteOutline: []
@@ -260,18 +260,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 33, y: 182}
+    uvTransform: {x: 39, y: 98}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_7
     originalName: 
-    pivot: {x: 0.8235295, y: -0.47619048}
+    pivot: {x: 0.7826087, y: -2.1000001}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 33
-      y: 211
-      width: 17
-      height: 21
+      x: 192
+      y: 32
+      width: 23
+      height: 20
     spriteID: 1eb079fa0c916604080b4ca8e802438d
     spriteBone: []
     spriteOutline: []
@@ -280,18 +280,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 33, y: 211}
+    uvTransform: {x: 192, y: 32}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_8
     originalName: 
-    pivot: {x: 0.49999994, y: -0.041666668}
+    pivot: {x: 0.4736842, y: -0.9655172}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 61
-      y: 84
-      width: 14
-      height: 24
+      x: 70
+      y: 62
+      width: 19
+      height: 29
     spriteID: 8231f9e7b956e7d419a71b8a64e5578f
     spriteBone: []
     spriteOutline: []
@@ -300,18 +300,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 61, y: 84}
+    uvTransform: {x: 70, y: 62}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_9
     originalName: 
-    pivot: {x: 0.41176465, y: -0.2}
+    pivot: {x: 0.5217391, y: -1.2399999}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 61
-      y: 28
-      width: 17
-      height: 20
+      x: 4
+      y: 99
+      width: 23
+      height: 25
     spriteID: c2940f9835b732144b437840f1090ecf
     spriteBone: []
     spriteOutline: []
@@ -320,17 +320,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 61, y: 28}
+    uvTransform: {x: 4, y: 99}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_10
     originalName: 
-    pivot: {x: 0.5, y: -0.35}
+    pivot: {x: 0.41666663, y: -1.95}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 181
-      width: 18
+      x: 95
+      y: 32
+      width: 24
       height: 20
     spriteID: 6f1869567e10cd647a983b49c50a3642
     spriteBone: []
@@ -340,17 +340,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 181}
+    uvTransform: {x: 95, y: 32}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_9
     originalName: 
-    pivot: {x: 0.5, y: -0.35}
+    pivot: {x: 0.41666663, y: -1.95}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 209
-      width: 18
+      x: 127
+      y: 32
+      width: 24
       height: 20
     spriteID: 572cbaabccdcbf64a9845cc72371b8f3
     spriteBone: []
@@ -360,18 +360,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 209}
+    uvTransform: {x: 127, y: 32}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_10
     originalName: 
-    pivot: {x: 0.4705883, y: -0.4}
+    pivot: {x: 0.41666663, y: -2.105263}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 61
-      y: 56
-      width: 17
-      height: 20
+      x: 223
+      y: 32
+      width: 24
+      height: 19
     spriteID: e41b507f082006443a63e4437aefab64
     spriteBone: []
     spriteOutline: []
@@ -380,17 +380,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 61, y: 56}
+    uvTransform: {x: 223, y: 32}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_11
     originalName: 
-    pivot: {x: 0.3636364, y: -0.5}
+    pivot: {x: 0.3928572, y: -2.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 61
-      y: 4
-      width: 22
+      x: 70
+      y: 99
+      width: 28
       height: 16
     spriteID: 1dc5b1bc7d8fc87429a7eaa5431f766a
     spriteBone: []
@@ -400,18 +400,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 61, y: 4}
+    uvTransform: {x: 70, y: 99}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_12
     originalName: 
-    pivot: {x: 0.5238096, y: -0.6428572}
+    pivot: {x: 0.8620691, y: -2.6666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 237
-      width: 21
-      height: 14
+      x: 135
+      y: 99
+      width: 29
+      height: 15
     spriteID: b8587fa8858572d4588307fb81408f56
     spriteBone: []
     spriteOutline: []
@@ -420,17 +420,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 237}
+    uvTransform: {x: 135, y: 99}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_13
     originalName: 
-    pivot: {x: 0.5714286, y: -0.31578946}
+    pivot: {x: 0.57142854, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 127
-      width: 21
+      x: 97
+      y: 62
+      width: 28
       height: 19
     spriteID: ab272a73c9f5d3f44b62a9ce5d0a7664
     spriteBone: []
@@ -440,17 +440,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 127}
+    uvTransform: {x: 97, y: 62}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_14
     originalName: 
-    pivot: {x: 0.5238096, y: -0.31578946}
+    pivot: {x: 0.50000006, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 154
-      width: 21
+      x: 133
+      y: 62
+      width: 28
       height: 19
     spriteID: 3c23389723344734b8e0241a22ce9365
     spriteBone: []
@@ -460,17 +460,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 154}
+    uvTransform: {x: 133, y: 62}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_17
     originalName: 
-    pivot: {x: 0.20588233, y: -0.22727273}
+    pivot: {x: 0.19444442, y: -1.6818182}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 64
-      width: 34
+      x: 51
+      y: 32
+      width: 36
       height: 22
     spriteID: 2886efe868014d349802ff27a45bcde8
     spriteBone: []
@@ -480,17 +480,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 64}
+    uvTransform: {x: 51, y: 32}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_18
     originalName: 
-    pivot: {x: 0.3, y: -0.36842105}
+    pivot: {x: 0.35999998, y: -2.0526314}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 33
-      y: 127
-      width: 20
+      x: 159
+      y: 32
+      width: 25
       height: 19
     spriteID: 174257d945bbdb7428b611a5a14d6de1
     spriteBone: []
@@ -500,17 +500,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 33, y: 127}
+    uvTransform: {x: 159, y: 32}
   - name: Wildfire_Spirit_Melee_Enemy_1_Frame_19
     originalName: 
-    pivot: {x: 0.5, y: -0.35}
+    pivot: {x: 0.38461536, y: -1.95}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 33
-      y: 154
-      width: 18
+      x: 203
+      y: 62
+      width: 26
       height: 20
     spriteID: 13174b31f906a1b48af4a767364e86a6
     spriteBone: []
@@ -520,7 +520,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 33, y: 154}
+    uvTransform: {x: 203, y: 62}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -534,35 +534,35 @@ ScriptedImporter:
       frameIndex: 4
       additiveSortOrder: 0
       cellRect:
-        x: 41
-        y: 1
-        width: 23
-        height: 25
+        x: 39
+        y: 28
+        width: 27
+        height: 29
       spriteId: b21cf21d850ac324a8d7e64751da2383
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
       cellRect:
-        x: 41
-        y: 2
-        width: 15
-        height: 21
+        x: 39
+        y: 27
+        width: 23
+        height: 28
       spriteId: 4677d8f426acd66438c9afeefc09d3dc
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_15
       frameIndex: 15
       additiveSortOrder: 0
       cellRect:
-        x: 31
-        y: 5
+        x: 33
+        y: 37
         width: 49
-        height: 22
+        height: 20
       spriteId: 6e7856ed706d1674c8d354b81a8140f6
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_16
       frameIndex: 16
       additiveSortOrder: 0
       cellRect:
         x: 41
-        y: 5
+        y: 37
         width: 39
         height: 22
       spriteId: 255be290be005cc43a4de660e5fd46ab
@@ -570,9 +570,9 @@ ScriptedImporter:
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 39
-        y: 7
-        width: 18
+        x: 38
+        y: 39
+        width: 26
         height: 20
       spriteId: 227584e3e54d1d74ea9ef0e84dee87c8
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_1
@@ -580,107 +580,107 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 39
-        y: 9
-        width: 16
-        height: 20
+        y: 41
+        width: 21
+        height: 21
       spriteId: 808d2444217a132458b62a872a9f1f4d
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
       cellRect:
-        x: 34
-        y: 10
-        width: 17
-        height: 21
+        x: 31
+        y: 42
+        width: 20
+        height: 23
       spriteId: 7a07ac7463e35ed44873e74b9156a375
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
       cellRect:
-        x: 34
-        y: 10
-        width: 17
-        height: 21
+        x: 30
+        y: 42
+        width: 23
+        height: 20
       spriteId: 1eb079fa0c916604080b4ca8e802438d
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
       cellRect:
-        x: 41
-        y: 1
-        width: 14
-        height: 24
+        x: 39
+        y: 28
+        width: 19
+        height: 29
       spriteId: 8231f9e7b956e7d419a71b8a64e5578f
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
       cellRect:
-        x: 41
-        y: 4
-        width: 17
-        height: 20
+        x: 36
+        y: 31
+        width: 23
+        height: 25
       spriteId: c2940f9835b732144b437840f1090ecf
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_8
       frameIndex: 8
       additiveSortOrder: 0
       cellRect:
-        x: 39
-        y: 7
-        width: 18
+        x: 38
+        y: 39
+        width: 24
         height: 20
       spriteId: 6f1869567e10cd647a983b49c50a3642
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_9
       frameIndex: 9
       additiveSortOrder: 0
       cellRect:
-        x: 39
-        y: 7
-        width: 18
+        x: 38
+        y: 39
+        width: 24
         height: 20
       spriteId: 572cbaabccdcbf64a9845cc72371b8f3
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_10
       frameIndex: 10
       additiveSortOrder: 0
       cellRect:
-        x: 40
-        y: 8
-        width: 17
-        height: 20
+        x: 38
+        y: 40
+        width: 24
+        height: 19
       spriteId: e41b507f082006443a63e4437aefab64
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_11
       frameIndex: 11
       additiveSortOrder: 0
       cellRect:
-        x: 40
-        y: 8
-        width: 22
+        x: 37
+        y: 40
+        width: 28
         height: 16
       spriteId: 1dc5b1bc7d8fc87429a7eaa5431f766a
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
-        x: 37
-        y: 9
-        width: 21
-        height: 14
+        x: 23
+        y: 40
+        width: 29
+        height: 15
       spriteId: b8587fa8858572d4588307fb81408f56
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_13
       frameIndex: 13
       additiveSortOrder: 0
       cellRect:
-        x: 36
-        y: 6
-        width: 21
+        x: 32
+        y: 38
+        width: 28
         height: 19
       spriteId: ab272a73c9f5d3f44b62a9ce5d0a7664
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_14
       frameIndex: 14
       additiveSortOrder: 0
       cellRect:
-        x: 37
-        y: 6
-        width: 21
+        x: 34
+        y: 38
+        width: 28
         height: 19
       spriteId: 3c23389723344734b8e0241a22ce9365
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_17
@@ -688,26 +688,26 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 41
-        y: 5
-        width: 34
+        y: 37
+        width: 36
         height: 22
       spriteId: 2886efe868014d349802ff27a45bcde8
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_18
       frameIndex: 18
       additiveSortOrder: 0
       cellRect:
-        x: 42
-        y: 7
-        width: 20
+        x: 39
+        y: 39
+        width: 25
         height: 19
       spriteId: 174257d945bbdb7428b611a5a14d6de1
     - name: Wildfire_Spirit_Melee_Enemy_1_Frame_19
       frameIndex: 19
       additiveSortOrder: 0
       cellRect:
-        x: 39
-        y: 7
-        width: 18
+        x: 38
+        y: 39
+        width: 26
         height: 20
       spriteId: 13174b31f906a1b48af4a767364e86a6
     linkedCells: []
@@ -716,4 +716,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 96, y: 32}
+  canvasSize: {x: 96, y: 96}

@@ -31,7 +31,7 @@ EnemySpirit enemy;
         if(enemy.Patrolling()){
                 enemy.ControlFlipforEnemybyVelocity();
                 enemy.PassStealthVelocity(enemy.patrol.patrolDirection);
-                if(enemy.canSeePlayer()){
+                if(enemy.canSeePlayer() || enemy.EnemytoPlayerDistance() < enemy.agroDistance){
                     enemy.patrol.playerSeen = true;
                 }
             }

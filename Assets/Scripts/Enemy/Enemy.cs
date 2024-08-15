@@ -12,12 +12,13 @@ public class Enemy : Entity
     [HideInInspector] public float lastTimeAttacked;
     public float attackCooldown;
     [HideInInspector] public float attackCooldownTimer;
-
     [HideInInspector]public int facingDirection { get; private set; } = 1;
     [HideInInspector]protected bool facingLeft = true;
     [HideInInspector]protected bool facingUp = false;
     [SerializeField] public bool startFlipped;
+
     [Header("Attack Info")]
+    public bool Is4Directional;
     public float prepDuration1;
     public float prepDuration2;
     public float prepDuration3;
@@ -106,7 +107,6 @@ public class Enemy : Entity
     }
     public void ControlFlipforEnemytoPlayer()
     {
-        var direction_y = player.position.y -transform.position.y;
         var direction_x = player.position.x - transform.position.x;
         if (direction_x < -.1f && !facingLeft) // it is -1 and 1 to prevent jittering
         {
@@ -116,13 +116,16 @@ public class Enemy : Entity
         {
             Flip();
         }
-        if(direction_y < -.1f && !facingUp){
-            anim.SetBool("isAttackingDown", true);
-            facingUp = !facingUp;
-        }
-        else if (direction_y > .1f && facingUp){
-            anim.SetBool("isAttackingDown", false);
-            facingUp = !facingUp;
+        if(Is4Directional){
+            var direction_y = player.position.y -transform.position.y;
+            if(direction_y < -.1f && !facingUp){
+                anim.SetBool("isAttackingDown", true);
+                facingUp = !facingUp;
+            }
+            else if (direction_y > .1f && facingUp){
+                anim.SetBool("isAttackingDown", false);
+                facingUp = !facingUp;
+            }
         }
     }
     public void ControlFlipforEnemybyVelocity(){
