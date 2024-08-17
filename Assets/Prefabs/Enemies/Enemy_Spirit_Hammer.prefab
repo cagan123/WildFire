@@ -1,36 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &970990041625543743
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2231537742682072815}
-  m_Layer: 8
-  m_Name: attack1Check
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2231537742682072815
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970990041625543743}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.73, y: -0.03, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 291885408272421217}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2425305796313993371
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,73 +139,6 @@ MonoBehaviour:
   SorterPositionOffset2: {x: 0, y: 0}
   renderersToSort:
   - {fileID: 1286700868643037340}
---- !u!1 &2967764989796898400
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3102144245484701192}
-  - component: {fileID: 4011949818359448537}
-  m_Layer: 8
-  m_Name: collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3102144245484701192
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2967764989796898400}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 291885408272421217}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &4011949818359448537
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2967764989796898400}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.115675926, y: -0.012176454}
-  m_Size: {x: 0.73135185, y: 1.243528}
-  m_Direction: 0
 --- !u!1 &3682348925797886641
 GameObject:
   m_ObjectHideFlags: 0
@@ -250,6 +152,7 @@ GameObject:
   - component: {fileID: 4560890491681222317}
   - component: {fileID: 3794147402153008457}
   - component: {fileID: 8661397127488349882}
+  - component: {fileID: 4304234843443182943}
   m_Layer: 8
   m_Name: Enemy_Spirit_Hammer
   m_TagString: Untagged
@@ -271,11 +174,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1474207449068605263}
-  - {fileID: 2231537742682072815}
-  - {fileID: 329572964059400882}
   - {fileID: 8391972460656738370}
   - {fileID: 3926370698246144852}
-  - {fileID: 3102144245484701192}
+  - {fileID: 7946971116257830187}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1904959102032108331
@@ -337,7 +238,7 @@ MonoBehaviour:
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 128
-  knockbackForce: 5
+  knockbackForce: 25
   knockbackDir: {x: 0, y: 0}
   knockbackTime: 1
   PlayerLayer:
@@ -354,12 +255,10 @@ MonoBehaviour:
   prepDuration3: 1.8
   attackNumber: 3
   attackCheck:
-  - {fileID: 2231537742682072815}
-  - {fileID: 329572964059400882}
-  attackCheckRadius: 1.98
-  attack2CheckRadius: 2.4
-  attack3CheckRadius: 0
-  attackDistance: 1.44
+  - {fileID: 7946971116257830187}
+  attackCheckRadius:
+  - 2.1
+  attackDistance: 2.5
   fieldOfView: {fileID: 0}
   player: {fileID: 0}
   assasin: {fileID: 0}
@@ -386,9 +285,47 @@ MonoBehaviour:
     baseValue: 5
     modifiers: 
   maxHp:
-    baseValue: 30
+    baseValue: 60
     modifiers: 
   currentHp: 0
+  evasionChance:
+    baseValue: 0
+    modifiers: 
+--- !u!70 &4304234843443182943
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3682348925797886641}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.010099888, y: 0.10604453}
+  m_Size: {x: 0.94437695, y: 1.4140782}
+  m_Direction: 0
 --- !u!1 &4033736025578579703
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,7 +379,7 @@ MonoBehaviour:
   angleOfVision: 160
   lenghtOfVision: 5.86
   playerSeen: 0
---- !u!1 &4992908990860940273
+--- !u!1 &6067831791003947957
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -450,24 +387,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 329572964059400882}
-  m_Layer: 8
-  m_Name: attack2Check
+  - component: {fileID: 7946971116257830187}
+  m_Layer: 0
+  m_Name: attackcheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &329572964059400882
+--- !u!4 &7946971116257830187
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4992908990860940273}
+  m_GameObject: {fileID: 6067831791003947957}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07, y: 0.02, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

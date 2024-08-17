@@ -31,73 +31,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1175567344057543588}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5838188432648470280
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8785352012088188258}
-  - component: {fileID: 5292640512673393816}
-  m_Layer: 8
-  m_Name: collider
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8785352012088188258
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5838188432648470280}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1175567344057543588}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &5292640512673393816
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5838188432648470280}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.115675926, y: -0.012176454}
-  m_Size: {x: 0.73135185, y: 1.243528}
-  m_Direction: 0
 --- !u!1 &6718917293024325092
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,6 +44,7 @@ GameObject:
   - component: {fileID: 3286497893991900720}
   - component: {fileID: 7707011052601311817}
   - component: {fileID: 9068167358719671740}
+  - component: {fileID: 7975233109841132515}
   m_Layer: 8
   m_Name: Enemy_Spirit_Spear
   m_TagString: Untagged
@@ -135,7 +69,6 @@ Transform:
   - {fileID: 6107128561241550383}
   - {fileID: 8873669620202996316}
   - {fileID: 8473320991627863243}
-  - {fileID: 8785352012088188258}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &5626208701262747050
@@ -185,6 +118,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   knockbackForce: 0
+  knockbackDir: {x: 0, y: 0}
   knockbackTime: 1
   PlayerLayer:
     serializedVersion: 2
@@ -201,9 +135,8 @@ MonoBehaviour:
   attackNumber: 3
   attackCheck:
   - {fileID: 6107128561241550383}
-  attackCheckRadius: 1.5
-  attack2CheckRadius: 0
-  attack3CheckRadius: 0
+  attackCheckRadius:
+  - 1.48
   attackDistance: 2
   fieldOfView: {fileID: 0}
   player: {fileID: 0}
@@ -247,6 +180,41 @@ MonoBehaviour:
     baseValue: 30
     modifiers: 
   currentHp: 0
+--- !u!70 &7975233109841132515
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6718917293024325092}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.13014045, y: -0.010010719}
+  m_Size: {x: 0.7602809, y: 1.2736292}
+  m_Direction: 0
 --- !u!1 &8306792904513171454
 GameObject:
   m_ObjectHideFlags: 0

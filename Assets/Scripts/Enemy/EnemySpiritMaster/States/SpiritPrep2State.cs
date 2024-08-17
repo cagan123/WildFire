@@ -14,7 +14,6 @@ EnemySpirit enemy;
     {
         base.Enter();
         stateTimer = enemy.prepDuration2;
-        enemy.PassDashVelocity(Vector2.zero);
     }
     public override void Exit()
     {
@@ -27,10 +26,16 @@ EnemySpirit enemy;
         if(stateTimer < 0){
             stateTimer = enemy.prepDuration2;
             stateMachine.ChangeState(enemy.Attack2State);
-        }
+        }        
     }
     public override void FixedUpdate()
     {
         base.FixedUpdate();
+        if(enemy.EnemytoPlayerDistance() <= enemy.attackDistance){
+            enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.Attack2DashSpeed/2);
+        }
+        else{
+            enemy.PassDashVelocity(enemy.EnemyToPlayerDirection() * enemy.Attack2DashSpeed/2);
+        }
     }
 }

@@ -22,18 +22,12 @@ public class ViolentState : FireSpiritState
     public override void FixedUpdate()
     {
         base.FixedUpdate();
-        
-    }
-
-    public override void Update()
-    {
-        base.Update();
         Collider2D[] colliders = Physics2D.OverlapCircleAll(fireSpirit.attackCheck.position, fireSpirit.attackCheckRadius);
         foreach (var hit in colliders)
         {
-            if (hit.GetComponentInParent<Enemy>() != null){
-                EnemyStats _target = hit.GetComponentInParent<EnemyStats>();
-                hit.GetComponentInParent<Enemy>().stats.DoDamage(_target);
+            if (hit.GetComponent<Enemy>() != null){
+                EnemyStats _target = hit.GetComponent<EnemyStats>();
+                hit.GetComponent<Enemy>().stats.DoDamage(_target);
                 if(stateMachine.currentState != fireSpirit.swordState){
                     stateMachine.ChangeState(fireSpirit.returnState);            
                 }   

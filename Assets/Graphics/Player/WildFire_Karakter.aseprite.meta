@@ -329,7 +329,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 51
-      y: 171
+      y: 215
       width: 12
       height: 12
     spriteID: 6a42c5f71d1295f4785137155c21d926
@@ -340,7 +340,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 171}
+    uvTransform: {x: 51, y: 215}
   - name: WildFire_Karakter_Frame_11
     originalName: 
     pivot: {x: 0.5, y: -4}
@@ -349,7 +349,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 51
-      y: 191
+      y: 235
       width: 12
       height: 12
     spriteID: 5b1d5ca550438074797aa8f91e2f7ae2
@@ -360,7 +360,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 191}
+    uvTransform: {x: 51, y: 235}
   - name: WildFire_Karakter_Frame_10
     originalName: 
     pivot: {x: 0.5, y: -4}
@@ -368,8 +368,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
-      y: 211
+      x: 72
+      y: 56
       width: 12
       height: 12
     spriteID: 80212fdb55f4fe44c91d458d1260f0ab
@@ -380,7 +380,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 211}
+    uvTransform: {x: 72, y: 56}
   - name: WildFire_Karakter_Frame_11
     originalName: 
     pivot: {x: 0.5, y: -4}
@@ -388,8 +388,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
-      y: 231
+      x: 72
+      y: 76
       width: 12
       height: 12
     spriteID: b07177481dca021459690c3d13b56be7
@@ -400,7 +400,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 231}
+    uvTransform: {x: 72, y: 76}
   - name: WildFire_Karakter_Frame_12
     originalName: 
     pivot: {x: 0.33333337, y: -2.2272727}
@@ -721,6 +721,66 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 117}
+  - name: WildFire_Karakter_Frame_30
+    originalName: 
+    pivot: {x: 0.46153852, y: -3.2666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 171
+      width: 13
+      height: 15
+    spriteID: 33d2519b7dbaaf74dbc2b987aab7ac92
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 171}
+  - name: WildFire_Karakter_Frame_31
+    originalName: 
+    pivot: {x: 0.46153852, y: -3.692308}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 194
+      width: 13
+      height: 13
+    spriteID: e732600cb03619b40b1c03ed81403931
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 194}
+  - name: WildFire_Karakter_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: -9.6}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 130
+      y: 246
+      width: 12
+      height: 5
+    spriteID: 4a06a81c0fce27446ace96a1af30e53b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 130, y: 246}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -1000,6 +1060,33 @@ ScriptedImporter:
         width: 39
         height: 33
       spriteId: 0067db3596598a848a8892ca7a689d77
+    - name: WildFire_Karakter_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 49
+        width: 13
+        height: 15
+      spriteId: 33d2519b7dbaaf74dbc2b987aab7ac92
+    - name: WildFire_Karakter_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 13
+        height: 13
+      spriteId: e732600cb03619b40b1c03ed81403931
+    - name: WildFire_Karakter_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 12
+        height: 5
+      spriteId: 4a06a81c0fce27446ace96a1af30e53b
     linkedCells: []
     parentIndex: -1
   platformSettings: []

@@ -1,10 +1,10 @@
-using Enemy_Bug_namespace;
 using UnityEngine;
+
 [RequireComponent(typeof(Rigidbody2D))]
 
 public class Enemy : Entity
 {
-    [SerializeField] protected LayerMask PlayerLayer;
+    [SerializeField] public LayerMask PlayerLayer;
 
     [Header("Chase Info")]
     public float agroDistance = 4f;
@@ -25,9 +25,7 @@ public class Enemy : Entity
     public float prepDuration3;
     public int attackNumber;
     public Transform[] attackCheck;
-    public float attackCheckRadius;
-    public float attack2CheckRadius;
-    public float attack3CheckRadius;
+    public float[] attackCheckRadius;
     public float attackDistance;
 
     #region Components
@@ -144,11 +142,10 @@ public class Enemy : Entity
    protected virtual void OnDrawGizmos()
     {
         for(int i = 0; i < attackCheck.Length; i++){
-            Gizmos.DrawWireSphere(attackCheck[i].position, attackCheckRadius);
-        }
+            Gizmos.DrawWireSphere(attackCheck[i].position, attackCheckRadius[i]);
         Gizmos.DrawLine(transform.position, new Vector2(transform.position.x-attackDistance, transform.position.y));
+        }
     }
-
     #endregion
     # region Death
     public override void Die()

@@ -28,6 +28,6 @@ EnemySpirit enemy;
     public override void FixedUpdate()
     {
         base.FixedUpdate();
-        
+        enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.Attack2DashSpeed/2);
     }
 }

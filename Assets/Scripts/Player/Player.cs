@@ -96,11 +96,6 @@ public class Player : Entity
     public Vector2 KnockbackDirection(){
         return ((Vector2)transform.position - closestEnemyPos).normalized;
     }
-    public void PlayerDamageEffect(){
-        if(stateMachine.currentState != dashState){
-            DamageEffect();
-        }
-    }
     public override void Die()
     {
         base.Die();
