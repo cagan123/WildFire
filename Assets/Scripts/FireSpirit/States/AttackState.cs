@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class AttackState : ViolentState
 {
-    public AttackState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine) : base(_fireSpirit, _stateMachine)
+    public AttackState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine, string _animBoolName) : base(_fireSpirit, _stateMachine, _animBoolName)
     {
     }
+
     public override void Enter()
     {
         base.Enter();

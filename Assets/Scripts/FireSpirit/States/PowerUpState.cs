@@ -6,10 +6,10 @@ using UnityEngine;
 
 public class PowerUpState : FireSpiritState
 {
-    public PowerUpState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine) : base(_fireSpirit, _stateMachine)
+    public PowerUpState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine, string _animBoolName) : base(_fireSpirit, _stateMachine, _animBoolName)
     {
     }
-    
+
     public override void Enter()
     {
         base.Enter();

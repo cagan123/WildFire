@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ReturnState : ViolentState
 {
-    public ReturnState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine) : base(_fireSpirit, _stateMachine)
+    public ReturnState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine, string _animBoolName) : base(_fireSpirit, _stateMachine, _animBoolName)
     {
     }
 

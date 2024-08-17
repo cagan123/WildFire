@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class FollowState : FireSpiritState
 {
-    public FollowState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine) : base(_fireSpirit, _stateMachine)
+    public FollowState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine, string _animBoolName) : base(_fireSpirit, _stateMachine, _animBoolName)
     {
     }
-    
 
     public override void Enter()
     {

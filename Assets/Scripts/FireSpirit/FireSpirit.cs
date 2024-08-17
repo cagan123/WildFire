@@ -36,6 +36,7 @@ public class FireSpirit : MonoBehaviour
     #region Components
     [HideInInspector] public Transform transformToFollow{get;private set;}
     public Rigidbody2D rb { get; private set; }
+    public Animator anim { get; private set; }
     [HideInInspector]public Camera cam;
     #endregion
 
@@ -61,24 +62,23 @@ public class FireSpirit : MonoBehaviour
     private void Awake()
     {
         stateMachine = new FireSpiritStateMachine();
-        followState = new FollowState(this, stateMachine);
-        attackState = new AttackState(this, stateMachine);
-        attack2State = new Attack2State(this, stateMachine);
-        returnState = new ReturnState(this, stateMachine);
-        powerUpState = new PowerUpState(this, stateMachine);
-        violentState = new ViolentState(this,stateMachine);
-        swordState = new SwordState(this, stateMachine);
+        followState = new FollowState(this, stateMachine, null);
+        attackState = new AttackState(this, stateMachine, null);
+        attack2State = new Attack2State(this, stateMachine, null);
+        returnState = new ReturnState(this, stateMachine, null);
+        powerUpState = new PowerUpState(this, stateMachine, null);
+        violentState = new ViolentState(this,stateMachine, null);
+        swordState = new SwordState(this, stateMachine, "move");
 
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();       
         fire = GetComponentInChildren<ParticleSystem>();
-
-
+        anim = GetComponentInChildren<Animator>();
     }
     private void Start()
     {
         stateMachine.Initialize(followState);
-                transformToFollow = PlayerManager.instance.player.transform;
+        transformToFollow = PlayerManager.instance.player.transform;
     }
 
     private void FixedUpdate()

@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class SwordState : ViolentState
 {
-    public SwordState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine) : base(_fireSpirit, _stateMachine)
-    {
-    }
+    
     Quaternion originalRotation;
     float originalAttackCheckRadius;
+
+    public SwordState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine, string _animBoolName) : base(_fireSpirit, _stateMachine, _animBoolName)
+    {
+    }
+
     public override void Enter()
     {
         base.Enter();

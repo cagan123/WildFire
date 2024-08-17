@@ -8,7 +8,7 @@ public class FireSpiritState
     #region Components
     protected FireSpiritStateMachine stateMachine;
     protected FireSpirit fireSpirit;
-    protected ParticleSystem fireToPlay;
+    private string animBoolName;
     protected Rigidbody2D rb;
     #endregion
 
@@ -29,16 +29,25 @@ public class FireSpiritState
     #endregion
 
 
-    public FireSpiritState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine)
+    public FireSpiritState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine, string _animBoolName)
     {
         this.fireSpirit = _fireSpirit;
         this.stateMachine = _stateMachine;
+        this.animBoolName = _animBoolName;
+
     }
 
     public virtual void Enter()
     {
         rb = fireSpirit.rb;
         Distance = fireSpirit.distanceBetweenPlayerandFireSpirit;
+        if(animBoolName != null){
+            fireSpirit.fire.Stop();
+            fireSpirit.anim.SetBool(animBoolName, true);
+        }
+        else{
+            fireSpirit.fire.Play();
+        }
     }
 
     public virtual void Update()
@@ -56,6 +65,17 @@ public class FireSpiritState
     }
     public virtual void Exit()
     {
-        
+        if(animBoolName != null){
+            fireSpirit.fire.Play();
+            fireSpirit.anim.SetBool(animBoolName, false);
+        }
+        else{
+            fireSpirit.fire.Stop();
+        }
+    }
+
+    public virtual void AnimationFinishTrigger()
+    {
+        triggerCalled = true;
     }
 }
