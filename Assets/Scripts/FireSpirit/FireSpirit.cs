@@ -12,27 +12,12 @@ public class FireSpirit : MonoBehaviour
     [SerializeField] float movementSpeed;
     [SerializeField] public float dashSpeed;
     public float DashVelocitySmoothness = .1f;
+    public float followDistance = 1f;
 
     [Header("Attack Info")]
     public Transform attackCheck;
     public float attackCheckRadius;
-    public float spearDistance = 3f;
-
-    [Header("Charge Up Info")]
-    public float chargeRate = 2.5f;
-    public float maxChargeTime = 3.0f;
-    public float minChargePower = 1.0f;
-    public float maxChargePower = 5.0f;
-    public float currentChargeTime = 0.0f;
-    public float sizeMultipilier = 2f;
-    [Header("Sword Info")]
-    public float SwordDistance = 2f;
-    public float rotationTorque = 50f;
-    public float followSmoothness = .1f;
-    public float torqueSmoothnes = .1f;
-    public float SwordAttackCheckRadius = 1f;
-    public float swordTime = 2f;
-
+    
     #region Components
     [HideInInspector] public Transform transformToFollow{get;private set;}
     public Rigidbody2D rb { get; private set; }
@@ -48,12 +33,10 @@ public class FireSpirit : MonoBehaviour
     #region States
     public FireSpiritStateMachine stateMachine { get; private set; }
     public FollowState followState { get; private set; }
-    public AttackState attackState { get; private set; }  
-    public ReturnState returnState { get; private set; }
-    public PowerUpState powerUpState { get; private set; }
-    public ViolentState violentState { get; private set; }
-    public SwordState swordState { get; private set; }
-    public Attack2State attack2State{ get; private set; }
+    public FireSpiritPrep1State prep1State { get; private set; }
+    public FireSpiritAttack1State attack1State { get; private set; }
+    public FireSpiritReco1State reco1State { get; private set; }
+    public FollowBehaviorState followBehaviorState { get; private set; }
 
     #endregion
    
@@ -63,12 +46,11 @@ public class FireSpirit : MonoBehaviour
     {
         stateMachine = new FireSpiritStateMachine();
         followState = new FollowState(this, stateMachine, null);
-        attackState = new AttackState(this, stateMachine, null);
-        attack2State = new Attack2State(this, stateMachine, null);
-        returnState = new ReturnState(this, stateMachine, null);
-        powerUpState = new PowerUpState(this, stateMachine, null);
-        violentState = new ViolentState(this,stateMachine, null);
-        swordState = new SwordState(this, stateMachine, "move");
+        followBehaviorState = new FollowBehaviorState(this, stateMachine, null);
+
+        prep1State = new FireSpiritPrep1State(this, stateMachine, "prep1");
+        attack1State = new FireSpiritAttack1State(this, stateMachine, "attack1");
+        reco1State = new FireSpiritReco1State(this, stateMachine, "reco1");
 
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();       
@@ -91,7 +73,7 @@ public class FireSpirit : MonoBehaviour
         stateMachine.currentState.Update();
         distanceBetweenPlayerandFireSpirit = Vector2.Distance(transform.position, transformToFollow.position);
     }
-    
+    public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
 
     #region Directions & Positions
     public Vector2 FireToMouseDirection()
@@ -110,6 +92,15 @@ public class FireSpirit : MonoBehaviour
     }
     public Vector2 PlayerToMouseDirection(){
         var direction = (Input.mousePosition - cam.WorldToScreenPoint(transformToFollow.position)).normalized;
+        return direction;
+    }
+    public Vector2 PointBeweenPlayerandMouse(){
+        Vector3 direction = PlayerToMouseDirection();        
+        Vector3 targetPosition = transformToFollow.position + direction * followDistance;
+        return targetPosition;  
+    }
+    public Vector2 DirectionToPointBeweenPlayerandMouse(){
+        var direction = (PointBeweenPlayerandMouse() - (Vector2)transform.position).normalized;
         return direction;
     }
 
@@ -158,15 +149,6 @@ public class FireSpirit : MonoBehaviour
     }
     #endregion
 
-    #region Color
-    public void ChangeColor(float attackPower)
-    {
-        fire = GetComponentInChildren<ParticleSystem>();
-
-    }
-
-    #endregion
-
     #region Velocity
     public virtual void PassVelocity(float _xInput, float _yInput)
     {
@@ -193,6 +175,7 @@ public class FireSpirit : MonoBehaviour
         float newDashSpeed = Mathf.Lerp(currentSpeed, dashSpeed, DashVelocitySmoothness);
         rb.velocity = vector2.normalized * newDashSpeed;
         LinearVelocity(-rb.velocity/1.75f);
+        
     }
     #endregion
 

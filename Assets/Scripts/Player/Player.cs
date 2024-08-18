@@ -24,12 +24,6 @@ public class Player : Entity
     public IdleState idleState { get; private set; }
     public MoveState moveState { get; private set; }
     public DashState dashState { get; private set; }
-    public Prep1State prep1state { get; private set; }
-    public Attack1State attack1State{ get; private set; }
-    public Reco1Sstate reco1State{ get; private set; }
-    public Up1State up1State{ get; private set;}
-    public RecoUpState recoUpState{ get; private set; }
-
     public DeathState deathState{ get; private set; }
     #endregion
 
@@ -43,13 +37,7 @@ public class Player : Entity
         idleState = new IdleState(this, stateMachine, "Idle");
         moveState = new MoveState(this, stateMachine, "Run"); 
         dashState = new DashState(this, stateMachine, "dash"); 
-
-        prep1state = new Prep1State(this, stateMachine, "swordprep");
-        attack1State = new Attack1State(this, stateMachine, "sworddown");
-        reco1State = new Reco1Sstate(this, stateMachine, "swordreco");
-        up1State = new Up1State(this, stateMachine, "swordup");
-        recoUpState = new RecoUpState(this, stateMachine, "swordrecoup");
-
+        
         deathState = new DeathState(this, stateMachine, "death");
 
     }

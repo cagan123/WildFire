@@ -25,32 +25,18 @@ public class FollowState : FireSpiritState
     {
         base.Update();
         if (Input.GetMouseButton(0)){
-            stateMachine.ChangeState(fireSpirit.powerUpState);
+            stateMachine.ChangeState(fireSpirit.prep1State);
         }
-
-        if (Input.GetMouseButton(1)){
-            stateMachine.ChangeState(fireSpirit.swordState);
-        }
-        
-    
     }
 
     public override void FixedUpdate()
     {
         base.FixedUpdate();
-        if (fireSpirit.distanceBetweenPlayerandFireSpirit < 1f)
-        {
-            fireSpirit.PassVelocity(0f, 0f);
-
+        if(fireSpirit.distanceBetweenPlayerandFireSpirit <= fireSpirit.followDistance){
+            fireSpirit.PassVelocity(Vector2.zero);
         }
-        else if (fireSpirit.distanceBetweenPlayerandFireSpirit > 50f) // just in case
-        {
-            stateMachine.ChangeState(fireSpirit.returnState);
-        }
-        else
-        {
+        else{
             fireSpirit.PassVelocity(fireSpirit.FireToPlayerDirection());
         }
-
     }
 }

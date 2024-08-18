@@ -39,6 +39,7 @@ public class FireSpiritState
 
     public virtual void Enter()
     {
+        triggerCalled = false;
         rb = fireSpirit.rb;
         Distance = fireSpirit.distanceBetweenPlayerandFireSpirit;
         if(animBoolName != null){
@@ -51,10 +52,13 @@ public class FireSpiritState
     }
 
     public virtual void Update()
-    {
-        
+    {   
         PlayerPosition = fireSpirit.cam.WorldToScreenPoint(fireSpirit.transformToFollow.position);
         RealPos = fireSpirit.cam.ScreenToWorldPoint(Position);
+        if(animBoolName != null){
+            RotationHandler();
+        }
+
     }
 
     public virtual void FixedUpdate()
@@ -68,6 +72,7 @@ public class FireSpiritState
         if(animBoolName != null){
             fireSpirit.fire.Play();
             fireSpirit.anim.SetBool(animBoolName, false);
+            RotationResetter();
         }
         else{
             fireSpirit.fire.Stop();
@@ -78,4 +83,20 @@ public class FireSpiritState
     {
         triggerCalled = true;
     }
+    #region Rotation Managers
+    public void RotationHandler(){
+        float angle = Vector2.SignedAngle(Vector2.down, fireSpirit.FireToPlayerDirection());
+
+        Quaternion newRotation = new Quaternion {
+            eulerAngles = new Vector3(0, 0, angle)
+        };
+        fireSpirit.transform.rotation = newRotation;
+    }
+    public void RotationResetter(){
+        Quaternion newRotation = new Quaternion { 
+        eulerAngles = Vector3.zero
+        };
+        fireSpirit.transform.rotation  = newRotation;
+    }
+    #endregion
 }
