@@ -17,6 +17,7 @@ public class FireSpirit : MonoBehaviour
     [Header("Attack Info")]
     public Transform attackCheck;
     public float attackCheckRadius;
+    public float prepDuration1;
     
     #region Components
     [HideInInspector] public Transform transformToFollow{get;private set;}

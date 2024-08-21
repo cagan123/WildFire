@@ -11,6 +11,7 @@ public class FireSpiritPrep1State : FollowBehaviorState
     public override void Enter()
     {
         base.Enter();
+        stateTimer = fireSpirit.prepDuration1;
     }
     public override void Exit()
     {
@@ -23,8 +24,9 @@ public class FireSpiritPrep1State : FollowBehaviorState
     public override void Update()
     {
         base.Update();
-        if(triggerCalled){
+        if(stateTimer < 0){
+            stateTimer = fireSpirit.prepDuration1;
             stateMachine.ChangeState(fireSpirit.attack1State);
-        }
+        } 
     }
 }

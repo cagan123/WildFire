@@ -113,8 +113,8 @@ TextureImporter:
       name: Brics for buildings_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 172
+        x: 77
+        y: 381
         width: 71
         height: 73
       alignment: 0
@@ -134,8 +134,8 @@ TextureImporter:
       name: Brics for buildings_1
       rect:
         serializedVersion: 2
-        x: 76
-        y: 169
+        x: 0
+        y: 378
         width: 73
         height: 76
       alignment: 0
@@ -155,8 +155,8 @@ TextureImporter:
       name: Brics for buildings_2
       rect:
         serializedVersion: 2
-        x: 157
-        y: 168
+        x: 159
+        y: 377
         width: 76
         height: 72
       alignment: 0
@@ -176,8 +176,8 @@ TextureImporter:
       name: Brics for buildings_3
       rect:
         serializedVersion: 2
-        x: 242
-        y: 168
+        x: 243
+        y: 377
         width: 72
         height: 74
       alignment: 0
@@ -197,8 +197,8 @@ TextureImporter:
       name: Brics for buildings_4
       rect:
         serializedVersion: 2
-        x: 319
-        y: 167
+        x: 323
+        y: 374
         width: 76
         height: 78
       alignment: 0
@@ -218,8 +218,8 @@ TextureImporter:
       name: Brics for buildings_5
       rect:
         serializedVersion: 2
-        x: 402
-        y: 182
+        x: 405
+        y: 385
         width: 50
         height: 59
       alignment: 0
@@ -239,8 +239,8 @@ TextureImporter:
       name: Brics for buildings_6
       rect:
         serializedVersion: 2
-        x: 463
-        y: 179
+        x: 462
+        y: 382
         width: 43
         height: 58
       alignment: 0
@@ -260,8 +260,8 @@ TextureImporter:
       name: Brics for buildings_7
       rect:
         serializedVersion: 2
-        x: 518
-        y: 179
+        x: 520
+        y: 387
         width: 48
         height: 51
       alignment: 0
@@ -281,8 +281,8 @@ TextureImporter:
       name: Brics for buildings_8
       rect:
         serializedVersion: 2
-        x: 569
-        y: 158
+        x: 572
+        y: 369
         width: 73
         height: 81
       alignment: 0
@@ -302,8 +302,8 @@ TextureImporter:
       name: Brics for buildings_9
       rect:
         serializedVersion: 2
-        x: 1
-        y: 83
+        x: 0
+        y: 293
         width: 69
         height: 84
       alignment: 0
@@ -323,8 +323,8 @@ TextureImporter:
       name: Brics for buildings_10
       rect:
         serializedVersion: 2
-        x: 74
-        y: 75
+        x: 75
+        y: 287
         width: 72
         height: 90
       alignment: 0
@@ -344,8 +344,8 @@ TextureImporter:
       name: Brics for buildings_11
       rect:
         serializedVersion: 2
-        x: 155
-        y: 76
+        x: 158
+        y: 285
         width: 79
         height: 88
       alignment: 0
@@ -365,8 +365,8 @@ TextureImporter:
       name: Brics for buildings_12
       rect:
         serializedVersion: 2
-        x: 241
-        y: 84
+        x: 239
+        y: 290
         width: 81
         height: 80
       alignment: 0
@@ -378,6 +378,195 @@ TextureImporter:
       bones: []
       spriteID: 92ef3303546936349960f91c2096e919
       internalID: 803375607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brics for buildings_13
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 290
+        width: 72
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b63ce035d8760f4fb048acc881b8239
+      internalID: 1310506646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brics for buildings_14
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 303
+        width: 45
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b379e835473299549a03beb93a588da2
+      internalID: 967335629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brics for buildings_15
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 307
+        width: 45
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ccef9750ffbfec4fb267efb04b8d4f4
+      internalID: 512758991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brics for buildings_16
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 300
+        width: 53
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9145ce99027db4ba7c14e0b9dca0d3
+      internalID: -1607841766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brics for buildings_17
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 296
+        width: 72
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0892b67b7c2e72419fb63aedaef1662
+      internalID: 1223112117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brics for buildings_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 208
+        width: 64
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb85de302371aa34bad244313a70e584
+      internalID: -1124847478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brics for buildings_19
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 129
+        width: 63
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6e9beef365e17408e186f42d9d34a4
+      internalID: -1629659954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brics for buildings_20
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 199
+        width: 76
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b1cad87bb61ca1458f61efac609c97d
+      internalID: 1176659246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brics for buildings_21
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 144
+        width: 50
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d66becfe1e9d864da46b1795578b25d
+      internalID: 897059174
       vertices: []
       indices: 
       edges: []
@@ -398,7 +587,16 @@ TextureImporter:
       Brics for buildings_10: -1180294847
       Brics for buildings_11: 2056493016
       Brics for buildings_12: 803375607
+      Brics for buildings_13: 1310506646
+      Brics for buildings_14: 967335629
+      Brics for buildings_15: 512758991
+      Brics for buildings_16: -1607841766
+      Brics for buildings_17: 1223112117
+      Brics for buildings_18: -1124847478
+      Brics for buildings_19: -1629659954
       Brics for buildings_2: -1506318161
+      Brics for buildings_20: 1176659246
+      Brics for buildings_21: 897059174
       Brics for buildings_3: 1298113169
       Brics for buildings_4: -1820117022
       Brics for buildings_5: -2126307130
