@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5165980772199883568}
   - component: {fileID: 6011258036826293988}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 2099202233031032034}
   - component: {fileID: 3396713047081319427}
   - component: {fileID: 2084906108257115676}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Brick Front
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 8
   m_Sprite: {fileID: 1176659246, guid: cbd04168ecae29e4fb64ff7bc867912a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -179,7 +179,7 @@ MonoBehaviour:
   isMovable: 1
   renderBelowAll: 0
   sortType: 0
-  SorterPositionOffset: {x: 0, y: -1.0412273}
+  SorterPositionOffset: {x: 0, y: -1.0412292}
   SorterPositionOffset2: {x: 0, y: 0}
   renderersToSort: []
 --- !u!114 &2084906108257115676
@@ -208,7 +208,7 @@ MonoBehaviour:
   - {x: 1.9594154, y: -1.1463242, z: 0}
   m_ShapePathHash: 863662101
   m_Mesh: {fileID: 0}
-  m_InstanceId: -30342
+  m_InstanceId: -1856
   m_LocalBounds:
     m_Center: {x: 0, y: -0.8730717, z: 0}
     m_Extent: {x: 1.9594154, y: 0.2732525, z: 0}

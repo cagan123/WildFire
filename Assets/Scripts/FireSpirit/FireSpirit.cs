@@ -37,6 +37,9 @@ public class FireSpirit : MonoBehaviour
     public FireSpiritPrep1State prep1State { get; private set; }
     public FireSpiritAttack1State attack1State { get; private set; }
     public FireSpiritReco1State reco1State { get; private set; }
+    public FireSpiritPrepBackState prepBackState { get; private set; }
+    public FireSpiritAttackBackState attackbackState {get ; private set; }
+    public FireSpiritRecoBackState recoBackState { get ; private set; }
     public FollowBehaviorState followBehaviorState { get; private set; }
 
     #endregion
@@ -52,6 +55,11 @@ public class FireSpirit : MonoBehaviour
         prep1State = new FireSpiritPrep1State(this, stateMachine, "prep1");
         attack1State = new FireSpiritAttack1State(this, stateMachine, "attack1");
         reco1State = new FireSpiritReco1State(this, stateMachine, "reco1");
+
+        prepBackState = new FireSpiritPrepBackState(this, stateMachine, "prep2");
+        attackbackState = new FireSpiritAttackBackState(this, stateMachine, "attack2");
+        recoBackState = new FireSpiritRecoBackState(this, stateMachine, "reco2");
+
 
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();       

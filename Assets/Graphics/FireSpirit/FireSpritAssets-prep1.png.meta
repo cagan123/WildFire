@@ -115,8 +115,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: FireSpritAssets-prep1_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 96
         y: 0
-        width: 32
-        height: 32
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98c1da8752f77e549b8d803a8529a590
-      internalID: 607028045
+      spriteID: 757c727258b781742bf9c47583bf0b88
+      internalID: -456915476
       vertices: []
       indices: 
       edges: []
@@ -163,7 +163,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       FireSpritAssets-prep1_0: 1627755255
-      FireSpritAssets-prep1_1: 607028045
+      FireSpritAssets-prep1_1: -456915476
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

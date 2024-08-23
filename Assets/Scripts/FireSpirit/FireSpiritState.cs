@@ -8,7 +8,7 @@ public class FireSpiritState
     #region Components
     protected FireSpiritStateMachine stateMachine;
     protected FireSpirit fireSpirit;
-    private string animBoolName;
+    public string animBoolName {get; private set;}
     protected Rigidbody2D rb;
     #endregion
 

@@ -5,7 +5,7 @@ using UnityEngine.Playables;
 
 public class FireSpiritStateMachine
 {
-    public FireSpiritState currentState { get; private set; } // you can see the value but can't change it
+    public FireSpiritState currentState { get; private set; }
 
     public void Initialize(FireSpiritState _startState)
     {
