@@ -24,6 +24,7 @@ public class FireSpirit : MonoBehaviour
     public Rigidbody2D rb { get; private set; }
     public Animator anim { get; private set; }
     [HideInInspector]public Camera cam;
+    public CharacterStats stats{ get; private set; }
     #endregion
 
     #region Variables
@@ -65,6 +66,7 @@ public class FireSpirit : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();       
         fire = GetComponentInChildren<ParticleSystem>();
         anim = GetComponentInChildren<Animator>();
+        stats = GetComponent<CharacterStats>();
     }
     private void Start()
     {
