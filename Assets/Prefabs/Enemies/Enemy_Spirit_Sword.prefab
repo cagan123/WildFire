@@ -96,7 +96,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 14
+  m_SortingOrder: 20
   m_Sprite: {fileID: -1022454684, guid: e48c920d69924d44785f243557d0855d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -268,6 +268,8 @@ GameObject:
   - component: {fileID: 8416166845696119327}
   - component: {fileID: 7753408111278147959}
   - component: {fileID: 6704268509248642581}
+  - component: {fileID: 5783020472894443001}
+  - component: {fileID: 2792898558516946946}
   m_Layer: 8
   m_Name: Enemy_Spirit_Sword
   m_TagString: Untagged
@@ -341,7 +343,7 @@ MonoBehaviour:
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 128
-  knockbackForce: 0
+  knockbackForce: 30
   knockbackDir: {x: 0, y: 0}
   knockbackTime: 1
   PlayerLayer:
@@ -441,6 +443,35 @@ CapsuleCollider2D:
   m_Offset: {x: 0.12561655, y: -0.038984418}
   m_Size: {x: 0.7512331, y: 1.1472747}
   m_Direction: 0
+--- !u!114 &5783020472894443001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6639515053351302718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db82026613b60f419a5a8d423fbe9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: -11.417525, y: 1.1354427, z: 0}
+  EntityPos: {x: 19.12, y: 22.58, z: 0}
+--- !u!114 &2792898558516946946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6639515053351302718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43959850b6c10f54499de898d151febf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assasinRadius: 4
+  assasinTriggered: 0
 --- !u!1 &9005999638885946911
 GameObject:
   m_ObjectHideFlags: 0

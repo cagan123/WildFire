@@ -521,6 +521,66 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 203, y: 62}
+  - name: Wildfire_Spirit_Melee_Enemy_1_Frame_20
+    originalName: 
+    pivot: {x: 0.62499994, y: -2.2941177}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 194
+      y: 99
+      width: 16
+      height: 17
+    spriteID: e39651325a5363a4b9c2403d75df3e3d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 194, y: 99}
+  - name: Wildfire_Spirit_Melee_Enemy_1_Frame_21
+    originalName: 
+    pivot: {x: 0.64285713, y: -1.5454545}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 172
+      y: 99
+      width: 14
+      height: 22
+    spriteID: 1532faaf64a886f4ba22b43867c46a83
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 172, y: 99}
+  - name: Wildfire_Spirit_Melee_Enemy_1_Frame_22
+    originalName: 
+    pivot: {x: 0.57142866, y: -1.6666666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 237
+      y: 62
+      width: 14
+      height: 24
+    spriteID: d4002074e1fa55841a393c1d161f59dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 237, y: 62}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -710,6 +770,33 @@ ScriptedImporter:
         width: 26
         height: 20
       spriteId: 13174b31f906a1b48af4a767364e86a6
+    - name: Wildfire_Spirit_Melee_Enemy_1_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 38
+        y: 39
+        width: 16
+        height: 17
+      spriteId: e39651325a5363a4b9c2403d75df3e3d
+    - name: Wildfire_Spirit_Melee_Enemy_1_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 34
+        width: 14
+        height: 22
+      spriteId: 1532faaf64a886f4ba22b43867c46a83
+    - name: Wildfire_Spirit_Melee_Enemy_1_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 40
+        width: 14
+        height: 24
+      spriteId: d4002074e1fa55841a393c1d161f59dd
     linkedCells: []
     parentIndex: -1
   platformSettings: []

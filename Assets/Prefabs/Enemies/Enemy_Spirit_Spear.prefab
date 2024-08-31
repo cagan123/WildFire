@@ -45,6 +45,8 @@ GameObject:
   - component: {fileID: 7707011052601311817}
   - component: {fileID: 9068167358719671740}
   - component: {fileID: 7975233109841132515}
+  - component: {fileID: 4413885503203454215}
+  - component: {fileID: 4820261566276477208}
   m_Layer: 8
   m_Name: Enemy_Spirit_Spear
   m_TagString: Untagged
@@ -117,7 +119,7 @@ MonoBehaviour:
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 128
-  knockbackForce: 0
+  knockbackForce: 30
   knockbackDir: {x: 0, y: 0}
   knockbackTime: 1
   PlayerLayer:
@@ -127,7 +129,7 @@ MonoBehaviour:
   lastTimeAttacked: 0
   attackCooldown: 0
   attackCooldownTimer: 0
-  startFlipped: 0
+  startFlipped: 1
   Is4Directional: 1
   prepDuration1: 1
   prepDuration2: 1.2
@@ -215,6 +217,35 @@ CapsuleCollider2D:
   m_Offset: {x: 0.13014045, y: -0.010010719}
   m_Size: {x: 0.7602809, y: 1.2736292}
   m_Direction: 0
+--- !u!114 &4413885503203454215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6718917293024325092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db82026613b60f419a5a8d423fbe9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: 8.250244, y: -8.286127, z: 0}
+  EntityPos: {x: -8.4, y: 24.64, z: 0}
+--- !u!114 &4820261566276477208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6718917293024325092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43959850b6c10f54499de898d151febf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assasinRadius: 3
+  assasinTriggered: 0
 --- !u!1 &8306792904513171454
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +395,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 12
+  m_SortingOrder: 0
   m_Sprite: {fileID: -868274557, guid: 7dd9f9e3ca2b47a4faebd3231a77943c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
