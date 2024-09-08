@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -8,6 +9,10 @@ public class Player : Entity
     [SerializeField] public float dashDuration = 0.4f;
     [SerializeField] public float Cooldown = .3f;
     [HideInInspector]public float CooldownTimer;
+
+    [Header("Stamina")]
+    [SerializeField] public int staminaRecoveryRate;
+    [SerializeField] public int dashStamina;
 
     [Header("Attack Info")]
     public float prep1time;
@@ -24,6 +29,7 @@ public class Player : Entity
     public IdleState idleState { get; private set; }
     public MoveState moveState { get; private set; }
     public DashState dashState { get; private set; }
+    public RunState runState { get; private set; }
     public DeathState deathState{ get; private set; }
     #endregion
 
@@ -37,6 +43,7 @@ public class Player : Entity
         idleState = new IdleState(this, stateMachine, "Idle");
         moveState = new MoveState(this, stateMachine, "Run"); 
         dashState = new DashState(this, stateMachine, "dash"); 
+        runState = new RunState(this, stateMachine, "Run");
         
         deathState = new DeathState(this, stateMachine, "death");
 
@@ -57,8 +64,8 @@ public class Player : Entity
         ControlFlip();
 
         DashCooldownTimer();
-
-        
+        stats.StaminaRecovery();
+     
     }
     
 
@@ -70,7 +77,7 @@ public class Player : Entity
     #endregion
 
     public void CheckForDashInput(){
-        if (stateMachine.currentState == moveState && Input.GetKeyDown(KeyCode.Space) && CooldownTimer< 0)
+        if (stateMachine.currentState == moveState && Input.GetKeyDown(KeyCode.Space) && CooldownTimer< 0 && stats.HasEnoughStamina(dashStamina))
             stateMachine.ChangeState(dashState);
     }
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
@@ -89,5 +96,4 @@ public class Player : Entity
         base.Die();
         stateMachine.ChangeState(deathState);
     }
-
 }

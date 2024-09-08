@@ -24,8 +24,11 @@ public class FollowState : FireSpiritState
     public override void Update()
     {
         base.Update();
-        if (Input.GetMouseButton(0)){
+        if (Input.GetMouseButton(0) && fireSpirit.stats.HasEnoughStamina(20)){
             stateMachine.ChangeState(fireSpirit.prep1State);
+        }
+        if(Input.GetMouseButton(1)){
+            stateMachine.ChangeState(fireSpirit.shieldState);
         }
     }
 

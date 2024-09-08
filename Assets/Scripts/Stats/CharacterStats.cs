@@ -7,10 +7,14 @@ public class CharacterStats : MonoBehaviour
     public Stat strenght;
     public Stat damage;
     public Stat maxHp;
-    [SerializeField] private int currentHp;
+    public int currentHp;
+    public Stat maxStamina;
+    public float currentStamina;
+    public bool delayStaminaRecovery;
     protected virtual void Start()
     {
         currentHp = maxHp.GetValue();
+        currentStamina = maxStamina.GetValue();
     }
     public virtual void DoDamage(CharacterStats _targetStat){
         int totalDamage = damage.GetValue() + strenght.GetValue();
@@ -26,5 +30,23 @@ public class CharacterStats : MonoBehaviour
     protected virtual void Die(){
 
     }
-
+    public virtual void StaminaRecovery(){
+    }
+    public virtual void UseStamina(int _amount){
+        if(currentStamina < _amount){
+            return;
+        }
+        else{
+            currentStamina -= _amount;
+        }       
+    }
+    public virtual bool HasEnoughStamina(int _amount){
+        if(currentStamina < _amount){
+            return false;
+        }
+        else{
+            UseStamina(_amount);
+            return true;
+        }
+    }
 }

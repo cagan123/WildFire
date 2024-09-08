@@ -41,6 +41,7 @@ public class FireSpirit : MonoBehaviour
     public FireSpiritPrepBackState prepBackState { get; private set; }
     public FireSpiritAttackBackState attackbackState {get ; private set; }
     public FireSpiritRecoBackState recoBackState { get ; private set; }
+    public FireSpiritShieldState shieldState { get; private set; }
     public FollowBehaviorState followBehaviorState { get; private set; }
 
     #endregion
@@ -61,6 +62,7 @@ public class FireSpirit : MonoBehaviour
         attackbackState = new FireSpiritAttackBackState(this, stateMachine, "attack2");
         recoBackState = new FireSpiritRecoBackState(this, stateMachine, "reco2");
 
+        shieldState = new FireSpiritShieldState(this, stateMachine, "shield");
 
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();       
@@ -87,24 +89,21 @@ public class FireSpirit : MonoBehaviour
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
 
     #region Directions & Positions
+    public Vector3 MousePosition()
+    {
+        return Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
+    }
     public Vector2 FireToMouseDirection()
     {
-        var direction = Input.mousePosition - cam.WorldToScreenPoint(transform.position);
+        var direction = (MousePosition() - transform.position).normalized;
         return direction;
     }
     public Vector2 FireToPlayerDirection()
     {
-        var direction = transformToFollow.position - transform.position;
+        var direction = (transformToFollow.position - transform.position).normalized;
         return direction;
     }
-    public Vector2 MousePosition()
-    {
-        return Input.mousePosition;
-    }
-    public Vector2 PlayerToMouseDirection(){
-        var direction = (Input.mousePosition - cam.WorldToScreenPoint(transformToFollow.position)).normalized;
-        return direction;
-    }
+    public Vector2 PlayerToMouseDirection() => PlayerManager.instance.player.PlayerToMouseDirection();
     public Vector2 PointBeweenPlayerandMouse(){
         Vector3 direction = PlayerToMouseDirection();        
         Vector3 targetPosition = transformToFollow.position + direction * followDistance;

@@ -24,7 +24,7 @@ public class FollowBehaviorState : FireSpiritState
     {
         base.FixedUpdate();
 
-        if(Vector2.Distance(fireSpirit.transform.position, fireSpirit.PointBeweenPlayerandMouse()) < .1f){
+        if(Vector2.Distance(fireSpirit.transform.position, fireSpirit.PointBeweenPlayerandMouse()) < .2f){
             fireSpirit.PassVelocity(Vector2.zero);
         }
         else{

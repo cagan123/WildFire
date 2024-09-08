@@ -44,9 +44,11 @@ public class FireSpiritState
         Distance = fireSpirit.distanceBetweenPlayerandFireSpirit;
         if(animBoolName != null){
             fireSpirit.fire.Stop();
+            fireSpirit.anim.SetBool("empty", false);         
             fireSpirit.anim.SetBool(animBoolName, true);
         }
         else{
+            fireSpirit.anim.SetBool("empty", true);     
             fireSpirit.fire.Play();
         }
     }
@@ -55,10 +57,7 @@ public class FireSpiritState
     {   
         PlayerPosition = fireSpirit.cam.WorldToScreenPoint(fireSpirit.transformToFollow.position);
         RealPos = fireSpirit.cam.ScreenToWorldPoint(Position);
-        if(animBoolName != null){
-            RotationHandler();
-        }
-
+        RotationHandler();       
     }
 
     public virtual void FixedUpdate()
@@ -68,14 +67,9 @@ public class FireSpiritState
         Position = fireSpirit.cam.WorldToScreenPoint(rb.position);
     }
     public virtual void Exit()
-    {
+    {            
         if(animBoolName != null){
-            fireSpirit.fire.Play();
-            fireSpirit.anim.SetBool(animBoolName, false);
-            RotationResetter();
-        }
-        else{
-            fireSpirit.fire.Stop();
+            fireSpirit.anim.SetBool(animBoolName, false); 
         }
     }
 
@@ -86,17 +80,29 @@ public class FireSpiritState
     #region Rotation Managers
     public void RotationHandler(){
         float angle = Vector2.SignedAngle(Vector2.down, fireSpirit.FireToPlayerDirection());
-
         Quaternion newRotation = new Quaternion {
             eulerAngles = new Vector3(0, 0, angle)
         };
-        fireSpirit.transform.rotation = newRotation;
+        if(animBoolName == null){
+            RotationResetter();
+        }
+        else{
+            fireSpirit.transform.rotation = newRotation;
+        }
+        
     }
     public void RotationResetter(){
+        
         Quaternion newRotation = new Quaternion { 
         eulerAngles = Vector3.zero
         };
-        fireSpirit.transform.rotation  = newRotation;
+        if(fireSpirit.transform.rotation == newRotation){
+            return;
+        }
+        else{
+            fireSpirit.transform.rotation  = newRotation;
+        }
+        
     }
     #endregion
 }

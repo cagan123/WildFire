@@ -8,8 +8,7 @@ public class Entity : MonoBehaviour
     [Header("Movement Info")]
     [SerializeField] float movementSpeed;
     [SerializeField] public float dashSpeed;
-    [SerializeField] public float stealthSpeed;
-    [HideInInspector] public bool isInStealth;
+    [SerializeField] public float runSpeed;
 
     [Header("Collision Info")]
     
@@ -97,20 +96,20 @@ public class Entity : MonoBehaviour
         rb.velocity = vector2.normalized * dashSpeed;
     }
 
-    public virtual void PassStealthVelocity(float _xInput, float _yInput)
+    public virtual void PassRunVelocity(float _xInput, float _yInput)
     {
         if(isKnocked){
             return;
         }
-        rb.velocity = new Vector2(_xInput, _yInput).normalized * stealthSpeed;
+        rb.velocity = new Vector2(_xInput, _yInput).normalized * runSpeed;
     }
 
-    public virtual void PassStealthVelocity(Vector2 vector2)
+    public virtual void PassRunVelocity(Vector2 vector2)
     {
         if(isKnocked){
             return;
         }
-        rb.velocity = vector2.normalized * stealthSpeed;
+        rb.velocity = vector2.normalized * runSpeed;
     }
     #endregion
     public virtual void Die(){

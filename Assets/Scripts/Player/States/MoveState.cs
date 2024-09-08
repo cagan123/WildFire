@@ -24,12 +24,9 @@ public class MoveState : GroundedState
     {
         base.Update();
 
-        player.PassVelocity(xInput, yInput);
-
-        if (!thereIsMovementInput)        
-            stateMachine.ChangeState(player.idleState);
+        player.PassVelocity(xInput, yInput);  
         
-        if (thereIsMovementInput && Input.GetKeyDown(KeyCode.Space) && player.CooldownTimer< 0)
-          stateMachine.ChangeState(player.dashState);        
+        if(thereIsMovementInput && Input.GetKey(KeyCode.LeftShift))
+            stateMachine.ChangeState(player.runState);
     }
 }

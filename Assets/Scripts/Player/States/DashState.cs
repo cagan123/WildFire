@@ -12,9 +12,7 @@ public class DashState : PlayerState
     public override void Enter()
     {
         base.Enter();
-
         stateTimer = player.dashDuration;
-        
     }
 
     public override void Exit()
