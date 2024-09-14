@@ -7,7 +7,7 @@ public class FireSpiritPrep1State : FollowBehaviorState
     public FireSpiritPrep1State(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine, string _animBoolName) : base(_fireSpirit, _stateMachine, _animBoolName)
     {
     }
-
+    
     public override void Enter()
     {
         base.Enter();

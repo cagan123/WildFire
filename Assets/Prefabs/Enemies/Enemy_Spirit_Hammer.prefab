@@ -206,7 +206,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &4560890491681222317
 MonoBehaviour:
@@ -235,8 +235,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 3
   dashSpeed: 4
-  stealthSpeed: 3
-  isInStealth: 0
+  runSpeed: 0
+  facingLeft: 1
+  facingUp: 0
+  facingDirection: 1
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -290,6 +292,11 @@ MonoBehaviour:
     baseValue: 60
     modifiers: 
   currentHp: 0
+  maxStamina:
+    baseValue: 0
+    modifiers: 
+  currentStamina: 0
+  delayStaminaRecovery: 0
 --- !u!70 &4304234843443182943
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -338,8 +345,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {x: 0, y: 0, z: 0}
-  - {x: -18.083687, y: 12.184734, z: 0}
+  - {x: -2.5076056, y: 3.1984768, z: 0}
+  - {x: 5.7060823, y: -5.1175613, z: 0}
   EntityPos: {x: 16.38, y: 16.92, z: 0}
 --- !u!114 &2246246527708714828
 MonoBehaviour:

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireSpiritAttack1State : FollowBehaviorState
+public class FireSpiritAttack1State : DamageState
 {
     public FireSpiritAttack1State(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine, string _animBoolName) : base(_fireSpirit, _stateMachine, _animBoolName)
     {
@@ -25,6 +25,12 @@ public class FireSpiritAttack1State : FollowBehaviorState
         
         if(triggerCalled){            
             stateMachine.ChangeState(fireSpirit.reco1State);                     
+        }
+        if(fireSpirit.distanceBetweenPlayerandFireSpirit <= fireSpirit.followDistance){
+            fireSpirit.PassVelocity(Vector2.zero);
+        }
+        else{
+            fireSpirit.PassVelocity(fireSpirit.FireToPlayerDirection());
         }
     }
 }

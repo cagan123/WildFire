@@ -13,9 +13,7 @@ public class Enemy : Entity
     [HideInInspector] public float lastTimeAttacked;
     public float attackCooldown;
     [HideInInspector] public float attackCooldownTimer;
-    [HideInInspector]public int facingDirection { get; private set; } = 1;
-    [HideInInspector]protected bool facingLeft = true;
-    [HideInInspector]protected bool facingUp = false;
+
     [SerializeField] public bool startFlipped;
 
     [Header("Attack Info")]

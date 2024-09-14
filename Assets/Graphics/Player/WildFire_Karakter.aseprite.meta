@@ -123,15 +123,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: WildFire_Karakter_Frame_0
     originalName: 
-    pivot: {x: 0.15384617, y: -0.64000005}
+    pivot: {x: 0.46153852, y: -3.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
-      width: 39
-      height: 50
+      y: 27
+      width: 13
+      height: 15
     spriteID: d1a03d16fcdb9b64fb59b76f18294f9e
     spriteBone: []
     spriteOutline: []
@@ -140,18 +140,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 4, y: 27}
   - name: WildFire_Karakter_Frame_1
     originalName: 
-    pivot: {x: 0.22499998, y: -0.8181818}
+    pivot: {x: 0.46153852, y: -3.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
-      y: 4
-      width: 40
-      height: 44
+      x: 4
+      y: 50
+      width: 13
+      height: 15
     spriteID: d0f3d628908fe1a43be85b464a977798
     spriteBone: []
     spriteOutline: []
@@ -160,7 +160,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 4}
+    uvTransform: {x: 4, y: 50}
   - name: WildFire_Karakter_Frame_2
     originalName: 
     pivot: {x: 0.46153852, y: -3.2}
@@ -168,8 +168,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 130
-      y: 223
+      x: 4
+      y: 73
       width: 13
       height: 15
     spriteID: ce5b21a573abc3044807904e279b17d2
@@ -180,7 +180,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 130, y: 223}
+    uvTransform: {x: 4, y: 73}
   - name: WildFire_Karakter_Frame_3
     originalName: 
     pivot: {x: 0.46153852, y: -3.2}
@@ -189,7 +189,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 232
+      y: 96
       width: 13
       height: 15
     spriteID: 090b643f4a86f3e4e96f7af20a7aaef2
@@ -200,7 +200,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 232}
+    uvTransform: {x: 4, y: 96}
   - name: WildFire_Karakter_Frame_4
     originalName: 
     pivot: {x: 0.46153852, y: -3.2}
@@ -208,8 +208,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 25
-      y: 232
+      x: 26
+      y: 4
       width: 13
       height: 15
     spriteID: b2e25d0f976b75f40b80a47ec0d59dfe
@@ -220,7 +220,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 25, y: 232}
+    uvTransform: {x: 26, y: 4}
   - name: WildFire_Karakter_Frame_5
     originalName: 
     pivot: {x: 0.46153852, y: -3.2}
@@ -228,8 +228,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
-      y: 56
+      x: 26
+      y: 27
       width: 13
       height: 15
     spriteID: 5ca1eab5fa174234e82350b64dd35fc1
@@ -240,7 +240,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 56}
+    uvTransform: {x: 26, y: 27}
   - name: WildFire_Karakter_Frame_6
     originalName: 
     pivot: {x: 0.46153852, y: -3.2}
@@ -248,8 +248,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
-      y: 79
+      x: 26
+      y: 50
       width: 13
       height: 15
     spriteID: 052835eafd6ff974c8aeab3507ada5eb
@@ -260,7 +260,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 79}
+    uvTransform: {x: 26, y: 50}
   - name: WildFire_Karakter_Frame_7
     originalName: 
     pivot: {x: 0.46153852, y: -3.2}
@@ -268,8 +268,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
-      y: 102
+      x: 26
+      y: 73
       width: 13
       height: 15
     spriteID: 54770feab81f9cc4e912848952561797
@@ -280,18 +280,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 102}
+    uvTransform: {x: 26, y: 73}
   - name: WildFire_Karakter_Frame_8
     originalName: 
-    pivot: {x: 0.46153852, y: -3.2}
+    pivot: {x: 0.5, y: -4}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
-      y: 125
-      width: 13
-      height: 15
+      x: 89
+      y: 44
+      width: 12
+      height: 12
     spriteID: d1e4e00286eb4bc4cb0b9d0262d8fa98
     spriteBone: []
     spriteOutline: []
@@ -300,18 +300,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 125}
+    uvTransform: {x: 89, y: 44}
   - name: WildFire_Karakter_Frame_9
     originalName: 
-    pivot: {x: 0.46153852, y: -3.2}
+    pivot: {x: 0.5, y: -4}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
-      y: 148
-      width: 13
-      height: 15
+      x: 89
+      y: 64
+      width: 12
+      height: 12
     spriteID: b22d2d77f8eebe549bd59e469afe54f4
     spriteBone: []
     spriteOutline: []
@@ -320,7 +320,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 148}
+    uvTransform: {x: 89, y: 64}
   - name: WildFire_Karakter_Frame_10
     originalName: 
     pivot: {x: 0.5, y: -4}
@@ -328,8 +328,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
-      y: 215
+      x: 89
+      y: 84
       width: 12
       height: 12
     spriteID: 6a42c5f71d1295f4785137155c21d926
@@ -340,7 +340,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 215}
+    uvTransform: {x: 89, y: 84}
   - name: WildFire_Karakter_Frame_11
     originalName: 
     pivot: {x: 0.5, y: -4}
@@ -348,8 +348,8 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
-      y: 235
+      x: 89
+      y: 104
       width: 12
       height: 12
     spriteID: 5b1d5ca550438074797aa8f91e2f7ae2
@@ -360,18 +360,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 235}
+    uvTransform: {x: 89, y: 104}
   - name: WildFire_Karakter_Frame_10
     originalName: 
-    pivot: {x: 0.5, y: -4}
+    pivot: {x: 0.46153852, y: -3.2666667}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 72
-      y: 56
-      width: 12
-      height: 12
+      x: 26
+      y: 96
+      width: 13
+      height: 15
     spriteID: 80212fdb55f4fe44c91d458d1260f0ab
     spriteBone: []
     spriteOutline: []
@@ -380,18 +380,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 72, y: 56}
+    uvTransform: {x: 26, y: 96}
   - name: WildFire_Karakter_Frame_11
     originalName: 
-    pivot: {x: 0.5, y: -4}
+    pivot: {x: 0.46153852, y: -3.692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 72
-      y: 76
-      width: 12
-      height: 12
+      x: 68
+      y: 73
+      width: 13
+      height: 13
     spriteID: b07177481dca021459690c3d13b56be7
     spriteBone: []
     spriteOutline: []
@@ -400,18 +400,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 72, y: 76}
+    uvTransform: {x: 68, y: 73}
   - name: WildFire_Karakter_Frame_12
     originalName: 
-    pivot: {x: 0.33333337, y: -2.2272727}
+    pivot: {x: 0.46153852, y: -3.692308}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 133
-      y: 61
-      width: 18
-      height: 22
+      x: 68
+      y: 94
+      width: 13
+      height: 13
     spriteID: 4c31802696302cf44a52df6e77fbb7e8
     spriteBone: []
     spriteOutline: []
@@ -420,18 +420,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 133, y: 61}
+    uvTransform: {x: 68, y: 94}
   - name: WildFire_Karakter_Frame_13
     originalName: 
-    pivot: {x: 0.3, y: -1.96}
+    pivot: {x: 0.5, y: -9.6}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 99
-      y: 217
-      width: 20
-      height: 25
+      x: 26
+      y: 119
+      width: 12
+      height: 5
     spriteID: 25c224fb7077636439bc391242c002c8
     spriteBone: []
     spriteOutline: []
@@ -440,18 +440,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 99, y: 217}
+    uvTransform: {x: 26, y: 119}
   - name: WildFire_Karakter_Frame_14
     originalName: 
-    pivot: {x: 0.5882352, y: -1.5806451}
+    pivot: {x: 0.46153852, y: -3.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 99
-      y: 178
-      width: 17
-      height: 31
+      x: 47
+      y: 4
+      width: 13
+      height: 15
     spriteID: 8530a284c18d1aa48a53fed808d9b7da
     spriteBone: []
     spriteOutline: []
@@ -460,18 +460,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 99, y: 178}
+    uvTransform: {x: 47, y: 4}
   - name: WildFire_Karakter_Frame_16
     originalName: 
-    pivot: {x: 0.20000002, y: -1.4615384}
+    pivot: {x: 0.46153852, y: -3.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 198
-      width: 30
-      height: 26
+      x: 47
+      y: 27
+      width: 13
+      height: 15
     spriteID: 1f60023d9c410e94f8f414f97b1834c4
     spriteBone: []
     spriteOutline: []
@@ -480,18 +480,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 198}
+    uvTransform: {x: 47, y: 27}
   - name: WildFire_Karakter_Frame_17
     originalName: 
-    pivot: {x: 0.26086956, y: -1.4615384}
+    pivot: {x: 0.46153852, y: -3.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 99
-      y: 99
-      width: 23
-      height: 26
+      x: 47
+      y: 50
+      width: 13
+      height: 15
     spriteID: ea8cd03a5c82976439912a6d4cf07b8a
     spriteBone: []
     spriteOutline: []
@@ -500,18 +500,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 99, y: 99}
+    uvTransform: {x: 47, y: 50}
   - name: WildFire_Karakter_Frame_18
     originalName: 
-    pivot: {x: 0.3, y: -1.6666666}
+    pivot: {x: 0.5, y: -3.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 130
-      y: 132
-      width: 20
-      height: 24
+      x: 4
+      y: 4
+      width: 14
+      height: 15
     spriteID: 9a1116d4fb0103849aecb5ea030d64bc
     spriteBone: []
     spriteOutline: []
@@ -520,18 +520,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 130, y: 132}
+    uvTransform: {x: 4, y: 4}
   - name: WildFire_Karakter_Frame_19
     originalName: 
-    pivot: {x: 0.24000002, y: -1}
+    pivot: {x: 0.46153852, y: -3.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 158
-      width: 25
-      height: 32
+      x: 47
+      y: 73
+      width: 13
+      height: 15
     spriteID: 687ff90db8b304d4aa7a5bd93504cfe3
     spriteBone: []
     spriteOutline: []
@@ -540,18 +540,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 158}
+    uvTransform: {x: 47, y: 73}
   - name: WildFire_Karakter_Frame_21
     originalName: 
-    pivot: {x: 0.23076926, y: -1.6333333}
+    pivot: {x: 0.46153852, y: -3.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 99
-      y: 61
-      width: 26
-      height: 30
+      x: 47
+      y: 96
+      width: 13
+      height: 15
     spriteID: 388f59a79e5eb4d4390cbe429960381b
     spriteBone: []
     spriteOutline: []
@@ -560,18 +560,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 99, y: 61}
+    uvTransform: {x: 47, y: 96}
   - name: WildFire_Karakter_Frame_22
     originalName: 
-    pivot: {x: 0.3, y: -1.96}
+    pivot: {x: 0.46153852, y: -3.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 130
-      y: 99
-      width: 20
-      height: 25
+      x: 68
+      y: 4
+      width: 13
+      height: 15
     spriteID: 0e3731941bfc5f944b87c7968d8d445d
     spriteBone: []
     spriteOutline: []
@@ -580,18 +580,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 130, y: 99}
+    uvTransform: {x: 68, y: 4}
   - name: WildFire_Karakter_Frame_23
     originalName: 
-    pivot: {x: 0.33333337, y: -2.2272727}
+    pivot: {x: 0.46153852, y: -3.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 130
-      y: 164
-      width: 18
-      height: 22
+      x: 68
+      y: 27
+      width: 13
+      height: 15
     spriteID: ea82a3a6396affd4d8c89b144d957f20
     spriteBone: []
     spriteOutline: []
@@ -600,139 +600,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 130, y: 164}
+    uvTransform: {x: 68, y: 27}
   - name: WildFire_Karakter_Frame_24
     originalName: 
-    pivot: {x: 0.46153852, y: -2.3333335}
+    pivot: {x: 0.46153852, y: -3.2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 130
-      y: 194
-      width: 13
-      height: 21
-    spriteID: 6ffcba6db582d3d4782862b62f8f1b17
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 130, y: 194}
-  - name: WildFire_Karakter_Frame_25
-    originalName: 
-    pivot: {x: 0.5333333, y: -1.3243244}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 99
-      y: 133
-      width: 15
-      height: 37
-    spriteID: 088e48d7c0cdf68489892a3a83d6df31
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 99, y: 133}
-  - name: WildFire_Karakter_Frame_26
-    originalName: 
-    pivot: {x: 0.8, y: -1.0425532}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 62
-      width: 35
-      height: 47
-    spriteID: d2e4ca8485d03d94597f46b6e9db8ac7
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 62}
-  - name: WildFire_Karakter_Frame_27
-    originalName: 
-    pivot: {x: 0.8679245, y: -2.1304348}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 99
-      y: 4
-      width: 53
-      height: 23
-    spriteID: 1687ffeeb1d1811499d47e31c58ccd6d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 99, y: 4}
-  - name: WildFire_Karakter_Frame_28
-    originalName: 
-    pivot: {x: 0.11320756, y: -2.5555556}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 99
-      y: 35
-      width: 53
-      height: 18
-    spriteID: b6133e221a3a54d4698049613c434cee
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 99, y: 35}
-  - name: WildFire_Karakter_Frame_29
-    originalName: 
-    pivot: {x: 0.8205128, y: -0.93939394}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 117
-      width: 39
-      height: 33
-    spriteID: 0067db3596598a848a8892ca7a689d77
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 117}
-  - name: WildFire_Karakter_Frame_30
-    originalName: 
-    pivot: {x: 0.46153852, y: -3.2666667}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 51
-      y: 171
+      x: 68
+      y: 50
       width: 13
       height: 15
-    spriteID: 33d2519b7dbaaf74dbc2b987aab7ac92
+    spriteID: 518dd109e1e7e3d438c8db4321e873e4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -740,19 +620,19 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 171}
-  - name: WildFire_Karakter_Frame_31
+    uvTransform: {x: 68, y: 50}
+  - name: WildFire_Karakter_Frame_25
     originalName: 
-    pivot: {x: 0.46153852, y: -3.692308}
+    pivot: {x: 0.46153852, y: -4}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 51
-      y: 194
+      x: 89
+      y: 4
       width: 13
-      height: 13
-    spriteID: e732600cb03619b40b1c03ed81403931
+      height: 12
+    spriteID: 4e8de6998e279644f800051fa7cc2c83
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -760,19 +640,39 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 51, y: 194}
-  - name: WildFire_Karakter_Frame_32
+    uvTransform: {x: 89, y: 4}
+  - name: WildFire_Karakter_Frame_26
     originalName: 
-    pivot: {x: 0.5, y: -9.6}
+    pivot: {x: 0.46153852, y: -4}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 130
-      y: 246
+      x: 89
+      y: 24
+      width: 13
+      height: 12
+    spriteID: f6217adf07aa90a4b853a2ba23ce4b4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 24}
+  - name: WildFire_Karakter_Frame_27
+    originalName: 
+    pivot: {x: 0.5833333, y: -9.6}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 119
       width: 12
       height: 5
-    spriteID: 4a06a81c0fce27446ace96a1af30e53b
+    spriteID: 602ccd13251af7849b8e30bce5488b7d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -780,7 +680,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 130, y: 246}
+    uvTransform: {x: 47, y: 119}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -790,24 +690,6 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
-    - name: WildFire_Karakter_Frame_15
-      frameIndex: 15
-      additiveSortOrder: 0
-      cellRect:
-        x: 50
-        y: 32
-        width: 39
-        height: 50
-      spriteId: d1a03d16fcdb9b64fb59b76f18294f9e
-    - name: WildFire_Karakter_Frame_20
-      frameIndex: 20
-      additiveSortOrder: 0
-      cellRect:
-        x: 47
-        y: 36
-        width: 40
-        height: 44
-      spriteId: d0f3d628908fe1a43be85b464a977798
     - name: WildFire_Karakter_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -816,7 +698,7 @@ ScriptedImporter:
         y: 48
         width: 13
         height: 15
-      spriteId: ce5b21a573abc3044807904e279b17d2
+      spriteId: d1a03d16fcdb9b64fb59b76f18294f9e
     - name: WildFire_Karakter_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -825,7 +707,7 @@ ScriptedImporter:
         y: 48
         width: 13
         height: 15
-      spriteId: 090b643f4a86f3e4e96f7af20a7aaef2
+      spriteId: d0f3d628908fe1a43be85b464a977798
     - name: WildFire_Karakter_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -834,7 +716,7 @@ ScriptedImporter:
         y: 48
         width: 13
         height: 15
-      spriteId: b2e25d0f976b75f40b80a47ec0d59dfe
+      spriteId: ce5b21a573abc3044807904e279b17d2
     - name: WildFire_Karakter_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -843,7 +725,7 @@ ScriptedImporter:
         y: 48
         width: 13
         height: 15
-      spriteId: 5ca1eab5fa174234e82350b64dd35fc1
+      spriteId: 090b643f4a86f3e4e96f7af20a7aaef2
     - name: WildFire_Karakter_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
@@ -852,7 +734,7 @@ ScriptedImporter:
         y: 48
         width: 13
         height: 15
-      spriteId: 052835eafd6ff974c8aeab3507ada5eb
+      spriteId: b2e25d0f976b75f40b80a47ec0d59dfe
     - name: WildFire_Karakter_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
@@ -861,7 +743,7 @@ ScriptedImporter:
         y: 48
         width: 13
         height: 15
-      spriteId: 54770feab81f9cc4e912848952561797
+      spriteId: 5ca1eab5fa174234e82350b64dd35fc1
     - name: WildFire_Karakter_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
@@ -870,7 +752,7 @@ ScriptedImporter:
         y: 48
         width: 13
         height: 15
-      spriteId: d1e4e00286eb4bc4cb0b9d0262d8fa98
+      spriteId: 052835eafd6ff974c8aeab3507ada5eb
     - name: WildFire_Karakter_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
@@ -879,7 +761,7 @@ ScriptedImporter:
         y: 48
         width: 13
         height: 15
-      spriteId: b22d2d77f8eebe549bd59e469afe54f4
+      spriteId: 54770feab81f9cc4e912848952561797
     - name: WildFire_Karakter_Frame_8
       frameIndex: 8
       additiveSortOrder: 0
@@ -888,7 +770,7 @@ ScriptedImporter:
         y: 48
         width: 12
         height: 12
-      spriteId: 6a42c5f71d1295f4785137155c21d926
+      spriteId: d1e4e00286eb4bc4cb0b9d0262d8fa98
     - name: WildFire_Karakter_Frame_9
       frameIndex: 9
       additiveSortOrder: 0
@@ -897,7 +779,7 @@ ScriptedImporter:
         y: 48
         width: 12
         height: 12
-      spriteId: 5b1d5ca550438074797aa8f91e2f7ae2
+      spriteId: b22d2d77f8eebe549bd59e469afe54f4
     - name: WildFire_Karakter_Frame_10
       frameIndex: 10
       additiveSortOrder: 0
@@ -906,7 +788,7 @@ ScriptedImporter:
         y: 48
         width: 12
         height: 12
-      spriteId: 80212fdb55f4fe44c91d458d1260f0ab
+      spriteId: 6a42c5f71d1295f4785137155c21d926
     - name: WildFire_Karakter_Frame_11
       frameIndex: 11
       additiveSortOrder: 0
@@ -915,178 +797,151 @@ ScriptedImporter:
         y: 48
         width: 12
         height: 12
-      spriteId: b07177481dca021459690c3d13b56be7
+      spriteId: 5b1d5ca550438074797aa8f91e2f7ae2
     - name: WildFire_Karakter_Frame_12
       frameIndex: 12
       additiveSortOrder: 0
       cellRect:
         x: 50
         y: 49
-        width: 18
-        height: 22
-      spriteId: 4c31802696302cf44a52df6e77fbb7e8
-    - name: WildFire_Karakter_Frame_13
-      frameIndex: 13
-      additiveSortOrder: 0
-      cellRect:
-        x: 50
-        y: 49
-        width: 20
-        height: 25
-      spriteId: 25c224fb7077636439bc391242c002c8
-    - name: WildFire_Karakter_Frame_14
-      frameIndex: 14
-      additiveSortOrder: 0
-      cellRect:
-        x: 46
-        y: 49
-        width: 17
-        height: 31
-      spriteId: 8530a284c18d1aa48a53fed808d9b7da
-    - name: WildFire_Karakter_Frame_16
-      frameIndex: 16
-      additiveSortOrder: 0
-      cellRect:
-        x: 50
-        y: 38
-        width: 30
-        height: 26
-      spriteId: 1f60023d9c410e94f8f414f97b1834c4
-    - name: WildFire_Karakter_Frame_17
-      frameIndex: 17
-      additiveSortOrder: 0
-      cellRect:
-        x: 50
-        y: 38
-        width: 23
-        height: 26
-      spriteId: ea8cd03a5c82976439912a6d4cf07b8a
-    - name: WildFire_Karakter_Frame_18
-      frameIndex: 18
-      additiveSortOrder: 0
-      cellRect:
-        x: 50
-        y: 40
-        width: 20
-        height: 24
-      spriteId: 9a1116d4fb0103849aecb5ea030d64bc
-    - name: WildFire_Karakter_Frame_19
-      frameIndex: 19
-      additiveSortOrder: 0
-      cellRect:
-        x: 50
-        y: 32
-        width: 25
-        height: 32
-      spriteId: 687ff90db8b304d4aa7a5bd93504cfe3
-    - name: WildFire_Karakter_Frame_21
-      frameIndex: 21
-      additiveSortOrder: 0
-      cellRect:
-        x: 50
-        y: 49
-        width: 26
-        height: 30
-      spriteId: 388f59a79e5eb4d4390cbe429960381b
-    - name: WildFire_Karakter_Frame_22
-      frameIndex: 22
-      additiveSortOrder: 0
-      cellRect:
-        x: 50
-        y: 49
-        width: 20
-        height: 25
-      spriteId: 0e3731941bfc5f944b87c7968d8d445d
-    - name: WildFire_Karakter_Frame_23
-      frameIndex: 23
-      additiveSortOrder: 0
-      cellRect:
-        x: 50
-        y: 49
-        width: 18
-        height: 22
-      spriteId: ea82a3a6396affd4d8c89b144d957f20
-    - name: WildFire_Karakter_Frame_24
-      frameIndex: 24
-      additiveSortOrder: 0
-      cellRect:
-        x: 50
-        y: 49
-        width: 13
-        height: 21
-      spriteId: 6ffcba6db582d3d4782862b62f8f1b17
-    - name: WildFire_Karakter_Frame_25
-      frameIndex: 25
-      additiveSortOrder: 0
-      cellRect:
-        x: 48
-        y: 49
-        width: 15
-        height: 37
-      spriteId: 088e48d7c0cdf68489892a3a83d6df31
-    - name: WildFire_Karakter_Frame_26
-      frameIndex: 26
-      additiveSortOrder: 0
-      cellRect:
-        x: 28
-        y: 49
-        width: 35
-        height: 47
-      spriteId: d2e4ca8485d03d94597f46b6e9db8ac7
-    - name: WildFire_Karakter_Frame_27
-      frameIndex: 27
-      additiveSortOrder: 0
-      cellRect:
-        x: 10
-        y: 49
-        width: 53
-        height: 23
-      spriteId: 1687ffeeb1d1811499d47e31c58ccd6d
-    - name: WildFire_Karakter_Frame_28
-      frameIndex: 28
-      additiveSortOrder: 0
-      cellRect:
-        x: 50
-        y: 46
-        width: 53
-        height: 18
-      spriteId: b6133e221a3a54d4698049613c434cee
-    - name: WildFire_Karakter_Frame_29
-      frameIndex: 29
-      additiveSortOrder: 0
-      cellRect:
-        x: 24
-        y: 31
-        width: 39
-        height: 33
-      spriteId: 0067db3596598a848a8892ca7a689d77
-    - name: WildFire_Karakter_Frame_30
-      frameIndex: 30
-      additiveSortOrder: 0
-      cellRect:
-        x: 50
-        y: 49
         width: 13
         height: 15
-      spriteId: 33d2519b7dbaaf74dbc2b987aab7ac92
-    - name: WildFire_Karakter_Frame_31
-      frameIndex: 31
+      spriteId: 80212fdb55f4fe44c91d458d1260f0ab
+    - name: WildFire_Karakter_Frame_13
+      frameIndex: 13
       additiveSortOrder: 0
       cellRect:
         x: 50
         y: 48
         width: 13
         height: 13
-      spriteId: e732600cb03619b40b1c03ed81403931
-    - name: WildFire_Karakter_Frame_32
-      frameIndex: 32
+      spriteId: b07177481dca021459690c3d13b56be7
+    - name: WildFire_Karakter_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 13
+        height: 13
+      spriteId: 4c31802696302cf44a52df6e77fbb7e8
+    - name: WildFire_Karakter_Frame_15
+      frameIndex: 15
       additiveSortOrder: 0
       cellRect:
         x: 50
         y: 48
         width: 12
         height: 5
-      spriteId: 4a06a81c0fce27446ace96a1af30e53b
+      spriteId: 25c224fb7077636439bc391242c002c8
+    - name: WildFire_Karakter_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 13
+        height: 15
+      spriteId: 8530a284c18d1aa48a53fed808d9b7da
+    - name: WildFire_Karakter_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 13
+        height: 15
+      spriteId: 1f60023d9c410e94f8f414f97b1834c4
+    - name: WildFire_Karakter_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 13
+        height: 15
+      spriteId: ea8cd03a5c82976439912a6d4cf07b8a
+    - name: WildFire_Karakter_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 49
+        y: 48
+        width: 14
+        height: 15
+      spriteId: 9a1116d4fb0103849aecb5ea030d64bc
+    - name: WildFire_Karakter_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 13
+        height: 15
+      spriteId: 687ff90db8b304d4aa7a5bd93504cfe3
+    - name: WildFire_Karakter_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 13
+        height: 15
+      spriteId: 388f59a79e5eb4d4390cbe429960381b
+    - name: WildFire_Karakter_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 13
+        height: 15
+      spriteId: 0e3731941bfc5f944b87c7968d8d445d
+    - name: WildFire_Karakter_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 13
+        height: 15
+      spriteId: ea82a3a6396affd4d8c89b144d957f20
+    - name: WildFire_Karakter_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 13
+        height: 15
+      spriteId: 518dd109e1e7e3d438c8db4321e873e4
+    - name: WildFire_Karakter_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 13
+        height: 12
+      spriteId: 4e8de6998e279644f800051fa7cc2c83
+    - name: WildFire_Karakter_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 50
+        y: 48
+        width: 13
+        height: 12
+      spriteId: f6217adf07aa90a4b853a2ba23ce4b4a
+    - name: WildFire_Karakter_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 49
+        y: 48
+        width: 12
+        height: 5
+      spriteId: 602ccd13251af7849b8e30bce5488b7d
     linkedCells: []
     parentIndex: -1
   platformSettings: []

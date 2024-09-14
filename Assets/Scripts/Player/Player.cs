@@ -61,9 +61,12 @@ public class Player : Entity
 
         CheckForDashInput();
         
-        ControlFlip();
+        FlipByMovement();
 
         DashCooldownTimer();
+
+        AnimMoveSetter();
+
         stats.StaminaRecovery();
      
     }
@@ -96,4 +99,33 @@ public class Player : Entity
         base.Die();
         stateMachine.ChangeState(deathState);
     }
+    #region Flip
+    public void AnimMoveSetter(){
+        anim.SetFloat("move_Y", rb.velocity.y);
+    }
+    public void Flip_X()
+    {
+        facingDirection = facingDirection * -1;
+        facingLeft = !facingLeft;
+        transform.Rotate(0, 180, 0);
+    }
+    public void Flip_Y(){
+        facingUp = !facingUp;
+        anim.SetBool("isLookingUp", facingUp);
+    }
+    public void FlipByMovement(){
+        if(rb.velocity.x > 0 && !facingLeft){
+            Flip_X();
+        }
+        if(rb.velocity.x < 0 && facingLeft){
+            Flip_X();
+        }
+        if(rb.velocity.y > 0 && !facingUp){                      
+            Flip_Y();
+        }
+        if(rb.velocity.y < 0 && facingUp){
+            Flip_Y();
+        }
+    }
+    #endregion
 }

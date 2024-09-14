@@ -9,6 +9,9 @@ public class Entity : MonoBehaviour
     [SerializeField] float movementSpeed;
     [SerializeField] public float dashSpeed;
     [SerializeField] public float runSpeed;
+    [HideInInspector]public bool facingLeft = true;
+    [HideInInspector]public bool facingUp = true;
+    [HideInInspector]public int facingDirection = 1;
 
     [Header("Collision Info")]
     
@@ -23,7 +26,6 @@ public class Entity : MonoBehaviour
     #region Components
     public Animator anim { get; private set; }
     public Rigidbody2D rb { get; private set; }
-    public AnimationController animController { get; private set; }
     public EntityVFX VFX { get; private set; }
     public CharacterStats stats{ get; private set; }
 
@@ -37,7 +39,6 @@ public class Entity : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        animController = GetComponentInChildren<AnimationController>();
         VFX = GetComponent<EntityVFX>();
         stats = GetComponent<CharacterStats>();
     }
@@ -54,15 +55,6 @@ public class Entity : MonoBehaviour
         yield return new WaitForSeconds(knockbackTime);
         isKnocked= false;
     }
-
-    #region Flip Control
-
-    public virtual void ControlFlip()
-    {
-        animController.CalculateLookAtDirection();
-    }
-    #endregion
-
 
     #region Velocity
     public virtual void PassVelocity(float _xInput, float _yInput)
