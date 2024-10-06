@@ -10,6 +10,7 @@ public class FireSpiritState
     protected FireSpirit fireSpirit;
     public string animBoolName {get; private set;}
     protected Rigidbody2D rb;
+    protected damageSource damageSource;
     #endregion
 
     #region Variables
@@ -41,6 +42,8 @@ public class FireSpiritState
     {
         triggerCalled = false;
         rb = fireSpirit.rb;
+        damageSource = fireSpirit.damageSource; 
+        
         Distance = fireSpirit.distanceBetweenPlayerandFireSpirit;
         if(animBoolName != null){
             fireSpirit.fire.Stop();

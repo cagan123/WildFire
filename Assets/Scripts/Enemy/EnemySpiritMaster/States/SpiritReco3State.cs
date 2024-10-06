@@ -28,6 +28,11 @@ EnemySpirit enemy;
     public override void FixedUpdate()
     {
         base.FixedUpdate();
-        enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.Attack3DashSpeed/2);
+        if(!enemy.IsBoss){
+            enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.Attack3DashSpeed/2);
+        }
+        else{
+            enemy.PassVelocity(Vector2.zero);
+        }
     }
 }

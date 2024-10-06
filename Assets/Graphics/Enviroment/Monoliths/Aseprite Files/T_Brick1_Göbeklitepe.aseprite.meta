@@ -123,7 +123,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: "T_Brick1_G\xF6beklitepe"
     originalName: 
-    pivot: {x: 0.5221239, y: -0.111940295}
+    pivot: {x: 0.5221239, y: -0.07971014}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -131,7 +131,7 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 113
-      height: 134
+      height: 138
     spriteID: 186685d513e495348b7f4695d7dac882
     spriteBone: []
     spriteOutline: []
@@ -155,9 +155,9 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 21
-        y: 15
+        y: 11
         width: 113
-        height: 134
+        height: 138
       spriteId: 186685d513e495348b7f4695d7dac882
     linkedCells: []
     parentIndex: -1

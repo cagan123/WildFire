@@ -151,6 +151,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: FireSpritAssets-reco1_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d24ce5e50af4094e972a70848ce0f4d
+      internalID: 2081022473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireSpritAssets-reco1_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c068b70580e1a0f47a6abb388361d058
+      internalID: 854010239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireSpritAssets-reco1_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f00d6258bad83448524ddc92c9e887
+      internalID: -63000180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -164,6 +227,9 @@ TextureImporter:
     nameFileIdTable:
       FireSpritAssets-reco1_0: -1906014360
       FireSpritAssets-reco1_1: -1895345604
+      FireSpritAssets-reco1_2: 2081022473
+      FireSpritAssets-reco1_3: 854010239
+      FireSpritAssets-reco1_4: -63000180
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

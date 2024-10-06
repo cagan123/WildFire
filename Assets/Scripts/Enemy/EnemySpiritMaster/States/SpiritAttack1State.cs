@@ -14,12 +14,16 @@ public class SpiritAttack1State : EnemyState
     public override void Enter()
     {
         base.Enter();
-        slashDirection = enemy.EnemyToPlayerDirection();      
+        slashDirection = enemy.EnemyToPlayerDirection();  
+
+        enemy.enemyDamageSource1.gameObject.SetActive(true);    
     }
     public override void Exit()
     {
         base.Exit();
         enemy.attackCooldownTimer = enemy.attackCooldown;
+
+        enemy.enemyDamageSource1.gameObject.SetActive(false);    
     }
     public override void Update()
     {

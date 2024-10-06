@@ -1,0 +1,632 @@
+fileFormatVersion: 2
+guid: 29cd5822352008c4c964a9a15370c22a
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: BirdBoss_Frame_9
+    originalName: 
+    pivot: {x: 0.41666663, y: -0.21052633}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 75
+      width: 60
+      height: 76
+    spriteID: 2d1d372692636f74d9ae91400fda3214
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 75}
+  - name: BirdBoss_Frame_10
+    originalName: 
+    pivot: {x: 0.80952376, y: -0.2820513}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 62
+      width: 42
+      height: 78
+    spriteID: 6b40bfd15ce7d294faa223310f259655
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 62}
+  - name: BirdBoss_Frame_11
+    originalName: 
+    pivot: {x: 0.42857146, y: -0.76190484}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 77
+      height: 63
+    spriteID: 2e11ef96f5fc77d449c69fdb949f0406
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: BirdBoss_Frame_0
+    originalName: 
+    pivot: {x: 0.296875, y: -0.9019608}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 148
+      width: 64
+      height: 51
+    spriteID: 0c504d60cb7360d41ac168634ba781e5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 148}
+  - name: BirdBoss_Frame_1
+    originalName: 
+    pivot: {x: 0.338983, y: -0.93877554}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 61
+      width: 59
+      height: 49
+    spriteID: 1f0374c485464f44fa584a95a2870fb0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 163, y: 61}
+  - name: BirdBoss_Frame_2
+    originalName: 
+    pivot: {x: 0.33333328, y: -0.93877554}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 163
+      y: 4
+      width: 60
+      height: 49
+    spriteID: f2da47d37847f4b49a5ddfe7653dd696
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 163, y: 4}
+  - name: BirdBoss_Frame_3
+    originalName: 
+    pivot: {x: 0.328125, y: -0.9019608}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 207
+      width: 64
+      height: 51
+    spriteID: 716ed42de74b0024a8040a87206a6f01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 207}
+  - name: BirdBoss_Frame_4
+    originalName: 
+    pivot: {x: 0.296875, y: -0.9019608}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 266
+      width: 64
+      height: 51
+    spriteID: 5ec3f2cf0e1ea6a4ab517c40f02b7d30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 266}
+  - name: BirdBoss_Frame_5
+    originalName: 
+    pivot: {x: 0.13333338, y: -0.92}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 384
+      width: 60
+      height: 50
+    spriteID: c670a473d3c82b747b95e4861489d462
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 384}
+  - name: BirdBoss_Frame_6
+    originalName: 
+    pivot: {x: 0.13636363, y: -0.90000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 345
+      width: 66
+      height: 50
+    spriteID: a6996aede9294fb47b13c6883b71135c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 345}
+  - name: BirdBoss_Frame_7
+    originalName: 
+    pivot: {x: 0.10958908, y: -0.7592592}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 159
+      width: 73
+      height: 54
+    spriteID: 8c4a8638cf32a0346ad4de94f7dea500
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 159}
+  - name: BirdBoss_Frame_8
+    originalName: 
+    pivot: {x: 0.13636363, y: -0.90000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 403
+      width: 66
+      height: 50
+    spriteID: 213b89fe4685f1b41878f971e05b647e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 403}
+  - name: BirdBoss_Frame_12
+    originalName: 
+    pivot: {x: 0.10958908, y: -0.7592592}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 221
+      width: 73
+      height: 54
+    spriteID: 6f4628950f5f96d43b519239100300fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 221}
+  - name: BirdBoss_Frame_13
+    originalName: 
+    pivot: {x: 0.10958908, y: -0.7592592}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 283
+      width: 73
+      height: 54
+    spriteID: 36439f27ec522ce47b21f3a6cf8713ce
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 283}
+  - name: BirdBoss_Frame_14
+    originalName: 
+    pivot: {x: 0.13636363, y: -0.90000004}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 4
+      width: 66
+      height: 50
+    spriteID: 6179634cb5fa9764dbc8e7e938f18941
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 4}
+  - name: BirdBoss_Frame_15
+    originalName: 
+    pivot: {x: 0.13333338, y: -0.92}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 442
+      width: 60
+      height: 50
+    spriteID: 9d6c77d26aa6e6546b2bbc6abe7c4267
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 442}
+  - name: BirdBoss_Frame_16
+    originalName: 
+    pivot: {x: 0.296875, y: -0.9019608}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 89
+      y: 325
+      width: 64
+      height: 51
+    spriteID: 90db9d13350ae1040a4c6626d9e24f5c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 89, y: 325}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1240893832
+    name: BirdBoss
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: BirdBoss_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 87
+        y: 16
+        width: 60
+        height: 76
+      spriteId: 2d1d372692636f74d9ae91400fda3214
+    - name: BirdBoss_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 78
+        y: 22
+        width: 42
+        height: 78
+      spriteId: 6b40bfd15ce7d294faa223310f259655
+    - name: BirdBoss_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 79
+        y: 48
+        width: 77
+        height: 63
+      spriteId: 2e11ef96f5fc77d449c69fdb949f0406
+    - name: BirdBoss_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 93
+        y: 46
+        width: 64
+        height: 51
+      spriteId: 0c504d60cb7360d41ac168634ba781e5
+    - name: BirdBoss_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 92
+        y: 46
+        width: 59
+        height: 49
+      spriteId: 1f0374c485464f44fa584a95a2870fb0
+    - name: BirdBoss_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 92
+        y: 46
+        width: 60
+        height: 49
+      spriteId: f2da47d37847f4b49a5ddfe7653dd696
+    - name: BirdBoss_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 91
+        y: 46
+        width: 64
+        height: 51
+      spriteId: 716ed42de74b0024a8040a87206a6f01
+    - name: BirdBoss_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 93
+        y: 46
+        width: 64
+        height: 51
+      spriteId: 5ec3f2cf0e1ea6a4ab517c40f02b7d30
+    - name: BirdBoss_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 46
+        width: 60
+        height: 50
+      spriteId: c670a473d3c82b747b95e4861489d462
+    - name: BirdBoss_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 103
+        y: 45
+        width: 66
+        height: 50
+      spriteId: a6996aede9294fb47b13c6883b71135c
+    - name: BirdBoss_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 41
+        width: 73
+        height: 54
+      spriteId: 8c4a8638cf32a0346ad4de94f7dea500
+    - name: BirdBoss_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 103
+        y: 45
+        width: 66
+        height: 50
+      spriteId: 213b89fe4685f1b41878f971e05b647e
+    - name: BirdBoss_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 41
+        width: 73
+        height: 54
+      spriteId: 6f4628950f5f96d43b519239100300fb
+    - name: BirdBoss_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 41
+        width: 73
+        height: 54
+      spriteId: 36439f27ec522ce47b21f3a6cf8713ce
+    - name: BirdBoss_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 103
+        y: 45
+        width: 66
+        height: 50
+      spriteId: 6179634cb5fa9764dbc8e7e938f18941
+    - name: BirdBoss_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 104
+        y: 46
+        width: 60
+        height: 50
+      spriteId: 9d6c77d26aa6e6546b2bbc6abe7c4267
+    - name: BirdBoss_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 93
+        y: 46
+        width: 64
+        height: 51
+      spriteId: 90db9d13350ae1040a4c6626d9e24f5c
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 224, y: 160}

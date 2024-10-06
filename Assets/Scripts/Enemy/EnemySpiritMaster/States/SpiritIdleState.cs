@@ -12,6 +12,7 @@ public class SpiritIdleState : EnemyState
     public override void Enter()
     {
         base.Enter();
+        enemy.enemyDamageSource1.gameObject.SetActive(false);
     }
     public override void Exit()
     {

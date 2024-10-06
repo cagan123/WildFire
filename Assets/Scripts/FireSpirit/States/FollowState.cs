@@ -12,7 +12,7 @@ public class FollowState : FireSpiritState
     public override void Enter()
     {
         base.Enter();
-        
+        damageSource.gameObject.SetActive(false);
     }
 
     public override void Exit()
@@ -25,10 +25,15 @@ public class FollowState : FireSpiritState
     {
         base.Update();
         if (Input.GetMouseButton(0) && fireSpirit.stats.HasEnoughStamina(20)){
-            stateMachine.ChangeState(fireSpirit.prep1State);
+            if(fireSpirit.attackCounter % 2 == 1){
+                stateMachine.ChangeState(fireSpirit.prep1State);
+            }
+            else{
+                stateMachine.ChangeState(fireSpirit.prepBackState);
+            }
         }
         if(Input.GetMouseButton(1)){
-            stateMachine.ChangeState(fireSpirit.shieldState);
+            stateMachine.ChangeState(fireSpirit.fireballState);
         }
     }
 

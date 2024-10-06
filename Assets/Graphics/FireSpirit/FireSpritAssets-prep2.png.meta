@@ -151,6 +151,69 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: FireSpritAssets-prep2_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6818ef761eb0eaa46b456d84dc305141
+      internalID: -1714373348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireSpritAssets-prep2_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b857e5a750d3fb428ee2636c93306c8
+      internalID: 1026769783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FireSpritAssets-prep2_4
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0b5b98d2dad9b4b93d930fc36fba3a
+      internalID: 1635842083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -164,6 +227,9 @@ TextureImporter:
     nameFileIdTable:
       FireSpritAssets-prep2_0: 2090405716
       FireSpritAssets-prep2_1: -1850365630
+      FireSpritAssets-prep2_2: -1714373348
+      FireSpritAssets-prep2_3: 1026769783
+      FireSpritAssets-prep2_4: 1635842083
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

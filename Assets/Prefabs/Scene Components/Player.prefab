@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 8
   m_Sprite: {fileID: 577487618, guid: 72214dcd2ebdb0f4e8a909b3c4c62c5d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -198,7 +198,7 @@ MonoBehaviour:
   dashDuration: 0.23
   Cooldown: 0.4
   CooldownTimer: 0
-  staminaRecoveryRate: 20
+  staminaRecoveryRate: 32
   dashStamina: 15
   prep1time: 0.14
   attack1speed: 5
@@ -426,7 +426,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 6
   m_Sprite: {fileID: -491816226, guid: 6987d5d5212d4fb4182ae1fe0d95effc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

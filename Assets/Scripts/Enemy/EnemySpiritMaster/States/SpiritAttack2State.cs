@@ -20,6 +20,7 @@ EnemySpirit enemy;
     {
         base.Exit();
         enemy.attackCooldownTimer = enemy.attackCooldown;
+    
     }
     public override void Update()
     {

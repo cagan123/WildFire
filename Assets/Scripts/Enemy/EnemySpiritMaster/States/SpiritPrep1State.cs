@@ -30,11 +30,16 @@ public class SpiritPrep1State : EnemyState
     public override void FixedUpdate()
     {
         base.FixedUpdate();    
-        if(enemy.EnemytoPlayerDistance() <= enemy.attackDistance){
-            enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.Attack1DashSpeed/2);
+        if(!enemy.IsBoss){
+            if(enemy.EnemytoPlayerDistance() <= enemy.attackDistance){
+                enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.Attack1DashSpeed/2);
+            }
+            else{
+                enemy.PassDashVelocity(enemy.EnemyToPlayerDirection() * enemy.Attack2DashSpeed/2);
+            }
         }
         else{
-            enemy.PassDashVelocity(enemy.EnemyToPlayerDirection() * enemy.Attack2DashSpeed/2);
+            enemy.PassVelocity(Vector2.zero);
         }
     }
 }

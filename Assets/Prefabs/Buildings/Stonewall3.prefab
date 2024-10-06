@@ -127,8 +127,8 @@ SpriteRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5258782445310632184}
   m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
@@ -159,7 +159,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: 21d97d752267c4647b479d923c6f8d03, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
   - {x: -1.5907063, y: 0.08170271, z: 0}
   m_ShapePathHash: -433143583
   m_Mesh: {fileID: 0}
-  m_InstanceId: -1552
+  m_InstanceId: -1754
   m_LocalBounds:
     m_Center: {x: -0.0016283989, y: 0.16117966, z: 0}
     m_Extent: {x: 1.653811, y: 0.58792865, z: 0}
@@ -240,7 +240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6354396205564125489
 Transform:
   m_ObjectHideFlags: 0

@@ -18,12 +18,12 @@ public class Enemy : Entity
 
     [Header("Attack Info")]
     public bool Is4Directional;
+    public bool IsBoss;
     public float prepDuration1;
     public float prepDuration2;
     public float prepDuration3;
     public int attackNumber;
-    public Transform[] attackCheck;
-    public float[] attackCheckRadius;
+    [SerializeField] public enemyDamageSource enemyDamageSource1;
     public float attackDistance;
 
     #region Components
@@ -136,15 +136,6 @@ public class Enemy : Entity
     }
     #endregion
 
-    #region Gizmos
-   protected virtual void OnDrawGizmos()
-    {
-        for(int i = 0; i < attackCheck.Length; i++){
-            Gizmos.DrawWireSphere(attackCheck[i].position, attackCheckRadius[i]);
-        Gizmos.DrawLine(transform.position, new Vector2(transform.position.x-attackDistance, transform.position.y));
-        }
-    }
-    #endregion
     # region Death
     public override void Die()
     {

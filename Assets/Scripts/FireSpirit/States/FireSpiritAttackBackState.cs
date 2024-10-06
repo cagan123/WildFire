@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireSpiritAttackBackState : FollowBehaviorState
+public class FireSpiritAttackBackState : DamageState
 {
     public FireSpiritAttackBackState(FireSpirit _fireSpirit, FireSpiritStateMachine _stateMachine, string _animBoolName) : base(_fireSpirit, _stateMachine, _animBoolName)
     {
@@ -14,6 +14,7 @@ public class FireSpiritAttackBackState : FollowBehaviorState
     public override void Exit()
     {
         base.Exit();
+        fireSpirit.attackCounter += 1;
     }
     public override void FixedUpdate()
     {

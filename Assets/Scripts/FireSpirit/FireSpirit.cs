@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
+using JetBrains.Annotations;
 using Unity.IO.LowLevel.Unsafe;
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
@@ -15,9 +17,8 @@ public class FireSpirit : MonoBehaviour
     public float followDistance = 1f;
 
     [Header("Attack Info")]
-    public Transform attackCheck;
-    public float attackCheckRadius;
     public float prepDuration1;
+    public int attackCounter;
     
     #region Components
     [HideInInspector] public Transform transformToFollow{get;private set;}
@@ -25,6 +26,8 @@ public class FireSpirit : MonoBehaviour
     public Animator anim { get; private set; }
     [HideInInspector]public Camera cam;
     public CharacterStats stats{ get; private set; }
+    public damageSource damageSource { get; private set; }
+    [SerializeField] public GameObject fireBallprefab;
     #endregion
 
     #region Variables
@@ -43,6 +46,8 @@ public class FireSpirit : MonoBehaviour
     public FireSpiritRecoBackState recoBackState { get ; private set; }
     public FireSpiritShieldState shieldState { get; private set; }
     public FollowBehaviorState followBehaviorState { get; private set; }
+    public FireballState fireballState { get; private set; }
+    public DamageState damageState { get; private set; }
 
     #endregion
    
@@ -63,12 +68,15 @@ public class FireSpirit : MonoBehaviour
         recoBackState = new FireSpiritRecoBackState(this, stateMachine, "reco2");
 
         shieldState = new FireSpiritShieldState(this, stateMachine, "shield");
+        damageState = new DamageState(this, stateMachine, null);
+        fireballState = new FireballState(this, stateMachine, null);
 
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();       
         fire = GetComponentInChildren<ParticleSystem>();
         anim = GetComponentInChildren<Animator>();
         stats = GetComponent<CharacterStats>();
+        damageSource = GetComponentInChildren<damageSource>();
     }
     private void Start()
     {
@@ -188,14 +196,9 @@ public class FireSpirit : MonoBehaviour
         
     }
     #endregion
-
-    #region Gizmos
-
-    protected void OnDrawGizmos()
-    {
-        Gizmos.DrawWireSphere(attackCheck.position, attackCheckRadius);
+    public void CreateFireball(Vector2 _direction){
+        GameObject newFireBall = Instantiate(fireBallprefab, transform.position, quaternion.identity);
+        newFireBall.GetComponent<FireBall>().PassDirection(_direction);
     }
-
-    #endregion
 }
 

@@ -1,16 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 
 public class SpiritMoveState : EnemyState
 {
-EnemySpirit enemy;
+    EnemySpirit enemy;
+    int attackDeterminator;
     public SpiritMoveState(Enemy _enemyBase, EnemyStateMachine _stateMachine, string _animBoolName, EnemySpirit _enemy) : base(_enemyBase, _stateMachine, _animBoolName)
     {
         enemy = _enemy;
     }
-    int attackDeterminator;
+    
     public override void Enter()
     {
         base.Enter();
@@ -22,13 +22,14 @@ EnemySpirit enemy;
     }
     public override void Update()
     {
-        base.Update();        
+        base.Update();      
     }
     public override void FixedUpdate()
     {
         base.FixedUpdate();
         
         if(enemy.Patrolling()){
+                
                 enemy.ControlFlipforEnemybyVelocity();
                 enemy.PassRunVelocity(enemy.patrol.patrolDirection);
                 if(enemy.canSeePlayer() || enemy.EnemytoPlayerDistance() < enemy.agroDistance){
@@ -38,6 +39,9 @@ EnemySpirit enemy;
         else{
             enemy.PassDashVelocity(enemy.direction());
             enemy.ControlFlipforEnemytoPlayer();
+            if(rb.velocity == Vector2.zero){
+                stateMachine.ChangeState(enemy.idleState);
+            }
             attackDeterminator = Random.Range(0, enemy.attackNumber);
             if (enemy.EnemytoPlayerDistance() < enemy.attackDistance)
             {   

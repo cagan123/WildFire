@@ -14,10 +14,12 @@ public class FireSpiritAttack1State : DamageState
     public override void Exit()
     {
         base.Exit();
+        fireSpirit.attackCounter += 1;
     }
     public override void FixedUpdate()
     {
         base.FixedUpdate();
+
     }
     public override void Update()
     {
@@ -26,12 +28,7 @@ public class FireSpiritAttack1State : DamageState
         if(triggerCalled){            
             stateMachine.ChangeState(fireSpirit.reco1State);                     
         }
-        if(fireSpirit.distanceBetweenPlayerandFireSpirit <= fireSpirit.followDistance){
-            fireSpirit.PassVelocity(Vector2.zero);
-        }
-        else{
-            fireSpirit.PassVelocity(fireSpirit.FireToPlayerDirection());
-        }
+        
     }
 }
 
