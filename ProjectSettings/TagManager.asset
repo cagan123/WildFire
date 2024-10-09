@@ -58,3 +58,6 @@ TagManager:
   - name: Sprite Sorting
     uniqueID: 484162465
     locked: 0
+  - name: Foliage
+    uniqueID: 3446122119
+    locked: 0
