@@ -22,7 +22,6 @@ public class CharacterStats : MonoBehaviour
     }
     public virtual void TakeDamage(int _damage){
         currentHp -= _damage;
-        Debug.Log(_damage);
         if(currentHp <= 0){
             Die();
         }

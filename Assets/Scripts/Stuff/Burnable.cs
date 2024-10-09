@@ -35,9 +35,9 @@ public class Burnable : MonoBehaviour
         if(isBurning){
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, damageRadius);
             foreach (var hit in colliders){
-                if (hit.GetComponentInParent<Enemy>() != null){
+                if (hit.GetComponent<Enemy>() != null){
                     EnemyStats _target = hit.GetComponent<EnemyStats>();
-                    hit.GetComponentInParent<Enemy>().stats.DoDamage(_target);
+                    hit.GetComponent<Enemy>().stats.DoDamage(_target);
                 }
                     
             }

@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 6402653459450473906}
   - component: {fileID: 375032728412457163}
   - component: {fileID: 154498786003700504}
-  m_Layer: 0
+  - component: {fileID: 1793653847602903640}
+  m_Layer: 7
   m_Name: smaller_Campfire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 484162465
-  m_SortingLayer: 4
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fae3f999d5a7fdc40831501c464d6066, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -139,6 +140,26 @@ MonoBehaviour:
   destroyable: 0
   damageFrequency: 1
   damageRadius: 0
+--- !u!114 &1793653847602903640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396786669839591766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e93feda443ae0049931f180db6851fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMovable: 1
+  renderBelowAll: 0
+  sortType: 0
+  SorterPositionOffset: {x: 0.040885925, y: -0.57240677}
+  SorterPositionOffset2: {x: 0, y: 0}
+  renderersToSort:
+  - {fileID: 6402653459450473906}
+  - {fileID: 6964531286970945998}
 --- !u!1 &8032924452717534926
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,7 +171,7 @@ GameObject:
   - component: {fileID: 1934375885635711702}
   - component: {fileID: 4599467415089368932}
   - component: {fileID: 6964531286970945998}
-  m_Layer: 3
+  m_Layer: 7
   m_Name: Fire_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4935,7 +4956,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 484162465
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_RenderMode: 0
   m_MeshDistribution: 0
