@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class EnemySpirit : Enemy
 {
-    #region Variables
-    public float Attack1DashSpeed = 1.5f;
-    public float Attack2DashSpeed = 2f;
-    public float Attack3DashSpeed;
-    #endregion
-
     #region States
     public SpiritIdleState idleState{ get; private set; }
     public SpiritMoveState moveState{ get; private set; }

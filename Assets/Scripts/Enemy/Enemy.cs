@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -17,13 +18,9 @@ public class Enemy : Entity
     [SerializeField] public bool startFlipped;
 
     [Header("Attack Info")]
+    public List<EnemyAttack> enemyAttacks;
     public bool Is4Directional;
     public bool IsBoss;
-    public float prepDuration1;
-    public float prepDuration2;
-    public float prepDuration3;
-    public int attackNumber;
-    [SerializeField] public enemyDamageSource enemyDamageSource1;
     public float attackDistance;
 
     #region Components
@@ -58,7 +55,7 @@ public class Enemy : Entity
     protected override void Start()
     {
         base.Start();   
-        player = PlayerManager.instance.player.transform;   
+        player = PlayerManager.instance.player.transform; 
     }
     public bool PlayerInAssasinArea(){
         if(GetComponent<Assasin>() != null){

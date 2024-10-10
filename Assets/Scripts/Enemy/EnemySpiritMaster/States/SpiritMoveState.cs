@@ -42,7 +42,7 @@ public class SpiritMoveState : EnemyState
             if(rb.velocity == Vector2.zero){
                 stateMachine.ChangeState(enemy.idleState);
             }
-            attackDeterminator = Random.Range(0, enemy.attackNumber);
+            attackDeterminator = Random.Range(0, enemy.enemyAttacks.Count);
             if (enemy.EnemytoPlayerDistance() < enemy.attackDistance)
             {   
                 switch(attackDeterminator){

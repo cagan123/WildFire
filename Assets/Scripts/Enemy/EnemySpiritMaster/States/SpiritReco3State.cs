@@ -29,7 +29,7 @@ EnemySpirit enemy;
     {
         base.FixedUpdate();
         if(!enemy.IsBoss){
-            enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.Attack3DashSpeed/2);
+            enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.enemyAttacks[2].attackDashSpeed/2);
         }
         else{
             enemy.PassVelocity(Vector2.zero);

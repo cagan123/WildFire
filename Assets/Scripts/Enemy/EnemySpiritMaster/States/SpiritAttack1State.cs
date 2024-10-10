@@ -16,14 +16,14 @@ public class SpiritAttack1State : EnemyState
         base.Enter();
         slashDirection = enemy.EnemyToPlayerDirection();  
 
-        enemy.enemyDamageSource1.gameObject.SetActive(true);    
+        enemy.enemyAttacks[0].damageCollider.gameObject.SetActive(true);  
     }
     public override void Exit()
     {
         base.Exit();
         enemy.attackCooldownTimer = enemy.attackCooldown;
 
-        enemy.enemyDamageSource1.gameObject.SetActive(false);    
+        enemy.enemyAttacks[0].damageCollider.gameObject.SetActive(false);    
     }
     public override void Update()
     {
@@ -35,6 +35,6 @@ public class SpiritAttack1State : EnemyState
     public override void FixedUpdate()
     {
         base.FixedUpdate(); 
-        rb.velocity = slashDirection * enemy.dashSpeed*enemy.Attack1DashSpeed;
+        rb.velocity = slashDirection * enemy.dashSpeed*enemy.enemyAttacks[0].attackDashSpeed;
     }
 }

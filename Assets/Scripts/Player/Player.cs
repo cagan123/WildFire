@@ -13,6 +13,7 @@ public class Player : Entity
     [Header("Stamina")]
     [SerializeField] public int staminaRecoveryRate;
     [SerializeField] public int dashStamina;
+    [SerializeField] public int runStamina;
 
     [Header("Attack Info")]
     public float prep1time;

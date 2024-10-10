@@ -13,7 +13,7 @@ EnemySpirit enemy;
     public override void Enter()
     {
         base.Enter();
-        stateTimer = enemy.prepDuration3;
+        stateTimer = enemy.enemyAttacks[2].prepDuration;
     }
     public override void Exit()
     {
@@ -24,7 +24,7 @@ EnemySpirit enemy;
         base.Update();
         enemy.ControlFlipforEnemytoPlayer();       
         if(stateTimer < 0){
-            stateTimer = enemy.prepDuration3;
+            stateTimer = enemy.enemyAttacks[0].prepDuration;
             stateMachine.ChangeState(enemy.Attack3State);
         }      
     }
@@ -33,10 +33,10 @@ EnemySpirit enemy;
         base.FixedUpdate();
         if(!enemy.IsBoss){
             if(enemy.EnemytoPlayerDistance() <= enemy.attackDistance){
-                enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.Attack1DashSpeed/2);
+                enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.enemyAttacks[2].attackDashSpeed/2);
             }
             else{
-                enemy.PassDashVelocity(enemy.EnemyToPlayerDirection() * enemy.Attack2DashSpeed/2);
+                enemy.PassDashVelocity(enemy.EnemyToPlayerDirection() * enemy.enemyAttacks[2].attackDashSpeed/2);
             }
         }
         else{
