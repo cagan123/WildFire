@@ -21,7 +21,6 @@ public class RunState : GroundedState
     public override void Update()
     {
         base.Update();
-
         player.PassRunVelocity(xInput, yInput);
 
         if(thereIsMovementInput && Input.GetKeyUp(KeyCode.LeftShift))

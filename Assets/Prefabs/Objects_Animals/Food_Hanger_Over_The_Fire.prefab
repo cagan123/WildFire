@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 281671213920502219}
   - component: {fileID: 5335470852143817296}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Food_Hanger_Over_The_Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6749630889956333059}
   - component: {fileID: 7076697956280788416}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: collider_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -163,7 +163,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1674500417364057300}
   - component: {fileID: 4167370350737871813}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

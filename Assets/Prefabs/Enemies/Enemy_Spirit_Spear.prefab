@@ -278,9 +278,9 @@ MonoBehaviour:
   PlayerLayer:
     serializedVersion: 2
     m_Bits: 64
-  agroDistance: 0.1
+  agroDistance: 4
   lastTimeAttacked: 0
-  attackCooldown: 0
+  attackCooldown: 2
   attackCooldownTimer: 0
   startFlipped: 1
   enemyAttacks:
@@ -389,8 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   points:
   - {x: 7.709226, y: -3.826477, z: 0}
-  - {x: -17.023146, y: 6.937269, z: 0}
-  - {x: 10.9439125, y: 11.157646, z: 0}
+  - {x: -10.380882, y: 4.1878014, z: 0}
   EntityPos: {x: -2.5599995, y: -35.2, z: 0}
 --- !u!114 &3150109665039642017
 MonoBehaviour:

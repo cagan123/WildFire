@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1630397752659758123}
   - component: {fileID: 406354918915596148}
   - component: {fileID: 5095510280676671347}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Rubble_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 484162465
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b81900c0671b3324b9e42caf36d92146, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -150,7 +150,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5490217552327027668}
   - component: {fileID: 7453611139098502734}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

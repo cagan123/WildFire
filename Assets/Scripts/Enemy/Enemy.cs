@@ -124,11 +124,21 @@ public class Enemy : Entity
         }
     }
     public void ControlFlipforEnemybyVelocity(){
-        if(rb.velocity.x> 0 && facingLeft){
+        if(rb.velocity.x > 0 && facingLeft){
             Flip();
         }
-        if(rb.velocity.x<0 && !facingLeft){
+        if(rb.velocity.x < 0 && !facingLeft){
             Flip();
+        }
+        if(Is4Directional){
+            if(rb.velocity.y < -.1f && !facingUp){
+                anim.SetBool("isAttackingDown", true);
+                facingUp = !facingUp;
+            }
+            else if (rb.velocity.y > .1f && facingUp){
+                anim.SetBool("isAttackingDown", false);
+                facingUp = !facingUp;
+            }
         }
     }
     #endregion

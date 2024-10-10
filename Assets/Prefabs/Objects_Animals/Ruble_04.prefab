@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5818070360154470702}
   - component: {fileID: 6320667016063838608}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1754927997477546790}
   - component: {fileID: 2564101148864591126}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Ruble_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 484162465
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f56586b45aa7c2d4392f9d2489977db0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
