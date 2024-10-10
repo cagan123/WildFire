@@ -272,9 +272,9 @@ MonoBehaviour:
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 128
-  knockbackForce: 30
+  knockbackForce: 15
   knockbackDir: {x: 0, y: 0}
-  knockbackTime: 1
+  knockbackTime: 0.5
   PlayerLayer:
     serializedVersion: 2
     m_Bits: 64

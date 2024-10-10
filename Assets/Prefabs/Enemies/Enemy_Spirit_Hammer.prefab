@@ -328,9 +328,9 @@ MonoBehaviour:
   ObstacleLayer:
     serializedVersion: 2
     m_Bits: 128
-  knockbackForce: 25
+  knockbackForce: 12
   knockbackDir: {x: 0, y: 0}
-  knockbackTime: 1
+  knockbackTime: 0.5
   PlayerLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -431,9 +431,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {x: -5.0182486, y: 0.88095474, z: 0}
-  - {x: 9.201482, y: -9.436377, z: 0}
-  EntityPos: {x: -8.96, y: -16, z: 0}
+  - {x: -7.254755, y: 3.8056097, z: 0}
+  - {x: 15.098307, y: -6.588438, z: 0}
+  EntityPos: {x: 0.3199997, y: -18.88, z: 0}
 --- !u!114 &2246246527708714828
 MonoBehaviour:
   m_ObjectHideFlags: 0

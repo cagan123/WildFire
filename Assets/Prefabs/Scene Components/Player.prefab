@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 18
   m_Sprite: {fileID: 577487618, guid: 72214dcd2ebdb0f4e8a909b3c4c62c5d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -183,9 +183,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f2ea3eb4d85674a9b0e747c7a5276c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 7
-  dashSpeed: 14
-  runSpeed: 9
+  movementSpeed: 6
+  dashSpeed: 13
+  runSpeed: 8
   facingLeft: 1
   facingUp: 1
   facingDirection: 1
@@ -200,6 +200,7 @@ MonoBehaviour:
   CooldownTimer: 0
   staminaRecoveryRate: 32
   dashStamina: 15
+  runStamina: 0
   prep1time: 0.14
   attack1speed: 5
   closestEnemyPos: {x: 0, y: 0}
@@ -301,7 +302,7 @@ MonoBehaviour:
   isMovable: 1
   renderBelowAll: 0
   sortType: 0
-  SorterPositionOffset: {x: 0.022870064, y: -0.30099392}
+  SorterPositionOffset: {x: 0.02286911, y: -0.30099487}
   SorterPositionOffset2: {x: 0, y: 0}
   renderersToSort:
   - {fileID: 5661268610057764966}
@@ -318,17 +319,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strenght:
-    baseValue: 0
+    BaseValue: 0
     modifiers: 
   damage:
-    baseValue: 0
+    BaseValue: 0
     modifiers: 
   maxHp:
-    baseValue: 60
+    BaseValue: 30
     modifiers: 
   currentHp: 0
   maxStamina:
-    baseValue: 100
+    BaseValue: 100
     modifiers: 
   currentStamina: 0
   delayStaminaRecovery: 0
@@ -426,7 +427,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 16
   m_Sprite: {fileID: -491816226, guid: 6987d5d5212d4fb4182ae1fe0d95effc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
