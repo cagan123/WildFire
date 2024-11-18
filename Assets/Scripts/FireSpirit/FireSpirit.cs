@@ -19,6 +19,7 @@ public class FireSpirit : MonoBehaviour
     [Header("Attack Info")]
     public float prepDuration1;
     public int attackCounter;
+    public List<Spell> spells;
     
     #region Components
     [HideInInspector] public Transform transformToFollow{get;private set;}
@@ -27,7 +28,7 @@ public class FireSpirit : MonoBehaviour
     [HideInInspector]public Camera cam;
     public CharacterStats stats{ get; private set; }
     public damageSource damageSource { get; private set; }
-    [SerializeField] public GameObject fireBallprefab;
+
     #endregion
 
     #region Variables
@@ -196,9 +197,12 @@ public class FireSpirit : MonoBehaviour
         
     }
     #endregion
-    public void CreateFireball(Vector2 _direction){
-        GameObject newFireBall = Instantiate(fireBallprefab, transform.position, quaternion.identity);
-        newFireBall.GetComponent<FireBall>().PassDirection(_direction);
+
+    #region
+    public void InstantiateSpell(GameObject prefab, Vector3 position, Quaternion quaternion){
+        prefab.GetComponent<SpellPrefabMaster>().getFirespirit(this);
+        Instantiate(prefab.gameObject, position, quaternion);
     }
+    #endregion
 }
 

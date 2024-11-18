@@ -474,6 +474,8 @@ GameObject:
   - component: {fileID: 3155333903902880674}
   - component: {fileID: 6371173663847050665}
   - component: {fileID: 2250401118184724994}
+  - component: {fileID: 7057862226460854030}
+  - component: {fileID: 8577669313567152465}
   m_Layer: 8
   m_Name: EnemyGolem
   m_TagString: Untagged
@@ -581,6 +583,7 @@ MonoBehaviour:
   - attackDashSpeed: 0
     prepDuration: 1.8
     damageCollider: {fileID: 2235214418703207557}
+  magicAttacks: []
   Is4Directional: 0
   IsBoss: 0
   attackDistance: 4
@@ -650,6 +653,35 @@ CapsuleCollider2D:
   m_Offset: {x: -0.20681524, y: -0.08150482}
   m_Size: {x: 0.594327, y: 1.1858215}
   m_Direction: 0
+--- !u!114 &7057862226460854030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7457218084935574987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1db82026613b60f419a5a8d423fbe9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {x: 7.8560743, y: -4.975504, z: 0}
+  - {x: -14.165099, y: 12.101143, z: 0}
+  EntityPos: {x: 2.2399998, y: -23.359999, z: 0}
+--- !u!114 &8577669313567152465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7457218084935574987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e16cdf18510af724784c07044d067561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSeen: 0
 --- !u!1 &8907451612305894720
 GameObject:
   m_ObjectHideFlags: 0

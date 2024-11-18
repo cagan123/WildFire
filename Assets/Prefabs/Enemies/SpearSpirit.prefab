@@ -390,9 +390,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {x: 7.709226, y: -3.826477, z: 0}
+  - {x: 8.034995, y: 1.7116013, z: 0}
   - {x: -10.380882, y: 4.1878014, z: 0}
-  EntityPos: {x: 2.5600004, y: -37.76, z: 0}
+  EntityPos: {x: 2.5600014, y: -37.76, z: 0}
 --- !u!114 &3150109665039642017
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -32,7 +32,7 @@ public class FollowState : FireSpiritState
                 stateMachine.ChangeState(fireSpirit.prepBackState);
             }
         }
-        if(Input.GetMouseButton(1)){
+        if(Input.GetMouseButton(1) && fireSpirit.stats.HasEnoughStamina(fireSpirit.spells[0].staminaUse)){
             stateMachine.ChangeState(fireSpirit.fireballState);
         }
     }

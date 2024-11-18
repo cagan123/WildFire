@@ -1,8 +1,8 @@
 using System.Collections;
-using Unity.VisualScripting;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class FireballSpell : Spell
+public class FireballSpell : SpellPrefabMaster
 {
     
 }
