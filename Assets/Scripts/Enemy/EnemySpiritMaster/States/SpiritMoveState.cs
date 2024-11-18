@@ -42,10 +42,14 @@ public class SpiritMoveState : EnemyState
             if(rb.velocity == Vector2.zero){
                 stateMachine.ChangeState(enemy.idleState);
             }
-            attackDeterminator = Random.Range(0, enemy.enemyAttacks.Count);
+
+                int totalAttacks = enemy.enemyAttacks.Count + enemy.magicAttacks.Count;
+                int attackDeterminator = Random.Range(0, totalAttacks);
+
             if (enemy.EnemytoPlayerDistance() < enemy.attackDistance)
             {   
-                switch(attackDeterminator){
+                if (attackDeterminator < enemy.enemyAttacks.Count){
+                    switch(attackDeterminator){
                     case 0:
                         stateMachine.ChangeState(enemy.Prep1State);
                         break;
@@ -55,6 +59,15 @@ public class SpiritMoveState : EnemyState
                     case 2:
                         stateMachine.ChangeState(enemy.Prep3State);
                         break;
+                    }
+                }
+                else{
+                    int magicIndex = attackDeterminator - enemy.enemyAttacks.Count;
+                    switch(magicIndex){
+                        case 0:
+                            stateMachine.ChangeState(enemy.MagicPrep1);
+                            break;
+                    }
                 }
             }       
         }

@@ -17,9 +17,6 @@ public class PlayerStats : CharacterStats
         if(player.stateMachine.currentState == player.dashState){
             return;
         }
-        else if(fireSpirit.stateMachine.currentState == fireSpirit.shieldState){           
-            return;
-        }
         base.TakeDamage(_damage);
         player.knockbackDir = player.KnockbackDirection();
         player.DamageEffect();

@@ -167,7 +167,7 @@ MonoBehaviour:
   attackCooldownTimer: 0
   startFlipped: 1
   enemyAttacks:
-  - attackDashSpeed: 1
+  - attackDashSpeed: 1.2
     prepDuration: 0.8
     damageCollider: {fileID: 640188545162041187}
   - attackDashSpeed: 0

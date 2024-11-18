@@ -19,6 +19,7 @@ public class Enemy : Entity
 
     [Header("Attack Info")]
     public List<EnemyAttack> enemyAttacks;
+    public List<EnemyMagicAttack> magicAttacks;
     public bool Is4Directional;
     public bool IsBoss;
     public float attackDistance;
@@ -78,7 +79,7 @@ public class Enemy : Entity
     public Vector2 direction() => pathFinder.direction;
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTirgger();
    
-    #region EnemyToPlayer...
+    # region EnemyToPlayer...
     public float EnemytoPlayerDistance()
     {
         var distance = Vector2.Distance(transform.position, player.position);
@@ -92,7 +93,7 @@ public class Enemy : Entity
     }
     #endregion
 
-    #region Enemy Flippers
+    # region Enemy Flippers
 
     public virtual void Flip()
     {
@@ -152,6 +153,13 @@ public class Enemy : Entity
     }
     public void GetDeathState(EnemyState _deathState){
         deathState = _deathState;
+    }
+    #endregion
+    
+    # region Instantiate in states
+    public void InstantiateInState(GameObject prefab, Vector3 position, Quaternion quaternion){
+        prefab.GetComponent<MagicAttack>().getEnemy(this);
+        Instantiate(prefab.gameObject, position, quaternion);
     }
     #endregion
 }
