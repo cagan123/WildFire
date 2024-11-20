@@ -8,7 +8,8 @@ public class FireballState : FireSpiritState
     public override void Enter()
     {
         base.Enter();
-        
+        stateTimer = fireSpirit.spells[0].prepDuration;
+        fireSpirit.InstantiateSpell(fireSpirit.spells[0].Spellprefab, fireSpirit.transform.position, Quaternion.identity);
     }
     public override void Exit()
     {
@@ -17,7 +18,21 @@ public class FireballState : FireSpiritState
     public override void Update()
     {
         base.Update();
-        stateMachine.ChangeState(fireSpirit.followState);
+
+        if(stateTimer<0){
+            stateMachine.ChangeState(fireSpirit.followState);
+        }
+        
+    }
+    public override void FixedUpdate()
+    {
+        base.FixedUpdate();
+        if(fireSpirit.distanceBetweenPlayerandFireSpirit <= fireSpirit.followDistance){
+            fireSpirit.PassVelocity(Vector2.zero);
+        }
+        else{
+            fireSpirit.PassVelocity(fireSpirit.FireToPlayerDirection());
+        }
     }
 
 

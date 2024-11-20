@@ -43,11 +43,13 @@ public class Entity : MonoBehaviour
         stats = GetComponent<CharacterStats>();
     }
 
-    public virtual void DamageEffect()
+    public virtual void DamageEffect(int _damage, Transform parent)
     {
         VFX.StartCoroutine("FlashVFX_Routine");
         StartCoroutine("KnockBackRoutine");
+        VFX.TakeDamage(_damage);
     }
+    
     protected virtual IEnumerator KnockBackRoutine()
     {
         isKnocked = true;

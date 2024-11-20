@@ -15,7 +15,7 @@ public class EnemyStats : CharacterStats
     {
         base.TakeDamage(_damage);
         enemy.knockbackDir = -enemy.EnemyToPlayerDirection();
-        enemy.DamageEffect();
+        enemy.DamageEffect(_damage, enemy.transform);
     }
     protected override void Die()
     {

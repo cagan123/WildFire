@@ -19,7 +19,7 @@ public class PlayerStats : CharacterStats
         }
         base.TakeDamage(_damage);
         player.knockbackDir = player.KnockbackDirection();
-        player.DamageEffect();
+        player.DamageEffect(_damage, player.transform);
     }
     protected override void Die()
     {

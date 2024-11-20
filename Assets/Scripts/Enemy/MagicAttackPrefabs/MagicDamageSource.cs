@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MagicDamageSource : MonoBehaviour
 {
-    Enemy enemy => GetComponentInParent<ThrownRockPrefabScript>().enemy;
+    Enemy enemy => GetComponentInParent<MagicAttack>().enemy;
     public bool damageDone = false;
     private void OnTriggerEnter2D(Collider2D hit){
         if (hit.gameObject.GetComponent<Player>() != null)
