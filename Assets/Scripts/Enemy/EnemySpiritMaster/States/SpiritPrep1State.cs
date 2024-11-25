@@ -31,7 +31,7 @@ public class SpiritPrep1State : EnemyState
     {
         base.FixedUpdate();    
         if(!enemy.IsBoss){
-            if(enemy.EnemytoPlayerDistance() <= enemy.attackDistance){
+            if(enemy.EnemytoPlayerDistance() <= enemy.enemyAttacks[0].attackRange){
                 enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.enemyAttacks[0].attackDashSpeed/2);
             }
             else{

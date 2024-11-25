@@ -15,9 +15,11 @@ public class ThrownRockPrefabScript : MagicAttack
     void Start(){
         direction = (PlayerManager.instance.player.transform.position - transform.position).normalized;
     }
-    public override void  Update()
+    public void  Update()
     {
         rb.velocity = direction * movementSpeed;
-        Destroy(this, lifeTime);
+        if(damageSource.damageDone){
+            Destroy(gameObject);
+        }
     }
 }

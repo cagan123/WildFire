@@ -16,8 +16,12 @@ public class EnemySpirit : Enemy
     public SpiritPrep3State Prep3State{ get; private set; }
     public SpiritAttack3State Attack3State{ get; private set; }
     public SpiritReco3State Recover3State{ get; private set;}
-    public SpriritMagicPrep1 MagicPrep1 { get; private set; }
+    public SpiritMagicPrep1 MagicPrep1 { get; private set; }
     public SpiritMagicAttack1 MagicAttack1{ get; private set; }
+    public SpiritMagicPrep2 MagicPrep2 { get; private set; }
+    public SpiritMagicAttack2 MagicAttack2{ get; private set; }
+    public SpiritMagicPrep3 MagicPrep3 { get; private set; }
+    public SpiritMagicAttack3 MagicAttack3{ get; private set; }
     public SpiritDeathState DeathState{ get; private set; }
 
     #endregion
@@ -39,8 +43,14 @@ public class EnemySpirit : Enemy
         Attack3State = new SpiritAttack3State(this, stateMachine, "attack3", this);
         Recover3State = new SpiritReco3State(this, stateMachine, "reco3", this);
 
-        MagicPrep1 = new SpriritMagicPrep1(this, stateMachine, "Mprep1", this);
+        MagicPrep1 = new SpiritMagicPrep1(this, stateMachine, "Mprep1", this);
         MagicAttack1 = new SpiritMagicAttack1(this, stateMachine, "Mattack1", this);
+
+        MagicPrep2 = new SpiritMagicPrep2(this, stateMachine, "Mprep2", this);
+        MagicAttack2 = new SpiritMagicAttack2(this, stateMachine, "Mattack2", this);
+
+        MagicPrep3 = new SpiritMagicPrep3(this, stateMachine, "Mprep3", this);
+        MagicAttack3 = new SpiritMagicAttack3(this, stateMachine, "Mattack3", this);
 
         DeathState = new SpiritDeathState(this, stateMachine, "death", this);
     }

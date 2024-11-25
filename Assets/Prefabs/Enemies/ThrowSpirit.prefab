@@ -379,9 +379,9 @@ MonoBehaviour:
   magicAttacks:
   - prepDuration: 1.2
     MagicPrefab: {fileID: 6854835330061841828, guid: e88307ff4c938464db4ec6530d5abb69, type: 3}
+    attackRange: 10
   Is4Directional: 0
   IsBoss: 0
-  attackDistance: 10
   fieldOfView: {fileID: 0}
   player: {fileID: 0}
   assasin: {fileID: 0}
@@ -399,6 +399,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitMat: {fileID: 2100000, guid: ca0842ac9110a384494f6bcd6f262681, type: 2}
+  damageTextPrefab: {fileID: 1546705653468048700, guid: b9341ccad25535342ab6a3562f4979f6, type: 3}
+  damageTextSpawnPoint: {fileID: 9172935169686147389}
 --- !u!114 &7753408111278147959
 MonoBehaviour:
   m_ObjectHideFlags: 0

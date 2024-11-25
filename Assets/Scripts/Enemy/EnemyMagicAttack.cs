@@ -7,4 +7,6 @@ public class EnemyMagicAttack
 {
     public float prepDuration;
     public GameObject MagicPrefab;
+    public float attackRange;
+    public float baseWeight => 1/attackRange;
 }

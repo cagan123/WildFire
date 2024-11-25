@@ -307,6 +307,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitMat: {fileID: 2100000, guid: ca0842ac9110a384494f6bcd6f262681, type: 2}
+  damageTextPrefab: {fileID: 1546705653468048700, guid: b9341ccad25535342ab6a3562f4979f6, type: 3}
+  damageTextSpawnPoint: {fileID: 291885408272421217}
 --- !u!114 &3794147402153008457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,16 +345,18 @@ MonoBehaviour:
   - attackDashSpeed: 1.5
     prepDuration: 1
     damageCollider: {fileID: 7420932185950845931}
-  - attackDashSpeed: 2.5
+    attackRange: 2
+  - attackDashSpeed: 4
     prepDuration: 1.3
     damageCollider: {fileID: 5586180394231249304}
+    attackRange: 3
   - attackDashSpeed: 2
     prepDuration: 1.5
     damageCollider: {fileID: 7420932185950845931}
+    attackRange: 2.5
   magicAttacks: []
   Is4Directional: 0
   IsBoss: 0
-  attackDistance: 2.5
   fieldOfView: {fileID: 0}
   player: {fileID: 0}
   assasin: {fileID: 0}

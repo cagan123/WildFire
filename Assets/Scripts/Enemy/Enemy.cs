@@ -20,10 +20,8 @@ public class Enemy : Entity
     [Header("Attack Info")]
     public List<EnemyAttack> enemyAttacks;
     public List<EnemyMagicAttack> magicAttacks;
-    public int amountofMagicInstantiated;
     public bool Is4Directional;
     public bool IsBoss;
-    public float attackDistance;
 
     #region Components
     public EnemyStateMachine stateMachine { get; private set; }

@@ -15,7 +15,6 @@ public class SpiritMagicAttack1 : EnemyState
     {
         base.Enter();
         enemy.InstantiateInState(enemy.magicAttacks[0].MagicPrefab, enemy.transform.position, Quaternion.identity);
-        enemy.amountofMagicInstantiated += 1;
     }
     public override void Update()
     {

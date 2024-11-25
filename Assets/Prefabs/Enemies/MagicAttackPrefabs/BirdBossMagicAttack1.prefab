@@ -92,6 +92,8 @@ GameObject:
   - component: {fileID: 5171387828603229604}
   - component: {fileID: 4491088004972364840}
   - component: {fileID: 282574238428779433}
+  - component: {fileID: 2298593905463070358}
+  - component: {fileID: 4680782716901170991}
   m_Layer: 0
   m_Name: BirdBossMagicAttack1
   m_TagString: Untagged
@@ -131,8 +133,8 @@ MonoBehaviour:
   target: {fileID: 0}
   orbitRadius: 5
   orbitSpeed: 30
-  orbitEasing: 0.1
-  offsetAngle: 0
+  crashSpeed: 5
+  spiralSpeed: 2
 --- !u!212 &282574238428779433
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -174,7 +176,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1434372591, guid: 7efe6212c16ad6c4abc6fcf499467ed5, type: 3}
+  m_Sprite: {fileID: 1536332314, guid: 2197776f788564c40b74b4a65c84b25a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -185,3 +187,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2298593905463070358
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8916644671613620460}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7ed2b14e5f02cd42a2ced264d6b163c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4680782716901170991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8916644671613620460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e93feda443ae0049931f180db6851fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMovable: 1
+  renderBelowAll: 0
+  sortType: 0
+  SorterPositionOffset: {x: 0, y: 0}
+  SorterPositionOffset2: {x: 0, y: 0}
+  renderersToSort:
+  - {fileID: 282574238428779433}

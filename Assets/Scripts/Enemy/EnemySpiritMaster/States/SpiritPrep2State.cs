@@ -32,7 +32,7 @@ EnemySpirit enemy;
     {
         base.FixedUpdate();
         if(!enemy.IsBoss){
-            if(enemy.EnemytoPlayerDistance() <= enemy.attackDistance){
+            if(enemy.EnemytoPlayerDistance() <= enemy.enemyAttacks[1].attackRange){
                 enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.enemyAttacks[1].attackDashSpeed/2);
             }
             else{

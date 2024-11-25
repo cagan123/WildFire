@@ -8,4 +8,6 @@ public class EnemyAttack
     public float attackDashSpeed;
     public float prepDuration;
     public Collider2D damageCollider;
+    public float attackRange;
+    public float baseWeight => 1/attackRange;
 }

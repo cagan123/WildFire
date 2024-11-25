@@ -162,8 +162,12 @@ MonoBehaviour:
   followDistance: 1.5
   prepDuration1: 0.25
   attackCounter: 0
+  spells:
+  - staminaUse: 20
+    damage: 50
+    prepDuration: 1
+    Spellprefab: {fileID: 6340891549309759702, guid: 0693e25b6ed90254db12dac433c84514, type: 3}
   cam: {fileID: 0}
-  fireBallprefab: {fileID: 840946476683878742, guid: 7cb879c123e36c943b66ff8240931d52, type: 3}
   fire: {fileID: 2121627373114050603}
 --- !u!114 &4924181607384002507
 MonoBehaviour:
@@ -178,17 +182,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   strenght:
-    baseValue: 0
+    BaseValue: 0
     modifiers: 
   damage:
-    baseValue: 5
+    BaseValue: 5
     modifiers: 
   maxHp:
-    baseValue: 0
+    BaseValue: 0
     modifiers: 
   currentHp: 0
   maxStamina:
-    baseValue: 0
+    BaseValue: 0
     modifiers: 
   currentStamina: 0
   delayStaminaRecovery: 0
