@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyStats : CharacterStats
 {
     Enemy enemy;
-
+    public bool isDamaged = false;
     protected override void Start()
     {
         base.Start();
@@ -16,11 +16,15 @@ public class EnemyStats : CharacterStats
         base.TakeDamage(_damage);
         enemy.knockbackDir = -enemy.EnemyToPlayerDirection();
         enemy.DamageEffect(_damage, enemy.transform);
+        isDamaged = true;
     }
     protected override void Die()
     {
         base.Die();
 
         enemy.Die();
+    }
+    public bool DamageTaken(){
+        return isDamaged;
     }
 }

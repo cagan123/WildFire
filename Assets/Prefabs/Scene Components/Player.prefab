@@ -197,7 +197,7 @@ MonoBehaviour:
   dashDuration: 0.23
   Cooldown: 0.4
   CooldownTimer: 0
-  staminaRecoveryRate: 32
+  staminaRecoveryRate: 24
   dashStamina: 15
   runStamina: 0
   prep1time: 0.14
@@ -217,6 +217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hitMat: {fileID: 2100000, guid: ca0842ac9110a384494f6bcd6f262681, type: 2}
   damageTextPrefab: {fileID: 1546705653468048700, guid: b9341ccad25535342ab6a3562f4979f6, type: 3}
+  exlamationTextPrefab: {fileID: 0}
   damageTextSpawnPoint: {fileID: 3080257135279126051}
 --- !u!58 &3204605520450331920
 CircleCollider2D:
@@ -295,7 +296,7 @@ MonoBehaviour:
     modifiers: 
   currentHp: 0
   maxStamina:
-    BaseValue: 100
+    BaseValue: 50
     modifiers: 
   currentStamina: 0
   delayStaminaRecovery: 0

@@ -29,9 +29,10 @@ public class SpiritIdleState : EnemyState
         base.FixedUpdate();
         enemy.PassVelocity(Vector2.zero);
         base.FixedUpdate();
-        if (enemy.canSeePlayer() || enemy.PlayerInAssasinArea() || enemy.EnemytoPlayerDistance() < enemy.agroDistance)
+        if (enemy.canSeePlayer() || enemy.PlayerInAssasinArea() || enemy.EnemyIsDamaged() || enemy.EnemytoPlayerDistance() < enemy.agroDistance)
             {
                 stateMachine.ChangeState(enemy.moveState);
+                enemy.VFX.NoticeEnemy();
             }
         else if(enemy.Patrolling()){
                 stateMachine.ChangeState(enemy.moveState);

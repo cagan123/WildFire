@@ -77,6 +77,9 @@ public class Enemy : Entity
     public bool canSeePlayer() => fieldOfView.playerSeen;
     public Vector2 direction() => pathFinder.direction;
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTirgger();
+    public bool EnemyIsDamaged(){
+        return stats.GetComponentInChildren<EnemyStats>().DamageTaken();
+    }
    
     # region EnemyToPlayer...
     public float EnemytoPlayerDistance()

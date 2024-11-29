@@ -34,8 +34,9 @@ public class SpiritMoveState : EnemyState
                 
                 enemy.ControlFlipforEnemybyVelocity();
                 enemy.PassRunVelocity(enemy.patrol.patrolDirection);
-                if(enemy.canSeePlayer() || enemy.EnemytoPlayerDistance() < enemy.agroDistance){
+                if(enemy.canSeePlayer() ||  enemy.EnemyIsDamaged() || enemy.EnemytoPlayerDistance() < enemy.agroDistance){
                     enemy.patrol.playerSeen = true;
+                    enemy.VFX.NoticeEnemy();
                 }
             }
         else{
