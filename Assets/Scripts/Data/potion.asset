@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8361ff6fd0b3dbc4995a63925c332249, type: 3}
   m_Name: potion
   m_EditorClassIdentifier: 
-  itemType: 0
+  itemType: 1
   ItemName: potion
   icon: {fileID: 21300000, guid: fcc7ab76101d33b4e9e9ac82c4fcf709, type: 3}
   equipmentType: 3
