@@ -16,3 +16,10 @@ MonoBehaviour:
   ItemName: ' Fire Scroll'
   icon: {fileID: 21300000, guid: 0ada8cf305ee3dd429f2f9943d5ac474, type: 3}
   equipmentType: 0
+  damage: 20
+  vitality: 0
+  inteligence: 0
+  stamina: 0
+  craftingMaterials:
+  - data: {fileID: 11400000, guid: 41f04d74da4cb2040a286aa38e4bc4db, type: 2}
+    stackSize: 2

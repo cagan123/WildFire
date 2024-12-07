@@ -6,10 +6,24 @@ public class EnemyStats : CharacterStats
 {
     Enemy enemy;
     public bool isDamaged = false;
+    [Header("Level Details")]
+    [SerializeField] private int level;
+
+    [Range(0f,1f)]
+    [SerializeField] private float precentageModifier = .2f;
     protected override void Start()
     {
+        Modify(damage);
+        Modify(maxHp);
+        // add some more here when needed
         base.Start();
-        enemy = GetComponent<Enemy>();
+        enemy = GetComponent<Enemy>();     
+    }
+    private void Modify(Stat _stat){
+        for(int i = 0; i < level; i++){
+            float modifier = _stat.GetValue() * precentageModifier;
+            _stat.AddModifier(Mathf.RoundToInt(modifier));
+        }
     }
     public override void TakeDamage(int _damage)
     {

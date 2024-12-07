@@ -19,8 +19,10 @@ public class Inventory : MonoBehaviour
     [Header("Inventory UI")]
     [SerializeField] private Transform inventorySlotParent;
     [SerializeField] private Transform stashSlotParent;
+    [SerializeField] private Transform equipmentSlotParent;
     private ItemSlotUI[] inventoryItemSlot;
     private ItemSlotUI[] stashItemSlot;
+    private EquipentSlotUI[] equipmentSlot;
     public void Awake(){
         if(instance == null){
             instance = this;
@@ -40,6 +42,7 @@ public class Inventory : MonoBehaviour
 
         equipment = new List<InventoryItem>();
         equipmentDictionary = new Dictionary<EquipmentItemData, InventoryItem>();
+        equipmentSlot = equipmentSlotParent.GetComponentsInChildren<EquipentSlotUI>();
 
     }
     public void EquipItem(ItemData _item)
@@ -62,20 +65,32 @@ public class Inventory : MonoBehaviour
         }
         equipment.Add(newItem);
         equipmentDictionary.Add(newEquipement, newItem);
+        newEquipement.AddModifiers();
         RemoveItem(_item);
         UpdateSlotUI();
     }
 
-    private void UnequipItem(EquipmentItemData itemToRemove)
+    public void UnequipItem(EquipmentItemData itemToRemove)
     {
         if (equipmentDictionary.TryGetValue(itemToRemove, out InventoryItem value))
         {
             equipment.Remove(value);
             equipmentDictionary.Remove(itemToRemove);
+            itemToRemove.RemoveModifiers();
         }
     }
 
     private void UpdateSlotUI(){
+
+        for(int i = 0; i< equipmentSlot.Length; i++){
+            foreach (KeyValuePair<EquipmentItemData, InventoryItem> item in equipmentDictionary)
+        {
+            if (item.Key.equipmentType == equipmentSlot[i].slotType)
+            {
+                equipmentSlot[i].UpdateSlot(item.Value);
+            }
+        }
+        }
         
         for(int i = 0; i< inventoryItemSlot.Length; i++){
             inventoryItemSlot[i].CleanUpSlot();
@@ -155,5 +170,34 @@ public class Inventory : MonoBehaviour
             }
         }
         UpdateSlotUI();
+    }
+
+    public bool CanCraft(EquipmentItemData _itemToCraft, List<InventoryItem> _requiredItems){
+        
+        List<InventoryItem> materialsToRemove = new List<InventoryItem>();
+        
+        for(int i = 0; i < _requiredItems.Count; i++){
+            if(stashDictianory.TryGetValue(_requiredItems[i].data, out InventoryItem stashvalue)){
+                if(stashvalue.stackSize < _requiredItems[i].stackSize){
+                    Debug.Log("Not enough materials");
+                    return false;
+                }
+                else{
+                    materialsToRemove.Add(stashvalue);
+                }
+            }
+            else{
+                Debug.Log("Not enough materials");
+                return false;
+            }
+        }
+
+        for(int i = 0; i < materialsToRemove.Count; i++){
+            RemoveItem(materialsToRemove[i].data);
+            Debug.Log("items Removed");
+        }
+
+        AddItem(_itemToCraft);
+        return true;
     }
 }

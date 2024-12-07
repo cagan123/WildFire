@@ -22,7 +22,7 @@ public class Stat
         modifiers.Add(_modifier);
     }
     public void RemoveModifier(int _modifier){
-        modifiers.RemoveAt(_modifier);
+        modifiers.Remove(_modifier);
     }
 
 }

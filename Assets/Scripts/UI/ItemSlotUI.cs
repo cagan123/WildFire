@@ -35,10 +35,16 @@ public class ItemSlotUI : MonoBehaviour, IPointerDownHandler
         itemImage.color = Color.clear;
         itemText.text = "";
     }
-    public void OnPointerDown(PointerEventData eventData)
+    public virtual void OnPointerDown(PointerEventData eventData)
     {   
-        if(item.data.itemType == ItemType.Equipment){
-            Inventory.instance.EquipItem(item.data);
+        if(item.data != null){
+            if(item.data.itemType == ItemType.Equipment){
+                Inventory.instance.EquipItem(item.data);
+            }
+        }
+        else{
+            Debug.LogWarning("Item data is null when clicking!");
+            return;
         }
     }
 }
