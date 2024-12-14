@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Water Scroll
   m_EditorClassIdentifier: 
   itemType: 1
-  ItemName: Water Scroll
+  itemName: 
   icon: {fileID: 21300000, guid: d31e282ee8a455744ae63a3a8189af2a, type: 3}
+  dropChance: 0
   equipmentType: 0
   damage: 5
   vitality: 0
   inteligence: 0
   stamina: 0
+  craftingMaterials: []

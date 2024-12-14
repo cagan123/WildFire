@@ -5,13 +5,15 @@ using UnityEngine.EventSystems;
 
 public class CraftSlotUI : ItemSlotUI
 {
-    public void OnEnable(){
+    private void OnEnable()
+    {
         UpdateSlot(item);
     }
+
     public override void OnPointerDown(PointerEventData eventData)
     {
-        EquipmentItemData craftItem = item.data as EquipmentItemData;
-        Inventory.instance.CanCraft(craftItem, craftItem.craftingMaterials);
-    
+        EquipmentItemData craftData = item.data as EquipmentItemData;
+
+        Inventory.instance.CanCraft(craftData, craftData.craftingMaterials);
     }
 }

@@ -25,6 +25,7 @@ public class PlayerStats : CharacterStats
     {
         base.Die();
         player.Die();
+        GetComponent<PlayerItemDrop>()?.GenerateDrop();
     }
     public override void StaminaRecovery(){
         if(delayStaminaRecovery){

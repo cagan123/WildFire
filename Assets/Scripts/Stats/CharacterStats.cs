@@ -11,6 +11,7 @@ public class CharacterStats : MonoBehaviour
     public Stat maxStamina;
     public float currentStamina;
     public bool delayStaminaRecovery;
+    public bool isDead{ get; private set; }
     protected virtual void Start()
     {
         currentHp = maxHp.GetValue();
@@ -27,7 +28,7 @@ public class CharacterStats : MonoBehaviour
         }
     }
     protected virtual void Die(){
-
+        isDead = true;
     }
     public virtual void StaminaRecovery(){
     }

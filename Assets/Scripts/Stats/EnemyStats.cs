@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyStats : CharacterStats
 {
     Enemy enemy;
+    private ItemDrop dropSystem;
     public bool isDamaged = false;
     [Header("Level Details")]
     [SerializeField] private int level;
@@ -17,7 +18,8 @@ public class EnemyStats : CharacterStats
         Modify(maxHp);
         // add some more here when needed
         base.Start();
-        enemy = GetComponent<Enemy>();     
+        enemy = GetComponent<Enemy>();
+        dropSystem = GetComponent<ItemDrop>();     
     }
     private void Modify(Stat _stat){
         for(int i = 0; i < level; i++){
@@ -35,8 +37,8 @@ public class EnemyStats : CharacterStats
     protected override void Die()
     {
         base.Die();
-
         enemy.Die();
+        dropSystem.GenerateDrop();
     }
     public bool DamageTaken(){
         return isDamaged;

@@ -9,15 +9,19 @@ public class ItemSlotUI : MonoBehaviour, IPointerDownHandler
     [SerializeField] private Image itemImage;
     [SerializeField] private TextMeshProUGUI itemText;
 
+
     public InventoryItem item;
 
-    public void UpdateSlot(InventoryItem _newitem)
+    public void UpdateSlot(InventoryItem _newItem)
     {
-        item = _newitem;
+        item = _newItem;
+
         itemImage.color = Color.white;
+
         if (item != null)
         {
             itemImage.sprite = item.data.icon;
+
             if (item.stackSize > 1)
             {
                 itemText.text = item.stackSize.ToString();
@@ -29,22 +33,24 @@ public class ItemSlotUI : MonoBehaviour, IPointerDownHandler
         }
     }
 
-    public void CleanUpSlot(){
+    public void CleanUpSlot()
+    {
         item = null;
+
         itemImage.sprite = null;
         itemImage.color = Color.clear;
         itemText.text = "";
     }
+
     public virtual void OnPointerDown(PointerEventData eventData)
-    {   
-        if(item.data != null){
-            if(item.data.itemType == ItemType.Equipment){
-                Inventory.instance.EquipItem(item.data);
-            }
-        }
-        else{
-            Debug.LogWarning("Item data is null when clicking!");
+    {
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            Inventory.instance.RemoveItem(item.data);
             return;
         }
+
+        if (item.data.itemType == ItemType.Equipment)
+            Inventory.instance.EquipItem(item.data);
     }
 }
