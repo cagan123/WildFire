@@ -1,9 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+public enum StatType{
+        damage,
+        vitality,
+        stamina
+    }
 public class CharacterStats : MonoBehaviour
 {
+    
     public Stat strenght;
     public Stat damage;
     public Stat maxHp;
@@ -48,5 +54,12 @@ public class CharacterStats : MonoBehaviour
             UseStamina(_amount);
             return true;
         }
+    }
+    public Stat GetStat(StatType _statType){
+        if(_statType == StatType.damage) return damage;
+        else if (_statType == StatType.vitality) return maxHp;
+        else if (_statType == StatType.stamina) return maxStamina;
+        
+        return null;
     }
 }

@@ -20,5 +20,5 @@ MonoBehaviour:
   damage: 5
   vitality: 0
   inteligence: 0
-  stamina: 0
+  stamina: 5
   craftingMaterials: []

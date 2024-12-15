@@ -4,16 +4,31 @@ using UnityEngine;
 
 public class UI : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private GameObject charcaterUI;
+    [SerializeField] private GameObject SpellsUI;
+    [SerializeField] private GameObject craftUI;
+    [SerializeField] private GameObject optionsUI;
+    [SerializeField] private GameObject inGameUI;
     void Start()
     {
-        
+        SwitchTo(inGameUI);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.C))
+            SwitchWithKeyTo(charcaterUI);
+
+        if (Input.GetKeyDown(KeyCode.B))
+            SwitchWithKeyTo(craftUI);
         
+
+        if (Input.GetKeyDown(KeyCode.K))
+            SwitchWithKeyTo(SpellsUI);
+
+        if(Input.GetKeyDown(KeyCode.O))
+            SwitchWithKeyTo(optionsUI);
     }
     public void SwitchTo(GameObject _menu)
     {
@@ -24,5 +39,26 @@ public class UI : MonoBehaviour
 
         if (_menu != null)
             _menu.SetActive(true);
+    }
+    public void SwitchWithKeyTo(GameObject _menu)
+    {
+        if (_menu != null && _menu.activeSelf)
+        {
+            _menu.SetActive(false);
+            CheckForInGameUI();
+            return;
+        }
+
+        SwitchTo(_menu);
+    }
+    private void CheckForInGameUI()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (transform.GetChild(i).gameObject.activeSelf)
+                return;
+        }
+
+        SwitchTo(inGameUI);
     }
 }

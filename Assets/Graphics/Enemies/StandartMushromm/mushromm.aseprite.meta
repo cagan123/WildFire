@@ -123,15 +123,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: mushromm
     originalName: 
-    pivot: {x: 0.54545456, y: -1.8571429}
+    pivot: {x: 0.3333333, y: -1.95}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 32
-      width: 22
-      height: 21
+      x: 40
+      y: 145
+      width: 21
+      height: 20
     spriteID: 48b044b8fe883c84cb4ee46a48291e98
     spriteBone: []
     spriteOutline: []
@@ -140,18 +140,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 32}
+    uvTransform: {x: 40, y: 145}
   - name: mushromm_Frame_1
     originalName: 
-    pivot: {x: 0.54545456, y: -1.95}
+    pivot: {x: 0.586207, y: -2.0526314}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 94
-      y: 32
-      width: 22
-      height: 20
+      x: 40
+      y: 4
+      width: 29
+      height: 19
     spriteID: 836d1f85cdd6c1a4185f6d7e8c04bb6a
     spriteBone: []
     spriteOutline: []
@@ -160,18 +160,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 94, y: 32}
+    uvTransform: {x: 40, y: 4}
   - name: mushromm_Frame_2
     originalName: 
-    pivot: {x: 0.54545456, y: -1.95}
+    pivot: {x: 0.8095239, y: -1.6363637}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 68
-      y: 4
-      width: 22
-      height: 20
+      x: 4
+      y: 116
+      width: 21
+      height: 22
     spriteID: 2557c286e74f0d94aa805f22f7996128
     spriteBone: []
     spriteOutline: []
@@ -180,18 +180,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 68, y: 4}
+    uvTransform: {x: 4, y: 116}
   - name: mushromm_Frame_3
     originalName: 
-    pivot: {x: 0.54545456, y: -1.8571429}
+    pivot: {x: 0.53571427, y: -1.95}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 34
-      y: 32
-      width: 22
-      height: 21
+      x: 4
+      y: 4
+      width: 28
+      height: 20
     spriteID: 7dc35130f7fc6734684c808ee5372b95
     spriteBone: []
     spriteOutline: []
@@ -200,18 +200,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 34, y: 32}
+    uvTransform: {x: 4, y: 4}
   - name: mushromm_Frame_4
     originalName: 
-    pivot: {x: 0.54545456, y: -1.8571429}
+    pivot: {x: 0.3333333, y: -1.95}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 64
-      y: 32
-      width: 22
-      height: 21
+      x: 40
+      y: 173
+      width: 21
+      height: 20
     spriteID: af1189e2503ded0448706a7c0a907179
     spriteBone: []
     spriteOutline: []
@@ -220,18 +220,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 64, y: 32}
+    uvTransform: {x: 40, y: 173}
   - name: mushromm_Frame_5
     originalName: 
-    pivot: {x: 0.34999996, y: -1.95}
+    pivot: {x: 0.54545456, y: -1.8571429}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 98
-      y: 4
-      width: 20
-      height: 20
+      x: 4
+      y: 146
+      width: 22
+      height: 21
     spriteID: fe00a948243677d4aaa9d94f49b8b0f2
     spriteBone: []
     spriteOutline: []
@@ -240,17 +240,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 98, y: 4}
+    uvTransform: {x: 4, y: 146}
   - name: mushromm_Frame_6
     originalName: 
-    pivot: {x: 0.29166663, y: -1.7}
+    pivot: {x: 0.54545456, y: -1.95}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 4
-      width: 24
+      x: 40
+      y: 89
+      width: 22
       height: 20
     spriteID: 4631e5f4e2152df48ad0372591717647
     spriteBone: []
@@ -260,17 +260,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: 40, y: 89}
   - name: mushromm_Frame_7
     originalName: 
-    pivot: {x: 0.29166663, y: -1.7}
+    pivot: {x: 0.54545456, y: -1.95}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 36
-      y: 4
-      width: 24
+      x: 40
+      y: 117
+      width: 22
       height: 20
     spriteID: da8e2177e3ac56e4e89152eee9710a21
     spriteBone: []
@@ -280,18 +280,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 36, y: 4}
+    uvTransform: {x: 40, y: 117}
   - name: mushromm_Frame_8
     originalName: 
-    pivot: {x: 0.34999996, y: -1.95}
+    pivot: {x: 0.54545456, y: -1.8571429}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 61
-      width: 20
-      height: 20
+      y: 175
+      width: 22
+      height: 21
     spriteID: eccf706aa74704b4eb6a88de2fc6df95
     spriteBone: []
     spriteOutline: []
@@ -300,7 +300,207 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 61}
+    uvTransform: {x: 4, y: 175}
+  - name: mushromm_Frame_4
+    originalName: 
+    pivot: {x: 0.54545456, y: -1.8571429}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 204
+      width: 22
+      height: 21
+    spriteID: fbe53dc94bc721a49b323efc6fb4ae37
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 204}
+  - name: mushromm_Frame_5
+    originalName: 
+    pivot: {x: 0.34999996, y: -1.95}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 201
+      width: 20
+      height: 20
+    spriteID: 104044f51e46d2a47b8c89ebc5ade2da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 201}
+  - name: mushromm_Frame_6
+    originalName: 
+    pivot: {x: 0.29166663, y: -1.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 32
+      width: 24
+      height: 20
+    spriteID: 9d979f2f0c297f2408b967e1ec407ae0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 32}
+  - name: mushromm_Frame_7
+    originalName: 
+    pivot: {x: 0.29166663, y: -1.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 60
+      width: 24
+      height: 20
+    spriteID: 09db09c2a435b6a46bc80da8ab804eff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 60}
+  - name: mushromm_Frame_10
+    originalName: 
+    pivot: {x: 0.75, y: -2.1111112}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 229
+      width: 20
+      height: 18
+    spriteID: 0b0753752758e65498dde3e773325736
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 229}
+  - name: mushromm_Frame_13
+    originalName: 
+    pivot: {x: 0.29166663, y: -1.7}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 88
+      width: 24
+      height: 20
+    spriteID: f0f0b866834cf474cb22b00086b5d1a4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 88}
+  - name: mushromm_Frame_15
+    originalName: 
+    pivot: {x: 0.54545456, y: -1.8571429}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 31
+      width: 22
+      height: 21
+    spriteID: 287d03f5302a6ad45b9e44035fed7c8a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 31}
+  - name: mushromm_Frame_16
+    originalName: 
+    pivot: {x: 0.54545456, y: -1.8571429}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 40
+      y: 60
+      width: 22
+      height: 21
+    spriteID: 8f2aada5eb9aa414db67bc727790da05
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 40, y: 60}
+  - name: mushromm_Frame_17
+    originalName: 
+    pivot: {x: 0.54545456, y: -2.2941177}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 233
+      width: 22
+      height: 17
+    spriteID: 7846121423c9aee4db4159d30a72d0ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 233}
+  - name: mushromm_Frame_18
+    originalName: 
+    pivot: {x: 0.54545456, y: -3.1666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 77
+      y: 4
+      width: 22
+      height: 12
+    spriteID: b249c954a85ed6a4a99c2be10c272473
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 77, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -310,6 +510,51 @@ ScriptedImporter:
     layerType: 0
     blendMode: 0
     cells:
+    - name: mushromm_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 39
+        width: 21
+        height: 20
+      spriteId: 48b044b8fe883c84cb4ee46a48291e98
+    - name: mushromm_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 31
+        y: 39
+        width: 29
+        height: 19
+      spriteId: 836d1f85cdd6c1a4185f6d7e8c04bb6a
+    - name: mushromm_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 31
+        y: 36
+        width: 21
+        height: 22
+      spriteId: 2557c286e74f0d94aa805f22f7996128
+    - name: mushromm_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 39
+        width: 28
+        height: 20
+      spriteId: 7dc35130f7fc6734684c808ee5372b95
+    - name: mushromm_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 41
+        y: 39
+        width: 21
+        height: 20
+      spriteId: af1189e2503ded0448706a7c0a907179
     - name: mushromm_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
@@ -318,7 +563,7 @@ ScriptedImporter:
         y: 39
         width: 22
         height: 21
-      spriteId: 48b044b8fe883c84cb4ee46a48291e98
+      spriteId: fe00a948243677d4aaa9d94f49b8b0f2
     - name: mushromm_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
@@ -327,7 +572,7 @@ ScriptedImporter:
         y: 39
         width: 22
         height: 20
-      spriteId: 836d1f85cdd6c1a4185f6d7e8c04bb6a
+      spriteId: 4631e5f4e2152df48ad0372591717647
     - name: mushromm_Frame_2
       frameIndex: 2
       additiveSortOrder: 0
@@ -336,7 +581,7 @@ ScriptedImporter:
         y: 39
         width: 22
         height: 20
-      spriteId: 2557c286e74f0d94aa805f22f7996128
+      spriteId: da8e2177e3ac56e4e89152eee9710a21
     - name: mushromm_Frame_3
       frameIndex: 3
       additiveSortOrder: 0
@@ -345,7 +590,7 @@ ScriptedImporter:
         y: 39
         width: 22
         height: 21
-      spriteId: 7dc35130f7fc6734684c808ee5372b95
+      spriteId: eccf706aa74704b4eb6a88de2fc6df95
     - name: mushromm_Frame_4
       frameIndex: 4
       additiveSortOrder: 0
@@ -354,7 +599,7 @@ ScriptedImporter:
         y: 39
         width: 22
         height: 21
-      spriteId: af1189e2503ded0448706a7c0a907179
+      spriteId: fbe53dc94bc721a49b323efc6fb4ae37
     - name: mushromm_Frame_5
       frameIndex: 5
       additiveSortOrder: 0
@@ -363,7 +608,7 @@ ScriptedImporter:
         y: 39
         width: 20
         height: 20
-      spriteId: fe00a948243677d4aaa9d94f49b8b0f2
+      spriteId: 104044f51e46d2a47b8c89ebc5ade2da
     - name: mushromm_Frame_6
       frameIndex: 6
       additiveSortOrder: 0
@@ -372,7 +617,7 @@ ScriptedImporter:
         y: 34
         width: 24
         height: 20
-      spriteId: 4631e5f4e2152df48ad0372591717647
+      spriteId: 9d979f2f0c297f2408b967e1ec407ae0
     - name: mushromm_Frame_7
       frameIndex: 7
       additiveSortOrder: 0
@@ -381,16 +626,61 @@ ScriptedImporter:
         y: 34
         width: 24
         height: 20
-      spriteId: da8e2177e3ac56e4e89152eee9710a21
-    - name: mushromm_Frame_8
-      frameIndex: 8
+      spriteId: 09db09c2a435b6a46bc80da8ab804eff
+    - name: mushromm_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 33
+        y: 38
+        width: 20
+        height: 18
+      spriteId: 0b0753752758e65498dde3e773325736
+    - name: mushromm_Frame_13
+      frameIndex: 13
       additiveSortOrder: 0
       cellRect:
         x: 41
-        y: 39
-        width: 20
+        y: 34
+        width: 24
         height: 20
-      spriteId: eccf706aa74704b4eb6a88de2fc6df95
+      spriteId: f0f0b866834cf474cb22b00086b5d1a4
+    - name: mushromm_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 39
+        width: 22
+        height: 21
+      spriteId: 287d03f5302a6ad45b9e44035fed7c8a
+    - name: mushromm_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 39
+        width: 22
+        height: 21
+      spriteId: 8f2aada5eb9aa414db67bc727790da05
+    - name: mushromm_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 39
+        width: 22
+        height: 17
+      spriteId: 7846121423c9aee4db4159d30a72d0ee
+    - name: mushromm_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 36
+        y: 38
+        width: 22
+        height: 12
+      spriteId: b249c954a85ed6a4a99c2be10c272473
     linkedCells: []
     parentIndex: -1
   platformSettings: []
