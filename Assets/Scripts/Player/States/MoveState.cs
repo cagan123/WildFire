@@ -25,8 +25,13 @@ public class MoveState : GroundedState
         base.Update();
 
         player.PassVelocity(xInput, yInput);  
-        
-        if(thereIsMovementInput && Input.GetKey(KeyCode.LeftShift))
-            stateMachine.ChangeState(player.runState);
+        player.anim.speed = 1f;
+
+        if(thereIsMovementInput && Input.GetKey(KeyCode.LeftShift)){
+            player.PassRunVelocity(xInput, yInput);
+            player.anim.speed = 1.4f;
+            player.stats.UseFloatStamina(player.runStamina * Time.deltaTime);
+        }
+            
     }
 }

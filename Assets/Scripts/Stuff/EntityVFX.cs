@@ -8,6 +8,7 @@ public class EntityVFX : MonoBehaviour
 
     [Header("Flash VFX")]
     [SerializeField] private Material hitMat;
+    [SerializeField] private Material tiredMat;
     [Header("UI")]
     public GameObject damageTextPrefab; // Drag and drop your DamageText prefab here
     public GameObject exlamationTextPrefab;
@@ -31,7 +32,6 @@ public class EntityVFX : MonoBehaviour
     }  
     public void TakeDamage(int damage)
     {
-        
         Vector3 spawnPosition = damageTextSpawnPoint.position + Vector3.up * 1.5f;
         GameObject damageTextInstance = Instantiate(damageTextPrefab, spawnPosition, Quaternion.identity, transform);
         
@@ -72,4 +72,15 @@ public class EntityVFX : MonoBehaviour
         yield return new WaitForSeconds(.2f);
         sr.material = originialMat;
     }
+    private IEnumerator NotEnoughStaminaVFX_Routine()
+    {
+        sr.material = tiredMat;
+        yield return new WaitForSeconds(.2f);
+        sr.material = originialMat;
+    }
+    public void NotEnoughStaminaVFX(){
+        StartCoroutine("NotEnoughStaminaVFX_Routine");
+        return;
+    }
+
 }

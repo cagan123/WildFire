@@ -1,5 +1,6 @@
 using Unity.Mathematics;
 using UnityEngine;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(Rigidbody2D))]
 
@@ -20,12 +21,12 @@ public class Player : Entity
     public float attack1speed;
     public Vector2 closestEnemyPos;
 
-    [Header("Buffer Info")]
-    [SerializeField] private float inputBufferTime = 0.2f;
+    [Header("Input Buffer Info")]
+    private Queue <float> dashInputBuffer = new Queue <float>();
+    [SerializeField] private float dashInputBufferTime = 0.2f; // Buffer duration in seconds
 
     #region Components
     Camera cam;
-    private InputBuffer inputBuffer;
 
     #endregion
 
@@ -44,7 +45,6 @@ public class Player : Entity
     {
         base.Awake();
         cam = Camera.main;
-        inputBuffer = new InputBuffer(inputBufferTime);
         stateMachine = new PlayerStateMachine();
 
         idleState = new IdleState(this, stateMachine, "Idle");
@@ -66,20 +66,11 @@ public class Player : Entity
     private void Update()
     {
         stateMachine.currentState.Update();
-
-        CheckForDashInputAndBuffer();
-        
+        CheckForDashInputAndBuffer();    
         FlipByMovement();
-
         DashCooldownTimer();
-
         AnimMoveSetter();
-
         stats.StaminaRecovery();
-
-        if (Input.GetKeyDown(KeyCode.Space))
-            inputBuffer.AddInput(ActionType.Roll);
-     
     }
     
 
@@ -87,12 +78,40 @@ public class Player : Entity
     public void DashCooldownTimer()
     {
         CooldownTimer -= Time.deltaTime;
+        if(CooldownTimer >= 0 && Input.GetKeyDown(KeyCode.Space)){
+            VFX.NotEnoughStaminaVFX();
+        }
     }
     #endregion
 
     public void CheckForDashInputAndBuffer(){
-        if (stateMachine.currentState == moveState && Input.GetKeyDown(KeyCode.Space)&& CooldownTimer< 0 && stats.HasEnoughStamina(dashStamina))
-            stateMachine.ChangeState(dashState);
+        // Store input if Space is pressed
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            dashInputBuffer.Enqueue(Time.time);
+        }
+
+        // Process buffered input
+        if (dashInputBuffer.Count > 0)
+        {
+            float bufferedInputTime = dashInputBuffer.Peek();
+
+            // Check if the buffered input is valid and dash conditions are met
+            if (Time.time - bufferedInputTime <= dashInputBufferTime &&
+                stateMachine.currentState == moveState &&
+                CooldownTimer <= 0 &&
+                stats.HasEnoughStamina(dashStamina))
+            {
+                // Execute dash
+                stateMachine.ChangeState(dashState);
+                dashInputBuffer.Dequeue(); // Remove processed input
+            }
+        else if (Time.time - bufferedInputTime > dashInputBufferTime)
+        {
+            // Discard expired input
+            dashInputBuffer.Dequeue();
+        }
+    }
     }
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
 

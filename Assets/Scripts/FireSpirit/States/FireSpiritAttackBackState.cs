@@ -14,7 +14,6 @@ public class FireSpiritAttackBackState : DamageState
     public override void Exit()
     {
         base.Exit();
-        fireSpirit.attackCounter += 1;
     }
     public override void FixedUpdate()
     {

@@ -43,6 +43,11 @@ public class PlayerStats : CharacterStats
         base.UseStamina(_amount);
         delayStaminaRecovery = true;
     }
+    public override void UseFloatStamina(float _amount)
+    {
+        base.UseFloatStamina(_amount);
+        delayStaminaRecovery = true;
+    }
     public override bool HasEnoughStamina(int _amount)
     {
         return base.HasEnoughStamina(_amount);

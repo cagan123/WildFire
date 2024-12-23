@@ -21,6 +21,7 @@ public class FireSpiritStats : CharacterStats
     public override bool HasEnoughStamina(int _amount)
     {
         if(player.stats.currentStamina < _amount){
+            player.VFX.NotEnoughStaminaVFX();
             return false;
         }
         else{

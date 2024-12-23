@@ -17,10 +17,16 @@ public class FireSpirit : MonoBehaviour
     public float followDistance = 1f;
 
     [Header("Attack Info")]
+    
     public float prepDuration1;
+    public int staminaUse;
     public int attackCounter;
     public List<Spell> spells;
     
+    [Header("Attack Buffer Settings")]
+    [SerializeField] private float attackBufferTime = 0.3f; // Time window for buffering inputs
+    private Queue<(int inputType, float timestamp)> inputBuffer = new Queue<(int, float)>();
+
     #region Components
     [HideInInspector] public Transform transformToFollow{get;private set;}
     public Rigidbody2D rb { get; private set; }
@@ -28,7 +34,6 @@ public class FireSpirit : MonoBehaviour
     [HideInInspector]public Camera cam;
     public CharacterStats stats{ get; private set; }
     public damageSource damageSource { get; private set; }
-
     #endregion
 
     #region Variables
@@ -93,9 +98,76 @@ public class FireSpirit : MonoBehaviour
     private void Update()
     {
         stateMachine.currentState.Update();
+        BufferInputs();
+        ProcessBufferedInputs();
+
         distanceBetweenPlayerandFireSpirit = Vector2.Distance(transform.position, transformToFollow.position);
     }
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
+   
+    #region Inputs and Buffer
+    private void BufferInputs()
+    {
+        if (Input.GetMouseButtonDown(0)) // Primary attack
+        {
+            inputBuffer.Enqueue((0, Time.time));
+        }
+        if (Input.GetMouseButtonDown(1)) // Special attack
+        {
+            inputBuffer.Enqueue((1, Time.time));
+        }
+    }
+
+    private void ProcessBufferedInputs()
+    {
+        if (inputBuffer.Count > 0)
+        {
+            var (inputType, timestamp) = inputBuffer.Peek();
+
+            // If the buffered input is still valid
+            if (Time.time - timestamp <= attackBufferTime)
+            {
+                if (HandleAttackInput(inputType))
+                {
+                    inputBuffer.Dequeue(); // Consume input after processing
+                }
+            }
+            else
+            {
+                inputBuffer.Dequeue(); // Discard expired input
+            }
+        }
+    }
+    private bool HandleAttackInput(int inputType)
+    {
+        switch (inputType)
+        {
+            case 0: // Primary attack
+                if (stats.HasEnoughStamina(staminaUse))
+                {
+                    attackCounter++;
+                    if (attackCounter % 2 == 1)
+                        stateMachine.ChangeState(prep1State);
+                    else
+                        stateMachine.ChangeState(prepBackState);
+
+                    return true; // Input processed
+                }
+                break;
+
+            case 1: // fireball
+                if (stats.HasEnoughStamina(spells[0].staminaUse))
+                {
+                    stateMachine.ChangeState(fireballState);
+                    return true; // Input processed
+                }
+                break;
+        }
+
+        return false; // Input not processed
+    }
+
+    #endregion
 
     #region Directions & Positions
     public Vector3 MousePosition()
@@ -198,7 +270,7 @@ public class FireSpirit : MonoBehaviour
     }
     #endregion
 
-    #region
+    #region Instantiate Spell
     public void InstantiateSpell(GameObject prefab, Vector3 position, Quaternion quaternion){
         prefab.GetComponent<SpellPrefabMaster>().getFirespirit(this);
         Instantiate(prefab.gameObject, position, quaternion);
