@@ -2,13 +2,18 @@ using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class StatSlotUI : MonoBehaviour
+public class StatSlotUI : MonoBehaviour, IPointerEnterHandler,IPointerExitHandler
 {
+    private UI UI;
     [SerializeField] private string statName;
     [SerializeField] private StatType statType;
     [SerializeField] private TextMeshProUGUI statValueText;
     [SerializeField] private TextMeshProUGUI statNameText;
+
+    [TextArea]
+    [SerializeField] private string statDescription;
     private void OnValidate()
     {
         gameObject.name = "Stat - " + statName;
@@ -20,6 +25,7 @@ public class StatSlotUI : MonoBehaviour
     void Start()
     {
         UpdateStatValueUI();
+        UI = GetComponentInParent<UI>();
     }
     public void UpdateStatValueUI()
     {
@@ -32,5 +38,15 @@ public class StatSlotUI : MonoBehaviour
                 statValueText.text = fireSpiritStats.GetStat(statType).GetValue().ToString();
             }
         }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        UI.statTooltip.ShowStatTooltip(statDescription);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        UI.statTooltip.HideStatTooltip();
     }
 }

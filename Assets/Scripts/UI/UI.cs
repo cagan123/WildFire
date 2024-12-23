@@ -9,6 +9,9 @@ public class UI : MonoBehaviour
     [SerializeField] private GameObject craftUI;
     [SerializeField] private GameObject optionsUI;
     [SerializeField] private GameObject inGameUI;
+
+    public ItemTooltipUI itemTooltip;
+    public StatTooltipUI statTooltip;
     void Start()
     {
         SwitchTo(inGameUI);

@@ -20,8 +20,13 @@ public class Player : Entity
     public float attack1speed;
     public Vector2 closestEnemyPos;
 
+    [Header("Buffer Info")]
+    [SerializeField] private float inputBufferTime = 0.2f;
+
     #region Components
     Camera cam;
+    private InputBuffer inputBuffer;
+
     #endregion
 
     #region States
@@ -31,6 +36,7 @@ public class Player : Entity
     public MoveState moveState { get; private set; }
     public DashState dashState { get; private set; }
     public RunState runState { get; private set; }
+    public GroundedState groundedState{get ;private set; }
     public DeathState deathState{ get; private set; }
     #endregion
 
@@ -38,13 +44,14 @@ public class Player : Entity
     {
         base.Awake();
         cam = Camera.main;
-
+        inputBuffer = new InputBuffer(inputBufferTime);
         stateMachine = new PlayerStateMachine();
 
         idleState = new IdleState(this, stateMachine, "Idle");
         moveState = new MoveState(this, stateMachine, "Run"); 
         dashState = new DashState(this, stateMachine, "dash"); 
         runState = new RunState(this, stateMachine, "Run");
+        groundedState = new GroundedState(this, stateMachine, null);
         
         deathState = new DeathState(this, stateMachine, "death");
 
@@ -60,7 +67,7 @@ public class Player : Entity
     {
         stateMachine.currentState.Update();
 
-        CheckForDashInput();
+        CheckForDashInputAndBuffer();
         
         FlipByMovement();
 
@@ -69,6 +76,9 @@ public class Player : Entity
         AnimMoveSetter();
 
         stats.StaminaRecovery();
+
+        if (Input.GetKeyDown(KeyCode.Space))
+            inputBuffer.AddInput(ActionType.Roll);
      
     }
     
@@ -80,8 +90,8 @@ public class Player : Entity
     }
     #endregion
 
-    public void CheckForDashInput(){
-        if (stateMachine.currentState == moveState && Input.GetKeyDown(KeyCode.Space) && CooldownTimer< 0 && stats.HasEnoughStamina(dashStamina))
+    public void CheckForDashInputAndBuffer(){
+        if (stateMachine.currentState == moveState && Input.GetKeyDown(KeyCode.Space)&& CooldownTimer< 0 && stats.HasEnoughStamina(dashStamina))
             stateMachine.ChangeState(dashState);
     }
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();

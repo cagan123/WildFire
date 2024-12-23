@@ -8,23 +8,27 @@ public class EntityVFX : MonoBehaviour
 
     [Header("Flash VFX")]
     [SerializeField] private Material hitMat;
+    [Header("UI")]
     public GameObject damageTextPrefab; // Drag and drop your DamageText prefab here
     public GameObject exlamationTextPrefab;
     public Transform damageTextSpawnPoint; // Optional: where to spawn the text
+    [Header("Time Stop")]
+    public float timeStopDuration = 1f;
+    private bool isStopping = false;
+    private Coroutine timeStopRoutine;
+    [Header("Screen Shake")]
+    [SerializeField] private ScreenShakeVFX screenShake;
+    [SerializeField] private float shakeDuration = 0.1f;
+    [SerializeField] private float shakeMagnitude = 0.2f;
+
+
     private Material originialMat;
 
     private void Start()
     {
         sr = GetComponentInChildren<SpriteRenderer>();
         originialMat = sr.material;
-    }
-
-    private IEnumerator FlashVFX_Routine()
-    {
-        sr.material = hitMat;
-        yield return new WaitForSeconds(.2f);
-        sr.material = originialMat;
-    }
+    }  
     public void TakeDamage(int damage)
     {
         
@@ -37,5 +41,35 @@ public class EntityVFX : MonoBehaviour
     public void NoticeEnemy(){
         Vector3 spawnPosition = damageTextSpawnPoint.position + Vector3.up * 1.5f;
         Instantiate(exlamationTextPrefab, spawnPosition, Quaternion.identity, transform);
+    }
+    public void TriggerScreenShake()
+    {
+        if (screenShake != null)
+        {
+            screenShake.Shake(shakeDuration, shakeMagnitude);
+        }
+    }
+    public void StopTime(){
+        if (isStopping)
+            return; // Prevent overlapping hitstop calls
+
+        // Start the hitstop coroutine
+        timeStopRoutine = StartCoroutine(HitTimeStop_Routine());
+    }
+    private IEnumerator HitTimeStop_Routine()
+    {
+        isStopping = true;
+        float originalTimeScale = Time.timeScale;
+        Time.timeScale = 0f;
+        yield return new WaitForSecondsRealtime(timeStopDuration);
+        Time.timeScale = originalTimeScale;
+        isStopping = false;
+        timeStopRoutine = null;
+    }
+    private IEnumerator FlashVFX_Routine()
+    {
+        sr.material = hitMat;
+        yield return new WaitForSeconds(.2f);
+        sr.material = originialMat;
     }
 }

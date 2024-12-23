@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fire Scroll
   m_EditorClassIdentifier: 
   itemType: 1
-  itemName: 
+  itemName: Fire Scroll
   icon: {fileID: 21300000, guid: 0ada8cf305ee3dd429f2f9943d5ac474, type: 3}
   dropChance: 0
   equipmentType: 0
