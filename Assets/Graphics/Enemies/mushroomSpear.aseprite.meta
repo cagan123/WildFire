@@ -1,0 +1,864 @@
+fileFormatVersion: 2
+guid: 4d07203db2474f04087ebb84131f35a1
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: mushroomSpear_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: -1.3928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 184
+      width: 48
+      height: 28
+    spriteID: 18169b0a01146a64ca5b5ef436619ea2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 184}
+  - name: mushroomSpear_Frame_10
+    originalName: 
+    pivot: {x: 0.69696975, y: -1.032258}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 38
+      width: 33
+      height: 31
+    spriteID: 2d42b8becc4e38c40a6600b7d1cac734
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 38}
+  - name: mushroomSpear_Frame_11
+    originalName: 
+    pivot: {x: 0.51282054, y: -0.52380955}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 39
+      height: 42
+    spriteID: b2945ebd3c008e847acc814fecb92161
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: mushroomSpear_Frame_12
+    originalName: 
+    pivot: {x: 0.31428576, y: -0.9032257}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 172
+      width: 35
+      height: 31
+    spriteID: 5f723a57237b75d4583fb540b3558061
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 172}
+  - name: mushroomSpear_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: -1.3928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 220
+      width: 48
+      height: 28
+    spriteID: 166f7f491a541604699974f6cfe6cc8f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 220}
+  - name: mushroomSpear_Frame_14
+    originalName: 
+    pivot: {x: 0.69696975, y: -1.032258}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 77
+      width: 33
+      height: 31
+    spriteID: 36c63190ceda7494dbcfcc21616ab203
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 77}
+  - name: mushroomSpear_Frame_0
+    originalName: 
+    pivot: {x: 0.6481481, y: -1.3928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 4
+      width: 54
+      height: 28
+    spriteID: 36da04d8f952a9047809938658776432
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 4}
+  - name: mushroomSpear_Frame_1
+    originalName: 
+    pivot: {x: 0.7222222, y: -1.4444444}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 116
+      width: 36
+      height: 27
+    spriteID: 61c85d9acc0d18c4d9a9e6c46909d0c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 116}
+  - name: mushroomSpear_Frame_2
+    originalName: 
+    pivot: {x: 0.69444454, y: -1.4444444}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 151
+      width: 36
+      height: 27
+    spriteID: 459d51f18a0527d4da52d3d19923e8a3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 151}
+  - name: mushroomSpear_Frame_3
+    originalName: 
+    pivot: {x: 0.6666667, y: -1.3928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 40
+      width: 54
+      height: 28
+    spriteID: 4de325fd4ddad434b85f2f3b9fbacfb2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 40}
+  - name: mushroomSpear_Frame_4
+    originalName: 
+    pivot: {x: 0.6481481, y: -1.3928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 76
+      width: 54
+      height: 28
+    spriteID: fe67a57a08ba46b4f8b12eace388d600
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 76}
+  - name: mushroomSpear_Frame_5
+    originalName: 
+    pivot: {x: 0.6666667, y: -1.56}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 186
+      width: 36
+      height: 25
+    spriteID: 54f7757e500541a4eb19aead46af0781
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 186}
+  - name: mushroomSpear_Frame_6
+    originalName: 
+    pivot: {x: 0.38095245, y: -1.6956521}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 169
+      y: 126
+      width: 21
+      height: 23
+    spriteID: e0d0889182dc6974794916447742f6d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 169, y: 126}
+  - name: mushroomSpear_Frame_7
+    originalName: 
+    pivot: {x: 0.31428576, y: -1.95}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 169
+      y: 4
+      width: 35
+      height: 20
+    spriteID: 4252223564eca5249b449907e335f44b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 169, y: 4}
+  - name: mushroomSpear_Frame_8
+    originalName: 
+    pivot: {x: 0.31428576, y: -1.95}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 169
+      y: 32
+      width: 35
+      height: 20
+    spriteID: 1842b5d305d7a4a4481962b702e8e8fe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 169, y: 32}
+  - name: mushroomSpear_Frame_15
+    originalName: 
+    pivot: {x: 0.8, y: -0.9666667}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 169
+      y: 88
+      width: 20
+      height: 30
+    spriteID: 739a5b2b32543fd4791e5a5456eef709
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 169, y: 88}
+  - name: mushroomSpear_Frame_16
+    originalName: 
+    pivot: {x: 0.32142857, y: -0.68421054}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 211
+      width: 28
+      height: 38
+    spriteID: 44704156c5cf3734e85794aec8c32a64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 211}
+  - name: mushroomSpear_Frame_17
+    originalName: 
+    pivot: {x: 0.31428576, y: -1.95}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 169
+      y: 60
+      width: 35
+      height: 20
+    spriteID: 0a9bf6c7fee239b4b8d92638eefe590e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 169, y: 60}
+  - name: mushroomSpear_Frame_18
+    originalName: 
+    pivot: {x: 0.38095245, y: -1.6956521}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 169
+      y: 157
+      width: 21
+      height: 23
+    spriteID: b7f6ad3c7e15ade43838f82ae8144fa6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 169, y: 157}
+  - name: mushroomSpear_Frame_19
+    originalName: 
+    pivot: {x: 0.6666667, y: -1.56}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 219
+      width: 36
+      height: 25
+    spriteID: 0e8d8767174138743b597a0ed423d142
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 219}
+  - name: mushroomSpear_Frame_20
+    originalName: 
+    pivot: {x: 0.6481481, y: -1.3928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 112
+      width: 54
+      height: 28
+    spriteID: 525ab482d7ef2cc40b6a4c5d0c58a558
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 112}
+  - name: mushroomSpear_Frame_21
+    originalName: 
+    pivot: {x: 0.6481481, y: -1.3928572}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 148
+      width: 54
+      height: 28
+    spriteID: 3c40b893beb330743a910568d6b2259d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 148}
+  - name: mushroomSpear_Frame_22
+    originalName: 
+    pivot: {x: 0.6666666, y: -1.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 113
+      y: 4
+      width: 48
+      height: 26
+    spriteID: 7e32adba68c6d174da6189855548f3f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 113, y: 4}
+  - name: mushroomSpear_Frame_23
+    originalName: 
+    pivot: {x: 0.27272728, y: -0.64705884}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 54
+      width: 22
+      height: 51
+    spriteID: 296dc76956ed3884e87719cf91a17d72
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 54}
+  - name: mushroomSpear_Frame_24
+    originalName: 
+    pivot: {x: 0.27272728, y: -0.64705884}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 113
+      width: 22
+      height: 51
+    spriteID: a2a86da7d5aad324ea77936aa0d40c02
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 113}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1939466939
+    name: mushroomSpear
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: mushroomSpear_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 24
+        y: 39
+        width: 48
+        height: 28
+      spriteId: 18169b0a01146a64ca5b5ef436619ea2
+    - name: mushroomSpear_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 25
+        y: 32
+        width: 33
+        height: 31
+      spriteId: 2d42b8becc4e38c40a6600b7d1cac734
+    - name: mushroomSpear_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 28
+        y: 22
+        width: 39
+        height: 42
+      spriteId: b2945ebd3c008e847acc814fecb92161
+    - name: mushroomSpear_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 37
+        y: 28
+        width: 35
+        height: 31
+      spriteId: 5f723a57237b75d4583fb540b3558061
+    - name: mushroomSpear_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 24
+        y: 39
+        width: 48
+        height: 28
+      spriteId: 166f7f491a541604699974f6cfe6cc8f
+    - name: mushroomSpear_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 25
+        y: 32
+        width: 33
+        height: 31
+      spriteId: 36c63190ceda7494dbcfcc21616ab203
+    - name: mushroomSpear_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 13
+        y: 39
+        width: 54
+        height: 28
+      spriteId: 36da04d8f952a9047809938658776432
+    - name: mushroomSpear_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 22
+        y: 39
+        width: 36
+        height: 27
+      spriteId: 61c85d9acc0d18c4d9a9e6c46909d0c0
+    - name: mushroomSpear_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 23
+        y: 39
+        width: 36
+        height: 27
+      spriteId: 459d51f18a0527d4da52d3d19923e8a3
+    - name: mushroomSpear_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 12
+        y: 39
+        width: 54
+        height: 28
+      spriteId: 4de325fd4ddad434b85f2f3b9fbacfb2
+    - name: mushroomSpear_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 13
+        y: 39
+        width: 54
+        height: 28
+      spriteId: fe67a57a08ba46b4f8b12eace388d600
+    - name: mushroomSpear_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 24
+        y: 39
+        width: 36
+        height: 25
+      spriteId: 54f7757e500541a4eb19aead46af0781
+    - name: mushroomSpear_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 39
+        width: 21
+        height: 23
+      spriteId: e0d0889182dc6974794916447742f6d0
+    - name: mushroomSpear_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 37
+        y: 39
+        width: 35
+        height: 20
+      spriteId: 4252223564eca5249b449907e335f44b
+    - name: mushroomSpear_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 37
+        y: 39
+        width: 35
+        height: 20
+      spriteId: 1842b5d305d7a4a4481962b702e8e8fe
+    - name: mushroomSpear_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 32
+        y: 29
+        width: 20
+        height: 30
+      spriteId: 739a5b2b32543fd4791e5a5456eef709
+    - name: mushroomSpear_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 39
+        y: 26
+        width: 28
+        height: 38
+      spriteId: 44704156c5cf3734e85794aec8c32a64
+    - name: mushroomSpear_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 37
+        y: 39
+        width: 35
+        height: 20
+      spriteId: 0a9bf6c7fee239b4b8d92638eefe590e
+    - name: mushroomSpear_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 40
+        y: 39
+        width: 21
+        height: 23
+      spriteId: b7f6ad3c7e15ade43838f82ae8144fa6
+    - name: mushroomSpear_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 24
+        y: 39
+        width: 36
+        height: 25
+      spriteId: 0e8d8767174138743b597a0ed423d142
+    - name: mushroomSpear_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 13
+        y: 39
+        width: 54
+        height: 28
+      spriteId: 525ab482d7ef2cc40b6a4c5d0c58a558
+    - name: mushroomSpear_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 13
+        y: 39
+        width: 54
+        height: 28
+      spriteId: 3c40b893beb330743a910568d6b2259d
+    - name: mushroomSpear_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 16
+        y: 39
+        width: 48
+        height: 26
+      spriteId: 7e32adba68c6d174da6189855548f3f0
+    - name: mushroomSpear_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 33
+        width: 22
+        height: 51
+      spriteId: 296dc76956ed3884e87719cf91a17d72
+    - name: mushroomSpear_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 42
+        y: 33
+        width: 22
+        height: 51
+      spriteId: a2a86da7d5aad324ea77936aa0d40c02
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 96, y: 96}

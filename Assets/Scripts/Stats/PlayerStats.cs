@@ -12,12 +12,12 @@ public class PlayerStats : CharacterStats
         player = GetComponent<Player>();
         fireSpirit = FireSpiritManager.instance.fireSpirit;
     }
-    public override void TakeDamage(int _damage)
+    public override void TakeDamage(int _damage, int _poiseDamage)
     {
         if(player.stateMachine.currentState == player.dashState){
             return;
         }
-        base.TakeDamage(_damage);
+        base.TakeDamage(_damage, _poiseDamage);
         player.knockbackDir = player.KnockbackDirection();
         player.DamageEffect(_damage, player.transform);
     }
@@ -39,6 +39,11 @@ public class PlayerStats : CharacterStats
             currentStamina += player.staminaRecoveryRate * Time.deltaTime;
         }
     }
+    public override void PoiseRecovery()
+    {
+        base.PoiseRecovery();
+    }
+
     public override void UseStamina(int _amount){
         base.UseStamina(_amount);
         delayStaminaRecovery = true;

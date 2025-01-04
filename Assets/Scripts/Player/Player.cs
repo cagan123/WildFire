@@ -39,6 +39,7 @@ public class Player : Entity
     public RunState runState { get; private set; }
     public GroundedState groundedState{get ;private set; }
     public DeathState deathState{ get; private set; }
+    public DazedState dazedState{ get; private set; }
     #endregion
 
     protected override void Awake()
@@ -52,6 +53,7 @@ public class Player : Entity
         dashState = new DashState(this, stateMachine, "dash"); 
         runState = new RunState(this, stateMachine, "Run");
         groundedState = new GroundedState(this, stateMachine, null);
+        dazedState = new DazedState(this, stateMachine, "dazed");
         
         deathState = new DeathState(this, stateMachine, "death");
 
@@ -71,6 +73,10 @@ public class Player : Entity
         DashCooldownTimer();
         AnimMoveSetter();
         stats.StaminaRecovery();
+        stats.PoiseRecovery();
+        if(stats.poiseBroken){
+            stateMachine.ChangeState(dazedState);
+        }
     }
     
 

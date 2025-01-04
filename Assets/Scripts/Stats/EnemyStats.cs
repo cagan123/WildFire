@@ -27,9 +27,9 @@ public class EnemyStats : CharacterStats
             _stat.AddModifier(Mathf.RoundToInt(modifier));
         }
     }
-    public override void TakeDamage(int _damage)
+    public override void TakeDamage(int _damage, int _poiseDamage)
     {
-        base.TakeDamage(_damage);
+        base.TakeDamage(_damage, _poiseDamage);
         enemy.knockbackDir = -enemy.EnemyToPlayerDirection();
         enemy.DamageEffect(_damage, enemy.transform);
         isDamaged = true;
