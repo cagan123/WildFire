@@ -9,6 +9,11 @@ public class MagicAttack : MonoBehaviour
     public void getEnemy(Enemy _enemy){
         enemy = _enemy;
     }
+    public void DestroyOnDamage(){
+        if(damageSource.damageDone){
+            Destroy(gameObject);
+        }
+    }
     
 
 }

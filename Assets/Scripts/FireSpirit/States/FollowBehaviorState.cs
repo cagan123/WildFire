@@ -12,7 +12,9 @@ public class FollowBehaviorState : FireSpiritState
     public override void Enter()
     {
         base.Enter();
-        
+        getPos = fireSpirit.PointBeweenPlayerandMouse();
+        getDirection = fireSpirit.DirectionToPointBeweenPlayerandMouse();
+
     }
     public override void Exit()
     {
@@ -20,16 +22,11 @@ public class FollowBehaviorState : FireSpiritState
     }
     public override void Update()
     {
-        base.Update();
-        getPos = fireSpirit.PointBeweenPlayerandMouse();
-        getDirection = fireSpirit.DirectionToPointBeweenPlayerandMouse();
+        base.Update();   
     }
     public override void FixedUpdate()
     {
         base.FixedUpdate();
-        
-        getPos = fireSpirit.PointBeweenPlayerandMouse();
-        getDirection = fireSpirit.DirectionToPointBeweenPlayerandMouse();
         if(Vector2.Distance(fireSpirit.transform.position, getPos) < .2f){
             fireSpirit.PassVelocity(Vector2.zero);
         }

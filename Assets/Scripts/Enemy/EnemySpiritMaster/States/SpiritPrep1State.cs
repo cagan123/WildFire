@@ -13,6 +13,7 @@ public class SpiritPrep1State : EnemyState
     {
         base.Enter();
         stateTimer = enemy.enemyAttacks[0].prepDuration;
+        enemy.PassDashVelocity(Vector2.zero);
     }
     public override void Exit()
     {
@@ -30,7 +31,7 @@ public class SpiritPrep1State : EnemyState
     public override void FixedUpdate()
     {
         base.FixedUpdate();    
-        if(!enemy.IsBoss){
+        if(!enemy.noPrepDash){
             if(enemy.EnemytoPlayerDistance() <= enemy.enemyAttacks[0].attackRange){
                 enemy.PassDashVelocity(-enemy.EnemyToPlayerDirection() * enemy.enemyAttacks[0].attackDashSpeed/2);
             }
@@ -39,7 +40,7 @@ public class SpiritPrep1State : EnemyState
             }
         }
         else{
-            enemy.PassVelocity(Vector2.zero);
+            enemy.PassDashVelocity(Vector2.zero);
         }
     }
 }

@@ -1,10 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Xml.Serialization;
-using JetBrains.Annotations;
-using Unity.IO.LowLevel.Unsafe;
-using Unity.Mathematics;
-using Unity.VisualScripting;
 using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 
@@ -16,9 +11,14 @@ public class FireSpirit : MonoBehaviour
     public float DashVelocitySmoothness = .1f;
     public float followDistance = 1f;
 
-    [Header("Attack Info")]
-    
-    public float prepDuration1;
+    [Header("Attack Info")]  
+    public int burstCount = 60; // Number of particles to emit in the burst
+    public float burstDuration = 0.3f; // Duration for the burst to appear
+    public float intensityScale = 1.5f; // How much larger/intense the burst appears
+    public float minBurstParticleLifetime = 1f; // Minimum lifetime for burst particles
+    public float maxBurstParticleLifetime = 2f; // Maximum lifetime for burst particles
+    public float minBurstParticleSpeed = 8f; // Minimum velocity for burst particles
+    public float maxBurstParticleSpeed = 11f; // Maximum velocity for burst particles
     public int staminaUse;
     public int attackCounter;
     public List<Spell> spells;
@@ -44,16 +44,11 @@ public class FireSpirit : MonoBehaviour
     #region States
     public FireSpiritStateMachine stateMachine { get; private set; }
     public FollowState followState { get; private set; }
-    public FireSpiritPrep1State prep1State { get; private set; }
-    public FireSpiritAttack1State attack1State { get; private set; }
-    public FireSpiritReco1State reco1State { get; private set; }
-    public FireSpiritPrepBackState prepBackState { get; private set; }
-    public FireSpiritAttackBackState attackbackState {get ; private set; }
-    public FireSpiritRecoBackState recoBackState { get ; private set; }
     public FireSpiritShieldState shieldState { get; private set; }
     public FollowBehaviorState followBehaviorState { get; private set; }
     public FireballState fireballState { get; private set; }
     public DamageState damageState { get; private set; }
+    public NewAttackState AttackState { get; private set; }
 
     #endregion
    
@@ -65,17 +60,10 @@ public class FireSpirit : MonoBehaviour
         followState = new FollowState(this, stateMachine, null);
         followBehaviorState = new FollowBehaviorState(this, stateMachine, null);
 
-        prep1State = new FireSpiritPrep1State(this, stateMachine, "prep1");
-        attack1State = new FireSpiritAttack1State(this, stateMachine, "attack1");
-        reco1State = new FireSpiritReco1State(this, stateMachine, "reco1");
-
-        prepBackState = new FireSpiritPrepBackState(this, stateMachine, "prep2");
-        attackbackState = new FireSpiritAttackBackState(this, stateMachine, "attack2");
-        recoBackState = new FireSpiritRecoBackState(this, stateMachine, "reco2");
-
-        shieldState = new FireSpiritShieldState(this, stateMachine, "shield");
         damageState = new DamageState(this, stateMachine, null);
         fireballState = new FireballState(this, stateMachine, null);
+
+        AttackState = new NewAttackState(this, stateMachine, "null");
 
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();       
@@ -147,9 +135,9 @@ public class FireSpirit : MonoBehaviour
                 {
                     attackCounter++;
                     if (attackCounter % 2 == 1)
-                        stateMachine.ChangeState(prep1State);
+                        stateMachine.ChangeState(AttackState);
                     else
-                        stateMachine.ChangeState(prepBackState);
+                        stateMachine.ChangeState(AttackState);
 
                     return true; // Input processed
                 }
@@ -244,12 +232,12 @@ public class FireSpirit : MonoBehaviour
     public virtual void PassVelocity(float _xInput, float _yInput)
     {
         rb.velocity = new Vector2(_xInput, _yInput).normalized * movementSpeed;
-        LinearVelocity(-rb.velocity/2.5f);
+        //LinearVelocity(-rb.velocity/2.5f);
     }
     public virtual void PassVelocity(Vector2 vector2)
     {
         rb.velocity = vector2.normalized * movementSpeed;
-        LinearVelocity(-rb.velocity/2.5f);
+        //LinearVelocity(-rb.velocity/2.5f);
     }
 
     public virtual void PassDashVelocity(float _xInput, float _yInput)
@@ -257,7 +245,7 @@ public class FireSpirit : MonoBehaviour
         float currentSpeed = rb.velocity.magnitude;
         float newDashSpeed = Mathf.Lerp(currentSpeed, dashSpeed, DashVelocitySmoothness);
         rb.velocity = new Vector2(_xInput, _yInput).normalized * newDashSpeed;
-        LinearVelocity(-rb.velocity/1.75f);
+        //LinearVelocity(-rb.velocity/1.75f);
     }
 
     public virtual void PassDashVelocity(Vector2 vector2)
@@ -265,7 +253,7 @@ public class FireSpirit : MonoBehaviour
         float currentSpeed = rb.velocity.magnitude;
         float newDashSpeed = Mathf.Lerp(currentSpeed, dashSpeed, DashVelocitySmoothness);
         rb.velocity = vector2.normalized * newDashSpeed;
-        LinearVelocity(-rb.velocity/1.75f);
+        //LinearVelocity(-rb.velocity/1.75f);
         
     }
     #endregion
@@ -274,6 +262,50 @@ public class FireSpirit : MonoBehaviour
     public void InstantiateSpell(GameObject prefab, Vector3 position, Quaternion quaternion){
         prefab.GetComponent<SpellPrefabMaster>().getFirespirit(this);
         Instantiate(prefab.gameObject, position, quaternion);
+    }
+    #endregion
+    
+    #region Burst
+    public void TriggerBurst()
+    {
+        for (int i = 0; i < burstCount; i++)
+        {
+            // Create custom parameters for each particle
+            ParticleSystem.EmitParams emitParams = new ParticleSystem.EmitParams
+            {
+                startLifetime = Random.Range(minBurstParticleLifetime, maxBurstParticleLifetime), // Random lifetime
+            };
+
+            // Randomize the speed of each particle
+            float randomSpeed = Random.Range(minBurstParticleSpeed, maxBurstParticleSpeed);
+
+            // Apply the velocity in the direction of the mouse with slight randomness
+            emitParams.velocity = PlayerToMouseDirection() * randomSpeed + new Vector2(
+                Random.Range(-1f, 1f), // Add slight X randomness
+                Random.Range(-1f, 1f) // Add slight Y randomness
+            );
+
+            // Emit a single particle with the custom parameters
+            fire.Emit(emitParams, 1);
+        }
+
+        // Optionally scale the particle system for a brief effect
+        StartCoroutine(ScaleFireTemporarily());
+    }
+    
+    public IEnumerator ScaleFireTemporarily()
+    {
+        // Store the original size of the particle system
+        Vector3 originalScale = new Vector3(1, 1, 1);
+
+        // Scale up the particle system
+        transform.localScale = originalScale * intensityScale;
+
+        // Wait for the burst duration
+        yield return new WaitForSeconds(burstDuration);
+
+        // Reset to the original size
+        transform.localScale = originalScale;
     }
     #endregion
 }

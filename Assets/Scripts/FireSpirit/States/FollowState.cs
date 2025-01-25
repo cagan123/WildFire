@@ -12,7 +12,7 @@ public class FollowState : FireSpiritState
     public override void Enter()
     {
         base.Enter();
-        damageSource.gameObject.SetActive(false);
+        //damageSource.gameObject.SetActive(false);
     }
 
     public override void Exit()

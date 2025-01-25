@@ -21,7 +21,7 @@ public class Enemy : Entity
     public List<EnemyAttack> enemyAttacks;
     public List<EnemyMagicAttack> magicAttacks;
     public bool Is4Directional;
-    public bool IsBoss;
+    public bool noPrepDash;
 
     #region Components
     public EnemyStateMachine stateMachine { get; private set; }

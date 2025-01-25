@@ -143,7 +143,7 @@ ScriptedImporter:
     uvTransform: {x: 54, y: 52}
   - name: Second character_Frame_1
     originalName: 
-    pivot: {x: 0.6153847, y: -2.3529413}
+    pivot: {x: 0.6153847, y: -2.5}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -151,7 +151,7 @@ ScriptedImporter:
       x: 33
       y: 35
       width: 13
-      height: 17
+      height: 16
     spriteID: fe3a589490cd53c4181d041da110221e
     spriteBone: []
     spriteOutline: []
@@ -169,7 +169,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 33
-      y: 60
+      y: 59
       width: 13
       height: 16
     spriteID: 087edbea0e4954b4680de82a34143170
@@ -180,7 +180,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 33, y: 60}
+    uvTransform: {x: 33, y: 59}
   - name: Second character_Frame_13
     originalName: 
     pivot: {x: 0.6153847, y: -2.6666667}
@@ -229,7 +229,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 33
-      y: 84
+      y: 83
       width: 13
       height: 16
     spriteID: 9bccb8d73aa981949af247ca301b35fb
@@ -240,7 +240,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 33, y: 84}
+    uvTransform: {x: 33, y: 83}
   - name: Second character_Frame_16
     originalName: 
     pivot: {x: 0.6153847, y: -2.5}
@@ -249,7 +249,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 33
-      y: 108
+      y: 107
       width: 13
       height: 16
     spriteID: fcd2511929d366c4d8dd1357343a6173
@@ -260,7 +260,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 33, y: 108}
+    uvTransform: {x: 33, y: 107}
   - name: Second character_Frame_3
     originalName: 
     pivot: {x: 0.57142866, y: -2.5}
@@ -566,7 +566,7 @@ ScriptedImporter:
         x: 40
         y: 40
         width: 13
-        height: 17
+        height: 16
       spriteId: fe3a589490cd53c4181d041da110221e
     - name: Second character_Frame_2
       frameIndex: 2

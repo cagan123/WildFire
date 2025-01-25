@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -10,7 +11,7 @@ public class FireSpiritState
     protected FireSpirit fireSpirit;
     public string animBoolName {get; private set;}
     protected Rigidbody2D rb;
-    protected damageSource damageSource;
+    //protected damageSource damageSource;
     #endregion
 
     #region Variables
@@ -42,25 +43,25 @@ public class FireSpiritState
     {
         triggerCalled = false;
         rb = fireSpirit.rb;
-        damageSource = fireSpirit.damageSource; 
-        
+        //damageSource = fireSpirit.damageSource; 
         Distance = fireSpirit.distanceBetweenPlayerandFireSpirit;
         if(animBoolName != null){
             fireSpirit.fire.Stop();
             fireSpirit.anim.SetBool("empty", false);         
-            fireSpirit.anim.SetBool(animBoolName, true);
+            fireSpirit.anim.SetBool(animBoolName, true);          
         }
         else{
-            fireSpirit.anim.SetBool("empty", true);     
+            fireSpirit.anim.SetBool("empty", true);       
             fireSpirit.fire.Play();
         }
+        
     }
 
     public virtual void Update()
     {   
         PlayerPosition = fireSpirit.cam.WorldToScreenPoint(fireSpirit.transformToFollow.position);
         RealPos = fireSpirit.cam.ScreenToWorldPoint(Position);
-        RotationHandler();       
+        RotationHandler();    
     }
 
     public virtual void FixedUpdate()
@@ -70,7 +71,8 @@ public class FireSpiritState
         Position = fireSpirit.cam.WorldToScreenPoint(rb.position);
     }
     public virtual void Exit()
-    {            
+    {      
+        
         if(animBoolName != null){
             fireSpirit.anim.SetBool(animBoolName, false); 
         }
@@ -85,7 +87,7 @@ public class FireSpiritState
         float angle = Vector2.SignedAngle(Vector2.down, fireSpirit.FireToPlayerDirection());
         Quaternion newRotation = new Quaternion {
             eulerAngles = new Vector3(0, 0, angle)
-        };
+        };  
         if(animBoolName == null){
             RotationResetter();
         }
