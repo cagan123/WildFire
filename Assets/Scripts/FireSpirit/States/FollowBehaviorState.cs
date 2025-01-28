@@ -31,7 +31,7 @@ public class FollowBehaviorState : FireSpiritState
             fireSpirit.PassVelocity(Vector2.zero);
         }
         else{
-            fireSpirit.PassDashVelocity(getDirection);
+            fireSpirit.PassDashVelocity( 3* getDirection);
         }
     }
 }

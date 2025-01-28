@@ -17,12 +17,7 @@ public class EntityVFX : MonoBehaviour
     public float timeStopDuration = 1f;
     private bool isStopping = false;
     private Coroutine timeStopRoutine;
-    [Header("Screen Shake")]
-    [SerializeField] private ScreenShakeVFX screenShake;
-    [SerializeField] private float shakeDuration = 0.1f;
-    [SerializeField] private float shakeMagnitude = 0.2f;
-
-
+    
     private Material originialMat;
 
     private void Start()
@@ -41,13 +36,6 @@ public class EntityVFX : MonoBehaviour
     public void NoticeEnemy(){
         Vector3 spawnPosition = damageTextSpawnPoint.position + Vector3.up * 1.5f;
         Instantiate(exlamationTextPrefab, spawnPosition, Quaternion.identity, transform);
-    }
-    public void TriggerScreenShake()
-    {
-        if (screenShake != null)
-        {
-            screenShake.Shake(shakeDuration, shakeMagnitude);
-        }
     }
     public void StopTime(){
         if (isStopping)

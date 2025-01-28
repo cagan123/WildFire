@@ -162,8 +162,6 @@ public class Inventory : MonoBehaviour
         else if (_item.itemType == ItemType.Material)
             AddToStash(_item);
 
-
-
         UpdateSlotUI();
     }
     public bool CanAddItem()

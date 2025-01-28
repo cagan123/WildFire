@@ -10,12 +10,12 @@ public class DamageState : FollowBehaviorState
     public override void Enter()
     {
         base.Enter();
-        //damageSource.gameObject.SetActive(true);
+        fireSpirit.damageSourceActive = true;
     }
     public override void Exit()
     {
         base.Exit();
-        //damageSource.gameObject.SetActive(false);
+        fireSpirit.damageSourceActive = false;
     }
 
 }

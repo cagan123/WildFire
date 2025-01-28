@@ -46,8 +46,7 @@ public class Entity : MonoBehaviour
     public virtual void DamageEffect(int _damage, Transform parent)
     {
         VFX.StartCoroutine("FlashVFX_Routine");
-        //VFX.StopTime(); fix this with good chat gpt
-        VFX.TriggerScreenShake();
+        //VFX.StopTime();
         StartCoroutine("KnockBackRoutine");
         VFX.TakeDamage(_damage);
     }

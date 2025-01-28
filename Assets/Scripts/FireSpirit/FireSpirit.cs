@@ -21,8 +21,8 @@ public class FireSpirit : MonoBehaviour
     public float maxBurstParticleSpeed = 11f; // Maximum velocity for burst particles
     public int staminaUse;
     public int attackCounter;
-    public List<Spell> spells;
-    
+    public bool damageSourceActive;
+
     [Header("Attack Buffer Settings")]
     [SerializeField] private float attackBufferTime = 0.3f; // Time window for buffering inputs
     private Queue<(int inputType, float timestamp)> inputBuffer = new Queue<(int, float)>();
@@ -44,7 +44,6 @@ public class FireSpirit : MonoBehaviour
     #region States
     public FireSpiritStateMachine stateMachine { get; private set; }
     public FollowState followState { get; private set; }
-    public FireSpiritShieldState shieldState { get; private set; }
     public FollowBehaviorState followBehaviorState { get; private set; }
     public FireballState fireballState { get; private set; }
     public DamageState damageState { get; private set; }
@@ -143,13 +142,13 @@ public class FireSpirit : MonoBehaviour
                 }
                 break;
 
-            case 1: // fireball
+            /*case 1: // fireball
                 if (stats.HasEnoughStamina(spells[0].staminaUse))
                 {
                     stateMachine.ChangeState(fireballState);
                     return true; // Input processed
                 }
-                break;
+                break;*/
         }
 
         return false; // Input not processed
@@ -259,10 +258,10 @@ public class FireSpirit : MonoBehaviour
     #endregion
 
     #region Instantiate Spell
-    public void InstantiateSpell(GameObject prefab, Vector3 position, Quaternion quaternion){
+    /*public void InstantiateSpell(GameObject prefab, Vector3 position, Quaternion quaternion){
         prefab.GetComponent<SpellPrefabMaster>().getFirespirit(this);
         Instantiate(prefab.gameObject, position, quaternion);
-    }
+    }*/
     #endregion
     
     #region Burst

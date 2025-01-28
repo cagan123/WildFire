@@ -12,24 +12,22 @@ public class NewAttackState : DamageState
     public override void Enter()
     {
         base.Enter();
-        stateTimer = fireSpirit.burstDuration;
-        fireSpirit.TriggerBurst();
+        stateTimer = fireSpirit.burstDuration;    
     }
     public override void Exit()
     {
         base.Exit();
+        fireSpirit.TriggerBurst();
     }
     public override void FixedUpdate()
     {
         base.FixedUpdate();
-
     }
     public override void Update()
     {
         base.Update();
         if(stateTimer < 0){
             stateMachine.ChangeState(fireSpirit.followState);
-        }
-                
+        }              
     }
 }
