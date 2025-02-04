@@ -14,7 +14,9 @@ public class ItemObject : MonoBehaviour
         GetComponent<SpriteRenderer>().sprite = itemData.icon;
         gameObject.name = "Item object - " + itemData.itemName;
     }
-
+    private void OnValidate(){
+        SetupVisuals();
+    }
 
     public void SetupItem(ItemData _itemData, Vector2 _velocity)
     {

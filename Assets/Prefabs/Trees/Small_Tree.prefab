@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1486396437097590525}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.06, y: -0.44, z: 0}
+  m_LocalPosition: {x: 0.06, y: -0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -110,7 +110,7 @@ Transform:
   m_GameObject: {fileID: 2413742911282655448}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -226,7 +226,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -163121957, guid: 6077c7c35543ff04a91668b839069562, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -253,7 +253,7 @@ MonoBehaviour:
   isMovable: 1
   renderBelowAll: 0
   sortType: 0
-  SorterPositionOffset: {x: -0.011177063, y: -0.22352982}
+  SorterPositionOffset: {x: 0.0027427673, y: 0.124443054}
   SorterPositionOffset2: {x: 0, y: 0}
   renderersToSort:
   - {fileID: 932690615024791135}

@@ -12,6 +12,8 @@ public class UI : MonoBehaviour
 
     public ItemTooltipUI itemTooltip;
     public StatTooltipUI statTooltip;
+    public SpellTooltipUI spellTooltip;
+    public SpellKeyUI spellKeyUI;
     void Start()
     {
         SwitchTo(inGameUI);

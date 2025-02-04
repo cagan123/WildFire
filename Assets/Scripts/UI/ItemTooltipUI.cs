@@ -20,6 +20,17 @@ public class ItemTooltipUI : MonoBehaviour
         itemDescription.text = item.GetDescription();
         gameObject.SetActive(true);
     }
+    public void ShowToolTip(SpellData item)
+    {
+        if (item == null)
+            return;
+
+        itemNameText.text = item.itemName;
+        itemTypeText.text = item.damage.ToString() + " Damage" + item.poise.ToString() + " Poise Damage" + item.statusEffects;
+        itemDescription.text = item.GetDescription();
+        gameObject.SetActive(true);
+
+    }
 
     public void HideToolTip() 
     {

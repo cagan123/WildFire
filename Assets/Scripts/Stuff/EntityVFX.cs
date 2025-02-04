@@ -13,10 +13,6 @@ public class EntityVFX : MonoBehaviour
     public GameObject damageTextPrefab; // Drag and drop your DamageText prefab here
     public GameObject exlamationTextPrefab;
     public Transform damageTextSpawnPoint; // Optional: where to spawn the text
-    [Header("Time Stop")]
-    public float timeStopDuration = 1f;
-    private bool isStopping = false;
-    private Coroutine timeStopRoutine;
     
     private Material originialMat;
 
@@ -36,23 +32,6 @@ public class EntityVFX : MonoBehaviour
     public void NoticeEnemy(){
         Vector3 spawnPosition = damageTextSpawnPoint.position + Vector3.up * 1.5f;
         Instantiate(exlamationTextPrefab, spawnPosition, Quaternion.identity, transform);
-    }
-    public void StopTime(){
-        if (isStopping)
-            return; // Prevent overlapping hitstop calls
-
-        // Start the hitstop coroutine
-        timeStopRoutine = StartCoroutine(HitTimeStop_Routine());
-    }
-    private IEnumerator HitTimeStop_Routine()
-    {
-        isStopping = true;
-        float originalTimeScale = Time.timeScale;
-        Time.timeScale = 0f;
-        yield return new WaitForSecondsRealtime(timeStopDuration);
-        Time.timeScale = originalTimeScale;
-        isStopping = false;
-        timeStopRoutine = null;
     }
     private IEnumerator FlashVFX_Routine()
     {

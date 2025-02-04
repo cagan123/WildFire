@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e809b4fc3be201f4ca5b1bcd5441431b, type: 3}
   m_Name: SecondSpell
   m_EditorClassIdentifier: 
-  spellName: Whirlwind
-  description: 'Learned by scholars by observing the natural movements of whirlwinds '
+  itemType: 2
+  itemName: 
+  icon: {fileID: 1739474275, guid: 9eec673a9dec18e429c82f367b187b99, type: 3}
+  dropChance: 0
+  StaminaCost: 0
   damage: 30
+  poise: 0
   statusEffects: Wind
-  Icon: {fileID: 1739474275, guid: 9eec673a9dec18e429c82f367b187b99, type: 3}
+  spellPrefab: {fileID: 0}

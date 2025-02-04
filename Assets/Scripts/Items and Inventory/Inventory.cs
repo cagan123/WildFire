@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -17,6 +18,9 @@ public class Inventory : MonoBehaviour
     public List<InventoryItem> stash;
     public Dictionary<ItemData, InventoryItem> stashDictianory;
 
+    public List<InventoryItem> spellInventory;
+    public Dictionary<SpellData, InventoryItem> spellDictionary;
+
 
 
     [Header("Inventory UI")]
@@ -25,12 +29,22 @@ public class Inventory : MonoBehaviour
     [SerializeField] private Transform stashSlotParent;
     [SerializeField] private Transform equpmentSlotParent;
     [SerializeField] private Transform statSlotParent;
-
-
+    [SerializeField] private Transform spellInventorySlotParent;
+    
+    [Header("Spell Slot UI")]
+    [SerializeField] private SpellEquipmentSlotUI leftClickSlot;
+    [SerializeField] private SpellEquipmentSlotUI rightClickSlot;
+    [SerializeField] private SpellEquipmentSlotUI dashSlot;
+    [SerializeField] private SpellEquipmentSlotUI eSlot;
+    [SerializeField] private SpellEquipmentSlotUI qSlot;
     private ItemSlotUI[] inventoryItemSlot;
     private ItemSlotUI[] stashItemSlot;
     private EquipentSlotUI[] equipmentSlot;
     private StatSlotUI[] statSlot;
+    private SpellInventorySlotUI[] spellInventorySlot;
+    private SpellEquipmentSlotUI[] spellEquipmentSlot;
+    
+
 
     [Header("Items cooldown")]
     private float lastTimeUsedFlask;
@@ -58,9 +72,14 @@ public class Inventory : MonoBehaviour
         equipment = new List<InventoryItem>();
         equipmentDictionary = new Dictionary<EquipmentItemData, InventoryItem>();
 
+        spellInventory = new List<InventoryItem>();
+        spellDictionary = new Dictionary<SpellData, InventoryItem>();
+
         inventoryItemSlot = inventorySlotParent.GetComponentsInChildren<ItemSlotUI>();
         stashItemSlot = stashSlotParent.GetComponentsInChildren<ItemSlotUI>();
         equipmentSlot = equpmentSlotParent.GetComponentsInChildren<EquipentSlotUI>();
+        spellInventorySlot = spellInventorySlotParent.GetComponentsInChildren<SpellInventorySlotUI>();
+
 
         statSlot = statSlotParent.GetComponentsInChildren<StatSlotUI>();
 
@@ -74,7 +93,88 @@ public class Inventory : MonoBehaviour
             AddItem(startingItems[i]);
         }
     }
+    #region Spell Equipment Slots
+    public void AddToLeftClickSlot(SpellData _spell){
+        var newItem = new InventoryItem(_spell);
 
+        if(leftClickSlot.item != null && leftClickSlot.item.data != null){
+            RemoveFromLeftClickSlot();
+        }
+        
+        leftClickSlot.UpdateSlot(newItem);
+        RemoveItem(_spell);
+    }
+    public void RemoveFromLeftClickSlot(){
+        if(leftClickSlot.item == null || leftClickSlot.item.data == null)
+            return;
+        AddItem(leftClickSlot.item.data);
+        leftClickSlot.CleanUpSlot();
+    }
+    public void AddToRightClickSlot(SpellData _spell){
+        var newItem = new InventoryItem(_spell);
+
+        if(rightClickSlot.item != null && rightClickSlot.item.data != null){
+            RemoveFromRightClickSlot();
+        }
+        
+        rightClickSlot.UpdateSlot(newItem);
+        RemoveItem(_spell);
+    }
+    public void RemoveFromRightClickSlot(){
+        if(rightClickSlot.item == null || rightClickSlot.item.data == null)
+            return;
+        AddItem(rightClickSlot.item.data);
+        rightClickSlot.CleanUpSlot();
+    }
+    public void AddToDashSlot(SpellData _spell){
+        var newItem = new InventoryItem(_spell);
+
+        if(dashSlot.item != null && dashSlot.item.data != null){
+            RemoveFromDashSlot();
+        }
+        
+        dashSlot.UpdateSlot(newItem);
+        RemoveItem(_spell);
+    }
+    public void RemoveFromDashSlot(){
+        if(dashSlot.item == null || dashSlot.item.data == null)
+            return;
+        AddItem(dashSlot.item.data);
+        dashSlot.CleanUpSlot();
+    }
+    public void AddToESlot(SpellData _spell){
+        var newItem = new InventoryItem(_spell);
+
+        if(eSlot.item != null && eSlot.item.data != null){
+            RemoveFromESlot();
+        }
+        
+        eSlot.UpdateSlot(newItem);
+        RemoveItem(_spell);
+    }
+    public void RemoveFromESlot(){
+        if(eSlot.item == null || eSlot.item.data == null)
+            return;
+        AddItem(eSlot.item.data);
+        eSlot.CleanUpSlot();
+    }
+    public void AddToQSlot(SpellData _spell){
+        var newItem = new InventoryItem(_spell);
+
+        if(qSlot.item != null && qSlot.item.data != null){
+            RemoveFromQSlot();
+        }
+        
+        qSlot.UpdateSlot(newItem);
+        RemoveItem(_spell);
+    }
+    public void RemoveFromQSlot(){
+        if(qSlot.item == null || qSlot.item.data == null)
+            return;
+        AddItem(qSlot.item.data);
+        qSlot.CleanUpSlot();
+    }
+    #endregion
     public void EquipItem(ItemData _item)
     {
         EquipmentItemData newEquipment = _item as EquipmentItemData;
@@ -134,6 +234,10 @@ public class Inventory : MonoBehaviour
         {
             stashItemSlot[i].CleanUpSlot();
         }
+        for (int i = 0; i < spellInventorySlot.Length; i++)
+        {
+            spellInventorySlot[i].CleanUpSlot();
+        }
 
 
         for (int i = 0; i < inventory.Count; i++)
@@ -145,6 +249,14 @@ public class Inventory : MonoBehaviour
         {
             stashItemSlot[i].UpdateSlot(stash[i]);
         }
+        
+        for (int i = 0; i < spellInventory.Count; i++)
+        {
+            spellInventorySlot[i].UpdateSlot(spellInventory[i]);
+        }
+
+        leftClickSlot.UpdateSlot(leftClickSlot.item);
+
         UpdateStatsUI();
     }
     public void UpdateStatsUI()
@@ -157,11 +269,15 @@ public class Inventory : MonoBehaviour
 
     public void AddItem(ItemData _item)
     {
-        if (_item.itemType == ItemType.Equipment && CanAddItem())
+        if (_item.itemType == ItemType.Equipment && CanAddItem()){
             AddToInventory(_item);
-        else if (_item.itemType == ItemType.Material)
+        }
+        else if (_item.itemType == ItemType.Material){
             AddToStash(_item);
-
+        }   
+        else if (_item.itemType == ItemType.Spell){
+            AddToSpellInventory(_item);
+        }
         UpdateSlotUI();
     }
     public bool CanAddItem()
@@ -173,11 +289,20 @@ public class Inventory : MonoBehaviour
 
         return true;
     }
-
+    public void AddToSpellInventory(ItemData _item){
+        if(spellDictionary.TryGetValue(_item as SpellData, out InventoryItem value)){
+            value.AddStack(); // increase stack value if we find the same item in the dictionary 
+        }
+        else{
+            InventoryItem newItem = new InventoryItem(_item);
+            spellInventory.Add(newItem);
+            spellDictionary.Add(_item as SpellData, newItem);
+        }
+        
+    }
     private void AddToStash(ItemData _item)
     {
-        if (stashDictianory.TryGetValue(_item, out InventoryItem value))
-        {
+        if (stashDictianory.TryGetValue(_item, out InventoryItem value)){
             value.AddStack();
         }
         else
@@ -225,6 +350,16 @@ public class Inventory : MonoBehaviour
             }
             else
                 stashValue.RemoveStack();
+        }
+        if(spellDictionary.TryGetValue(_item as SpellData, out InventoryItem spellValue)){
+            
+            if(spellValue.stackSize <= 1){
+                spellInventory.Remove(spellValue);
+                spellDictionary.Remove(_item as SpellData);
+            }
+            else{
+                spellValue.RemoveStack();
+            }
         }
 
         UpdateSlotUI();

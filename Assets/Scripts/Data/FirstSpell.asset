@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e809b4fc3be201f4ca5b1bcd5441431b, type: 3}
   m_Name: FirstSpell
   m_EditorClassIdentifier: 
-  spellName: Fire spray
-  description: techique inherent to every spirit of fire
+  itemType: 2
+  itemName: orb
+  icon: {fileID: 1536332314, guid: 2197776f788564c40b74b4a65c84b25a, type: 3}
+  dropChance: 0
+  StaminaCost: 10
   damage: 10
+  poise: 5
   statusEffects: burning
-  Icon: {fileID: 1536332314, guid: 2197776f788564c40b74b4a65c84b25a, type: 3}
+  spellPrefab: {fileID: 6340891549309759702, guid: 0693e25b6ed90254db12dac433c84514, type: 3}

@@ -113,12 +113,12 @@ TextureImporter:
       name: Tree Spirites_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 10
+        x: 14
+        y: 39
         width: 50
-        height: 58
+        height: 57
       alignment: 9
-      pivot: {x: 0.4777778, y: 0.081736825}
+      pivot: {x: 0.4777778, y: 0.08173683}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,8 +134,8 @@ TextureImporter:
       name: Tree Spirites_1
       rect:
         serializedVersion: 2
-        x: 62
-        y: 10
+        x: 158
+        y: 38
         width: 39
         height: 53
       alignment: 9
@@ -155,10 +155,10 @@ TextureImporter:
       name: Tree Spirites_2
       rect:
         serializedVersion: 2
-        x: 114
-        y: 10
-        width: 28
-        height: 37
+        x: 203
+        y: 38
+        width: 26
+        height: 33
       alignment: 9
       pivot: {x: 0.470238, y: 0.1071071}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,6 +168,90 @@ TextureImporter:
       bones: []
       spriteID: 1f40f30025890bd46bc4a54aa43910c7
       internalID: -163121957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree Spirites_3
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 37
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8168bf4423ad6749aef2cbc47aa3351
+      internalID: 155863326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree Spirites_5
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 38
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d76d085b106304c9fc7a3a62c8af38
+      internalID: -287650536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree Spirites_4
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 31
+        width: 49
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe40fe3ed050040449db488e44874cb8
+      internalID: -301579490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tree Spirites_6
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 38
+        width: 62
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c105d18093417469a22ec98f92f6a3
+      internalID: 1027969383
       vertices: []
       indices: 
       edges: []
@@ -186,6 +270,10 @@ TextureImporter:
       Tree Spirites_0: -1059969704
       Tree Spirites_1: -2026479062
       Tree Spirites_2: -163121957
+      Tree Spirites_3: 155863326
+      Tree Spirites_4: -301579490
+      Tree Spirites_5: -287650536
+      Tree Spirites_6: 1027969383
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

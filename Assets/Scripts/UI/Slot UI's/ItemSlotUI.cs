@@ -9,7 +9,7 @@ public class ItemSlotUI : MonoBehaviour, IPointerDownHandler,IPointerEnterHandle
     [SerializeField] private Image itemImage;
     [SerializeField] private TextMeshProUGUI itemText;
 
-    private UI UI;
+    public UI UI;
     public InventoryItem item;
     private void Start(){
         UI = GetComponentInParent<UI>();
@@ -20,7 +20,7 @@ public class ItemSlotUI : MonoBehaviour, IPointerDownHandler,IPointerEnterHandle
 
         itemImage.color = Color.white;
 
-        if (item != null)
+        if (item != null && item.data != null)
         {
             itemImage.sprite = item.data.icon;
 
@@ -34,7 +34,6 @@ public class ItemSlotUI : MonoBehaviour, IPointerDownHandler,IPointerEnterHandle
             }
         }
     }
-
     public void CleanUpSlot()
     {
         item = null;
@@ -56,10 +55,9 @@ public class ItemSlotUI : MonoBehaviour, IPointerDownHandler,IPointerEnterHandle
 
         if (item.data.itemType == ItemType.Equipment)
             Inventory.instance.EquipItem(item.data);
-
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    public virtual void OnPointerEnter(PointerEventData eventData)
     {
         if (item == null)
             return;
@@ -67,7 +65,7 @@ public class ItemSlotUI : MonoBehaviour, IPointerDownHandler,IPointerEnterHandle
         UI.itemTooltip.ShowToolTip(item.data as EquipmentItemData);
     }
 
-    public void OnPointerExit(PointerEventData eventData)
+    public virtual void OnPointerExit(PointerEventData eventData)
     {
         if (item == null)
             return;

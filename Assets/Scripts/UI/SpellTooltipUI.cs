@@ -1,33 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+
 public class SpellTooltipUI : MonoBehaviour
 {
-    public TextMeshProUGUI spellNameText;
-    public TextMeshProUGUI spellDescriptionText;
-    public TextMeshProUGUI spellStatsText;
+    [SerializeField] private TMPro.TextMeshProUGUI spellNameText;
+    [SerializeField] private TMPro.TextMeshProUGUI spellDescriptionText;
+    [SerializeField] private TMPro.TextMeshProUGUI spellStatText;
 
-    private RectTransform rectTransform;
 
-    private void Awake()
+    public void ShowToolTip(SpellData item)
     {
-        rectTransform = GetComponent<RectTransform>();
-        HideTooltip();
-    }
+        if (item == null)
+            return;
 
-    public void ShowTooltip(Spell spell, Vector2 position)
-    {
-        spellNameText.text = spell.spellName;
-        spellDescriptionText.text = spell.description;
-        spellStatsText.text = $"Damage: {spell.damage}\nEffects: {spell.statusEffects}";
-
-        // Position the tooltip
-        //rectTransform.anchoredPosition = position;
         gameObject.SetActive(true);
+        spellNameText.text = item.itemName;
+        spellDescriptionText.text = item.GetDescription();
+        spellStatText.text = item.damage.ToString();
     }
 
-    public void HideTooltip()
+    public void HideToolTip()
     {
         gameObject.SetActive(false);
     }

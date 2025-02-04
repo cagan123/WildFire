@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 
@@ -22,10 +23,6 @@ public class FireSpirit : MonoBehaviour
     public int staminaUse;
     public int attackCounter;
     public bool damageSourceActive;
-
-    [Header("Attack Buffer Settings")]
-    [SerializeField] private float attackBufferTime = 0.3f; // Time window for buffering inputs
-    private Queue<(int inputType, float timestamp)> inputBuffer = new Queue<(int, float)>();
 
     #region Components
     [HideInInspector] public Transform transformToFollow{get;private set;}
@@ -62,7 +59,7 @@ public class FireSpirit : MonoBehaviour
         damageState = new DamageState(this, stateMachine, null);
         fireballState = new FireballState(this, stateMachine, null);
 
-        AttackState = new NewAttackState(this, stateMachine, "null");
+        AttackState = new NewAttackState(this, stateMachine, null);
 
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();       
@@ -85,75 +82,19 @@ public class FireSpirit : MonoBehaviour
     private void Update()
     {
         stateMachine.currentState.Update();
-        BufferInputs();
-        ProcessBufferedInputs();
-
+        GetMouseInput();
         distanceBetweenPlayerandFireSpirit = Vector2.Distance(transform.position, transformToFollow.position);
     }
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
    
     #region Inputs and Buffer
-    private void BufferInputs()
-    {
-        if (Input.GetMouseButtonDown(0)) // Primary attack
+        public void GetMouseInput()
         {
-            inputBuffer.Enqueue((0, Time.time));
-        }
-        if (Input.GetMouseButtonDown(1)) // Special attack
-        {
-            inputBuffer.Enqueue((1, Time.time));
-        }
-    }
-
-    private void ProcessBufferedInputs()
-    {
-        if (inputBuffer.Count > 0)
-        {
-            var (inputType, timestamp) = inputBuffer.Peek();
-
-            // If the buffered input is still valid
-            if (Time.time - timestamp <= attackBufferTime)
+            if (Input.GetMouseButtonDown(0))
             {
-                if (HandleAttackInput(inputType))
-                {
-                    inputBuffer.Dequeue(); // Consume input after processing
-                }
-            }
-            else
-            {
-                inputBuffer.Dequeue(); // Discard expired input
+                stateMachine.ChangeState(AttackState);
             }
         }
-    }
-    private bool HandleAttackInput(int inputType)
-    {
-        switch (inputType)
-        {
-            case 0: // Primary attack
-                if (stats.HasEnoughStamina(staminaUse))
-                {
-                    attackCounter++;
-                    if (attackCounter % 2 == 1)
-                        stateMachine.ChangeState(AttackState);
-                    else
-                        stateMachine.ChangeState(AttackState);
-
-                    return true; // Input processed
-                }
-                break;
-
-            /*case 1: // fireball
-                if (stats.HasEnoughStamina(spells[0].staminaUse))
-                {
-                    stateMachine.ChangeState(fireballState);
-                    return true; // Input processed
-                }
-                break;*/
-        }
-
-        return false; // Input not processed
-    }
-
     #endregion
 
     #region Directions & Positions
@@ -231,12 +172,12 @@ public class FireSpirit : MonoBehaviour
     public virtual void PassVelocity(float _xInput, float _yInput)
     {
         rb.velocity = new Vector2(_xInput, _yInput).normalized * movementSpeed;
-        //LinearVelocity(-rb.velocity/2.5f);
+        LinearVelocity(-rb.velocity/2.5f);
     }
     public virtual void PassVelocity(Vector2 vector2)
     {
         rb.velocity = vector2.normalized * movementSpeed;
-        //LinearVelocity(-rb.velocity/2.5f);
+        LinearVelocity(-rb.velocity/2.5f);
     }
 
     public virtual void PassDashVelocity(float _xInput, float _yInput)
@@ -244,7 +185,7 @@ public class FireSpirit : MonoBehaviour
         float currentSpeed = rb.velocity.magnitude;
         float newDashSpeed = Mathf.Lerp(currentSpeed, dashSpeed, DashVelocitySmoothness);
         rb.velocity = new Vector2(_xInput, _yInput).normalized * newDashSpeed;
-        //LinearVelocity(-rb.velocity/1.75f);
+        LinearVelocity(-rb.velocity/1.75f);
     }
 
     public virtual void PassDashVelocity(Vector2 vector2)
@@ -252,16 +193,22 @@ public class FireSpirit : MonoBehaviour
         float currentSpeed = rb.velocity.magnitude;
         float newDashSpeed = Mathf.Lerp(currentSpeed, dashSpeed, DashVelocitySmoothness);
         rb.velocity = vector2.normalized * newDashSpeed;
-        //LinearVelocity(-rb.velocity/1.75f);
+        LinearVelocity(-rb.velocity/1.75f);
         
     }
     #endregion
 
     #region Instantiate Spell
-    /*public void InstantiateSpell(GameObject prefab, Vector3 position, Quaternion quaternion){
-        prefab.GetComponent<SpellPrefabMaster>().getFirespirit(this);
-        Instantiate(prefab.gameObject, position, quaternion);
-    }*/
+    private bool CastSpell(SpellData spell){
+        if (spell.spellPrefab!= null)
+        {
+            Instantiate(spell.spellPrefab, transform.position, Quaternion.identity);
+            return true; // Successfully cast spell
+        }
+        Debug.Log(spell.name + " is not assigned to the FireSpirit");
+        return false; // Spell cast failed
+    
+    }
     #endregion
     
     #region Burst
