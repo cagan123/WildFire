@@ -6,11 +6,6 @@ using UnityEngine.UI;
 public class SpellEquipmentSlotUI : ItemSlotUI
 {
     [SerializeField] public KeyCode keycode;
-    private void Update(){
-        if(item == null || item.data == null)
-            return;
-        Debug.Log(keycode + item.data.name);
-    }
     public override void OnPointerDown(PointerEventData eventData)
     {
         if(item == null || item.data == null)

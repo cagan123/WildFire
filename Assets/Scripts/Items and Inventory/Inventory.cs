@@ -254,9 +254,6 @@ public class Inventory : MonoBehaviour
         {
             spellInventorySlot[i].UpdateSlot(spellInventory[i]);
         }
-
-        leftClickSlot.UpdateSlot(leftClickSlot.item);
-
         UpdateStatsUI();
     }
     public void UpdateStatsUI()
