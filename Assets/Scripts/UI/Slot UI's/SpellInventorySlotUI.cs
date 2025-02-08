@@ -10,7 +10,7 @@ public class SpellInventorySlotUI : ItemSlotUI
     {
         if (item == null)
             return;
-        UI.spellTooltip.ShowToolTip(item.data as SpellData);
+        UI.spellTooltip.ShowToolTip(item.data as SpellData, transform);
     }
 
     public override void OnPointerExit(PointerEventData eventData)

@@ -5,8 +5,6 @@ using UnityEngine;
 public class UI : MonoBehaviour
 {
     [SerializeField] private GameObject charcaterUI;
-    [SerializeField] private GameObject SpellsUI;
-    [SerializeField] private GameObject craftUI;
     [SerializeField] private GameObject optionsUI;
     [SerializeField] private GameObject inGameUI;
 
@@ -22,15 +20,8 @@ public class UI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.Tab))
             SwitchWithKeyTo(charcaterUI);
-
-        if (Input.GetKeyDown(KeyCode.B))
-            SwitchWithKeyTo(craftUI);
-        
-
-        if (Input.GetKeyDown(KeyCode.K))
-            SwitchWithKeyTo(SpellsUI);
 
         if(Input.GetKeyDown(KeyCode.O))
             SwitchWithKeyTo(optionsUI);

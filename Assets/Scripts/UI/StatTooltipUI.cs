@@ -8,7 +8,7 @@ public class StatTooltipUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI description;
     public void ShowStatTooltip(string _text){
         description.text = _text;
-
+        transform.position = Input.mousePosition;
         gameObject.SetActive(true);
     }
     public void HideStatTooltip(){

@@ -10,7 +10,7 @@ public class ItemTooltipUI : MonoBehaviour
 
     [SerializeField] private int defaultFontSize = 32;
 
-    public void ShowToolTip(EquipmentItemData item)
+    public void ShowToolTip(EquipmentItemData item, Transform _transform)
     {
         if (item == null)
             return;
@@ -18,13 +18,15 @@ public class ItemTooltipUI : MonoBehaviour
         itemNameText.text = item.itemName;
         itemTypeText.text = item.equipmentType.ToString();
         itemDescription.text = item.GetDescription();
+        transform.position = _transform.position;
         gameObject.SetActive(true);
     }
-    public void ShowToolTip(SpellData item)
+    public void ShowToolTip(SpellData item, Transform _transform)
     {
         if (item == null)
             return;
 
+        transform.position = _transform.position;
         itemNameText.text = item.itemName;
         itemTypeText.text = item.damage.ToString() + " Damage" + item.poise.ToString() + " Poise Damage" + item.statusEffects;
         itemDescription.text = item.GetDescription();

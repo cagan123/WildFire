@@ -62,7 +62,7 @@ public class ItemSlotUI : MonoBehaviour, IPointerDownHandler,IPointerEnterHandle
         if (item == null)
             return;
 
-        UI.itemTooltip.ShowToolTip(item.data as EquipmentItemData);
+        UI.itemTooltip.ShowToolTip(item.data as EquipmentItemData, transform);
     }
 
     public virtual void OnPointerExit(PointerEventData eventData)

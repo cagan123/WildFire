@@ -23,6 +23,12 @@ public class FireSpirit : MonoBehaviour
     public int staminaUse;
     public int attackCounter;
     public bool damageSourceActive;
+    public SpellData leftClickSpell = null;
+    public SpellData rightClickSpell;
+    public SpellData dashSpell;
+    public SpellData eSpell;
+    public SpellData qSpell;
+
 
     #region Components
     [HideInInspector] public Transform transformToFollow{get;private set;}
@@ -83,6 +89,7 @@ public class FireSpirit : MonoBehaviour
     {
         stateMachine.currentState.Update();
         GetMouseInput();
+        GetInputFromInventory();
         distanceBetweenPlayerandFireSpirit = Vector2.Distance(transform.position, transformToFollow.position);
     }
     public virtual void AnimationFinishTrigger() => stateMachine.currentState.AnimationFinishTrigger();
@@ -198,10 +205,54 @@ public class FireSpirit : MonoBehaviour
     }
     #endregion
 
+    #region Get Input from Inventory
+    public void GetInputFromInventory()
+    {
+        
+    }
+    #endregion
+
+    #region GetKeyInput
+    public void GetKeyInput(){
+        if(Input.GetMouseButtonDown(1))
+        {
+            if (rightClickSpell != null)
+            {
+                CastSpell(rightClickSpell);
+            }
+        }
+        if(Input.GetMouseButtonDown(0))
+        {
+            if (leftClickSpell != null)
+            {
+                CastSpell(leftClickSpell);
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (qSpell != null)
+            {
+                CastSpell(qSpell);
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (eSpell != null)
+            {
+                CastSpell(eSpell);
+            }
+        }
+        
+    }
+        
+    #endregion
+    
     #region Instantiate Spell
     private bool CastSpell(SpellData spell){
         if (spell.spellPrefab!= null)
         {
+            // get mouse pos 
             Instantiate(spell.spellPrefab, transform.position, Quaternion.identity);
             return true; // Successfully cast spell
         }

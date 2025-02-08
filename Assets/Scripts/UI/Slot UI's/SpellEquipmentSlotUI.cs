@@ -28,4 +28,13 @@ public class SpellEquipmentSlotUI : ItemSlotUI
         }
         CleanUpSlot();
     }
+    public override void OnPointerEnter(PointerEventData eventData)
+    {
+        UI.spellTooltip.ShowToolTip(item.data as SpellData, transform);
+    }
+    public override void OnPointerExit(PointerEventData eventData)
+    {
+        UI.spellTooltip.HideToolTip();
+    }
+
 }

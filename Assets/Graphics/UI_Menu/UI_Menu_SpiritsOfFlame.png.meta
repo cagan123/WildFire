@@ -113,13 +113,13 @@ TextureImporter:
       name: UI_Menu_SpiritsOfFlame_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 17
-        width: 47
-        height: 47
+        x: 16
+        y: 142
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 1, w: 1}
+      border: {x: 1, y: 1, z: 1, w: 1}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -134,13 +134,13 @@ TextureImporter:
       name: UI_Menu_SpiritsOfFlame_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 32
-        width: 16
-        height: 32
+        x: 15
+        y: 109
+        width: 18
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 1, z: 1, w: 17}
+      border: {x: 2, y: 2, z: 2, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -155,13 +155,13 @@ TextureImporter:
       name: UI_Menu_SpiritsOfFlame_2
       rect:
         serializedVersion: 2
-        x: 112
-        y: 32
-        width: 16
+        x: 48
+        y: 126
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 1, z: 1, w: 17}
+      border: {x: 7, y: 7, z: 7, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -176,13 +176,13 @@ TextureImporter:
       name: UI_Menu_SpiritsOfFlame_3
       rect:
         serializedVersion: 2
-        x: 144
-        y: 32
-        width: 16
-        height: 32
+        x: 16
+        y: 78
+        width: 32
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 1, z: 1, w: 17}
+      border: {x: 7, y: 5, z: 7, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -197,13 +197,13 @@ TextureImporter:
       name: UI_Menu_SpiritsOfFlame_4
       rect:
         serializedVersion: 2
-        x: 179
-        y: 50
-        width: 10
-        height: 12
+        x: 64
+        y: 78
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 7, z: 7, w: 7}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -218,13 +218,13 @@ TextureImporter:
       name: UI_Menu_SpiritsOfFlame_5
       rect:
         serializedVersion: 2
-        x: 211
-        y: 50
-        width: 10
-        height: 12
+        x: 112
+        y: 78
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 8, z: 8, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -239,13 +239,13 @@ TextureImporter:
       name: UI_Menu_SpiritsOfFlame_6
       rect:
         serializedVersion: 2
-        x: 256
-        y: 16
-        width: 48
-        height: 48
+        x: 161
+        y: 95
+        width: 13
+        height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 4, y: 4, z: 4, w: 4}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -260,13 +260,13 @@ TextureImporter:
       name: UI_Menu_SpiritsOfFlame_7
       rect:
         serializedVersion: 2
-        x: 176
-        y: 16
-        width: 16
-        height: 16
+        x: 96
+        y: 126
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 1, z: 1, w: 1}
+      border: {x: 8, y: 8, z: 8, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -281,19 +281,61 @@ TextureImporter:
       name: UI_Menu_SpiritsOfFlame_8
       rect:
         serializedVersion: 2
-        x: 109
-        y: 2
-        width: 37
-        height: 27
+        x: 144
+        y: 126
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 5, y: 5, z: 5, w: 5}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 86cdc04616a23bf4bad2bf310732539a
       internalID: 1093888086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Menu_SpiritsOfFlame_9
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 79
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82309e4968168904faf8b2ec396ec063
+      internalID: -668092907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Menu_SpiritsOfFlame_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 30
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 9, y: 9, z: 9, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a52f24bf5715949bf30958b3bd492c
+      internalID: -529601221
       vertices: []
       indices: 
       edges: []
@@ -311,6 +353,7 @@ TextureImporter:
     nameFileIdTable:
       UI_Menu_SpiritsOfFlame_0: -664122069
       UI_Menu_SpiritsOfFlame_1: -856549477
+      UI_Menu_SpiritsOfFlame_10: -529601221
       UI_Menu_SpiritsOfFlame_2: -825066636
       UI_Menu_SpiritsOfFlame_3: 249014802
       UI_Menu_SpiritsOfFlame_4: 1521474307
@@ -318,6 +361,7 @@ TextureImporter:
       UI_Menu_SpiritsOfFlame_6: -349819835
       UI_Menu_SpiritsOfFlame_7: 493516255
       UI_Menu_SpiritsOfFlame_8: 1093888086
+      UI_Menu_SpiritsOfFlame_9: -668092907
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
