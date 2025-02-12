@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7569514922034754812}
   - component: {fileID: 7326541113381657877}
   - component: {fileID: 2621922532703416642}
+  - component: {fileID: 9118859166576372142}
   m_Layer: 0
   m_Name: Spirit
   m_TagString: Untagged
@@ -101,9 +102,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   points:
-  - {x: 15.286369, y: 8.687035, z: 0.0009765625}
-  - {x: -17.626186, y: -11.758627, z: 0.001953125}
-  EntityPos: {x: -1.96, y: 0.59, z: 0}
+  - {x: 5.663124, y: -0.409935, z: 0}
+  - {x: -7.326313, y: -7.322918, z: 0}
+  EntityPos: {x: -24.310001, y: -42.08, z: 0}
 --- !u!114 &7569514922034754812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,3 +159,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &9118859166576372142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5127116631536168097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e93feda443ae0049931f180db6851fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMovable: 1
+  renderBelowAll: 0
+  sortType: 0
+  SorterPositionOffset: {x: 0.056871414, y: -0.611393}
+  SorterPositionOffset2: {x: 0, y: 0}
+  renderersToSort:
+  - {fileID: 4986741269480032800}

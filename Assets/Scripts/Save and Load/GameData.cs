@@ -13,6 +13,8 @@ public class GameData
     public string dashSpellSlotID;
     public string qSpellSlotID;
     public string eSpellSlotID;
+
+    public SerializableDictionary<string, bool> checkpoints;
         
 
     public GameData()
@@ -25,5 +27,7 @@ public class GameData
         dashSpellSlotID = "";
         qSpellSlotID = "";
         eSpellSlotID = "";
+
+        checkpoints = new SerializableDictionary<string, bool>();
     }
 }

@@ -1,9 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class UI : MonoBehaviour
 {
+    [Header("End Screen")]
+    [SerializeField] private FadeScreenUI fadeScreenUI;
+    [SerializeField] private GameObject youDied;
+    [SerializeField] private GameObject restartButton;
+    [Space]
     [SerializeField] private GameObject charcaterUI;
     [SerializeField] private GameObject optionsUI;
     [SerializeField] private GameObject inGameUI;
@@ -28,9 +34,12 @@ public class UI : MonoBehaviour
     }
     public void SwitchTo(GameObject _menu)
     {
+        
         for (int i = 0; i < transform.childCount; i++)
         {
-            transform.GetChild(i).gameObject.SetActive(false);
+            bool isFadeScreen = transform.GetChild(i).GetComponent<FadeScreenUI>() != null;
+            if(!isFadeScreen)
+                transform.GetChild(i).gameObject.SetActive(false);
         }
 
         if (_menu != null)
@@ -57,4 +66,16 @@ public class UI : MonoBehaviour
 
         SwitchTo(inGameUI);
     }
+    public void SwitchOnEndScreen(){
+        fadeScreenUI.FadeOut();
+        StartCoroutine(EndScreenRoutine());
+    }
+
+    public IEnumerator EndScreenRoutine(){
+        yield return new WaitForSeconds(.5f);
+        youDied.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        restartButton.SetActive(true);
+    }
+    public void RestrartGameButton() => GameManager.instance.RestartScene();
 }

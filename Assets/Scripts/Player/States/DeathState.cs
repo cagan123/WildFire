@@ -10,6 +10,8 @@ public class DeathState : PlayerState
     public override void Enter()
     {
         base.Enter();
+
+        GameObject.Find("UI").GetComponentInChildren<UI>().SwitchOnEndScreen();
     }
     public override void Exit()
     {
