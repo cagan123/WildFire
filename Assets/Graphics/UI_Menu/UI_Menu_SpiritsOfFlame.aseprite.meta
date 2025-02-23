@@ -123,14 +123,14 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: UI_Menu_SpiritsOfFlame
     originalName: 
-    pivot: {x: 0.5031056, y: -0.23255815}
+    pivot: {x: 0.45762712, y: -0.23255815}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 161
+      width: 177
       height: 129
     spriteID: a74c04616b84b97448d0340048d0cf4d
     spriteBone: []
@@ -156,7 +156,7 @@ ScriptedImporter:
       cellRect:
         x: 15
         y: 30
-        width: 161
+        width: 177
         height: 129
       spriteId: a74c04616b84b97448d0340048d0cf4d
     linkedCells: []

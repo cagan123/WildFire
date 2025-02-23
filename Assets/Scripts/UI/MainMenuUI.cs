@@ -9,7 +9,7 @@ public class MainMenuUI : MonoBehaviour
 
     [SerializeField] private FadeScreenUI fadeScreenUI;
     private void Start(){
-        if(!SaveManager.Instance.HasSavedData()){
+        if(!SaveManager.instance.HasSavedData()){
             continueButton.SetActive(false);
         }
     }
@@ -17,7 +17,7 @@ public class MainMenuUI : MonoBehaviour
         StartCoroutine(LoadSceneWithFadeEffect(1f));
     }
     public void NewGame(){
-        SaveManager.Instance.DeleteSavedData();
+        SaveManager.instance.DeleteSavedData();
         StartCoroutine(LoadSceneWithFadeEffect(1f));
     }
     public void ExitGame(){

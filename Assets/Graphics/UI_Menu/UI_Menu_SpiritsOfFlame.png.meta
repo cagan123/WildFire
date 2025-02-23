@@ -340,6 +340,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: UI_Menu_SpiritsOfFlame_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 46
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 5, y: 5, z: 5, w: 5}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de50cb17f155d246be2aea2b6f27267
+      internalID: -188317293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -354,6 +375,7 @@ TextureImporter:
       UI_Menu_SpiritsOfFlame_0: -664122069
       UI_Menu_SpiritsOfFlame_1: -856549477
       UI_Menu_SpiritsOfFlame_10: -529601221
+      UI_Menu_SpiritsOfFlame_11: -188317293
       UI_Menu_SpiritsOfFlame_2: -825066636
       UI_Menu_SpiritsOfFlame_3: 249014802
       UI_Menu_SpiritsOfFlame_4: 1521474307

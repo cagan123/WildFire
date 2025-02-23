@@ -15,18 +15,28 @@ public class GameData
     public string eSpellSlotID;
 
     public SerializableDictionary<string, bool> checkpoints;
+    public string closestCheckpointID;
         
+    public float lostCurrencyX;
+    public float lostCurrencyY;
+    public int lostCurrencyAmount;
 
     public GameData()
     {
+        this.lostCurrencyX = 0;
+        this.lostCurrencyY = 0;
+        this.lostCurrencyAmount = 0;
+
+
         this.currency = 0;
         inventory = new SerializableDictionary<string, int>();
         equipmentId = new List<string>();
-        leftSpellSlotID = "";
-        rightSpellSlotID = "";
-        dashSpellSlotID = "";
-        qSpellSlotID = "";
-        eSpellSlotID = "";
+        leftSpellSlotID = string.Empty;
+        rightSpellSlotID = string.Empty;
+        dashSpellSlotID = string.Empty;
+        qSpellSlotID = string.Empty;
+        eSpellSlotID = string.Empty;
+        closestCheckpointID = string.Empty;
 
         checkpoints = new SerializableDictionary<string, bool>();
     }

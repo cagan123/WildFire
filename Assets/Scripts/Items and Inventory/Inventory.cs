@@ -530,14 +530,16 @@ public class Inventory : MonoBehaviour, ISaveManager
         {
             _data.inventory.Add(pair.Key.itemID, pair.Value.stackSize);
         }
-        foreach (KeyValuePair<SpellData, InventoryItem> pair in spellDictionary){
-            _data.inventory.Add(pair.Key.itemID, pair.Value.stackSize);
-        }
 
         foreach (KeyValuePair<EquipmentItemData, InventoryItem> pair in equipmentDictionary)
         {
             _data.equipmentId.Add(pair.Key.itemID);
         }
+
+        foreach (KeyValuePair<SpellData, InventoryItem> pair in spellDictionary){
+            _data.inventory.Add(pair.Key.itemID, pair.Value.stackSize);
+        }
+
         if(leftClickSlot.item != null && leftClickSlot.item.data != null)
             _data.leftSpellSlotID = leftClickSlot.item.data.itemID;
 
