@@ -213,6 +213,32 @@ public class Inventory : MonoBehaviour, ISaveManager
         AddItem(qSlot.item.data);
         qSlot.CleanUpSlot();
     }
+
+    public SpellData ReturnLeftClickSpell(){
+        if(leftClickSlot.item != null && leftClickSlot.item.data != null)
+            return leftClickSlot.item.data as SpellData;
+        return null;
+    }
+    public SpellData ReturnRightClickSpell(){
+        if(rightClickSlot.item != null && rightClickSlot.item.data != null)
+            return rightClickSlot.item.data as SpellData;
+        return null;
+    }
+    public SpellData ReturnESpell(){
+        if(eSlot.item != null && eSlot.item.data != null)
+            return eSlot.item.data as SpellData;
+        return null;
+    }
+    public SpellData ReturnQSpell(){
+        if(qSlot.item != null && qSlot.item.data != null)
+            return qSlot.item.data as SpellData;
+        return null;
+    }
+    public SpellData ReturnDashSpell(){
+        if(dashSlot.item != null && dashSlot.item.data != null)
+            return dashSlot.item.data as SpellData;
+        return null;
+    }
     #endregion
     public void EquipItem(ItemData _item)
     {

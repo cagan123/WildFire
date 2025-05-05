@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SpellDamageSource : MonoBehaviour
 {
-    FireSpirit fireSpirit => GetComponentInParent<SpellPrefabMaster>().fireSpirit;
     public bool damageDone = false;
     private void OnTriggerEnter2D(Collider2D hit){
         if (hit.gameObject.GetComponent<Enemy>() != null)
@@ -19,6 +18,6 @@ public class SpellDamageSource : MonoBehaviour
     }
     public void DoDamageToEnemy(Collider2D _hit){
             EnemyStats _target = _hit.gameObject.GetComponent<EnemyStats>();
-            fireSpirit.stats.DoDamage(_target);
+            FireSpiritManager.instance.fireSpirit.stats.DoDamage(_target);
         }
 }

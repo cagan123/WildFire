@@ -23,7 +23,7 @@ public class FireSpirit : MonoBehaviour
     public int staminaUse;
     public int attackCounter;
     public bool damageSourceActive;
-    public SpellData leftClickSpell = null;
+    public SpellData leftClickSpell;
     public SpellData rightClickSpell;
     public SpellData dashSpell;
     public SpellData eSpell;
@@ -99,7 +99,11 @@ public class FireSpirit : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                stateMachine.ChangeState(AttackState);
+                CastSpell(leftClickSpell);
+            }
+            if (Input.GetMouseButtonDown(1))
+            {
+                CastSpell(rightClickSpell);
             }
         }
     #endregion
@@ -208,7 +212,11 @@ public class FireSpirit : MonoBehaviour
     #region Get Input from Inventory
     public void GetInputFromInventory()
     {
-        
+        leftClickSpell = Inventory.instance.ReturnLeftClickSpell();
+        rightClickSpell = Inventory.instance.ReturnRightClickSpell();
+        dashSpell = Inventory.instance.ReturnDashSpell();
+        eSpell = Inventory.instance.ReturnESpell();
+        qSpell = Inventory.instance.ReturnQSpell();
     }
     #endregion
 
@@ -252,8 +260,8 @@ public class FireSpirit : MonoBehaviour
     private bool CastSpell(SpellData spell){
         if (spell.spellPrefab!= null)
         {
-            // get mouse pos 
-            Instantiate(spell.spellPrefab, transform.position, Quaternion.identity);
+            
+            Instantiate(spell.spellPrefab, PointBeweenPlayerandMouse(), Quaternion.identity);
             return true; // Successfully cast spell
         }
         Debug.Log(spell.name + " is not assigned to the FireSpirit");
